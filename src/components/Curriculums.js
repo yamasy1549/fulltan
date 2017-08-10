@@ -1,10 +1,11 @@
 import React from 'react'
+import styles from './Curriculums.css'
 
 const Curriculum = ({ curriculum, grade, toggleCredit }) => (
-  <form>
+  <ul className={styles.curriculumList}>
     {curriculum.map(c => {
       return (
-        <p key={c.id}>
+        <li key={c.id} className={styles.curriculum}>
           <input
             id={c.id}
             type="checkbox"
@@ -12,10 +13,10 @@ const Curriculum = ({ curriculum, grade, toggleCredit }) => (
             onChange={(e) => toggleCredit(c.id, e.target.checked)}
           />
           <label htmlFor={c.id}>{c.title} [{c.credit}]</label>
-        </p>
+        </li>
       )
     })}
-  </form>
+  </ul>
 )
 
 const Curriculums = ({ curriculums, toggleCredit }) => (
@@ -24,7 +25,7 @@ const Curriculums = ({ curriculums, toggleCredit }) => (
       const grade = i+1
       return (
         <div key={grade}>
-          <h3>{parseInt(grade)}年次</h3>
+          <h3 className={styles.curriculumListGrade}>{parseInt(grade)}年次</h3>
           <Curriculum curriculum={curriculums_of_grade} grade={grade} toggleCredit={toggleCredit} />
         </div>
       )
