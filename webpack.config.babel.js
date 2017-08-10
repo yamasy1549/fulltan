@@ -3,7 +3,7 @@ import path from 'path'
 export default {
   entry: './src/index.js',
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: __dirname,
     filename: 'index.js'
   },
   devtool: '#source-map',
