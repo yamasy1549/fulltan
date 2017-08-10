@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "divide": 0,
+    "required": true,
+    "title": "国語Ⅲ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "石原　のり子"
+  },
+  {
+    "id": 2,
+    "divide": 0,
+    "required": true,
+    "title": "日本史",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "本間　哲也"
+  },
+  {
+    "id": 3,
+    "divide": 0,
+    "required": true,
+    "title": "微積分Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "高野　啓児"
+  },
+  {
+    "id": 4,
+    "divide": 0,
+    "required": true,
+    "title": "代数Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "面田　康裕"
+  },
+  {
+    "id": 5,
+    "divide": 0,
+    "required": true,
+    "title": "物理Ⅲ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "山崎　日出男"
+  },
+  {
+    "id": 6,
+    "divide": 0,
+    "required": true,
+    "title": "化学Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "倉光　利江"
+  },
+  {
+    "id": 7,
+    "divide": 0,
+    "required": true,
+    "title": "保健体育Ⅲ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "松下　幸一、前田　忠紀、石田　まさみ"
+  },
+  {
+    "id": 8,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅢA",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "穐本　浩美"
+  },
+  {
+    "id": 9,
+    "divide": 0,
+    "required": true,
+    "title": "英会話Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "ジョン　ハーバート"
+  },
+  {
+    "id": 10,
+    "divide": 1,
+    "required": true,
+    "title": "電気磁気学Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "大向　雅人"
+  },
+  {
+    "id": 11,
+    "divide": 1,
+    "required": true,
+    "title": "電子工学",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "成枝　秀介"
+  },
+  {
+    "id": 12,
+    "divide": 1,
+    "required": true,
+    "title": "回路論",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "堤　保雄、周山　大慶"
+  },
+  {
+    "id": 13,
+    "divide": 1,
+    "required": true,
+    "title": "電気電子工学概論",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "廣田　敦志、上　泰"
+  },
+  {
+    "id": 14,
+    "divide": 1,
+    "required": true,
+    "title": "情報工学概論",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "濱田　幸弘、佐村　敏治"
+  },
+  {
+    "id": 15,
+    "divide": 1,
+    "required": true,
+    "title": "ディジタル電子回路",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "堀　桂太郎"
+  },
+  {
+    "id": 16,
+    "divide": 1,
+    "required": true,
+    "title": "電気情報工学実験Ⅱ",
+    "term": 0,
+    "credit": 4,
+    "lecturer": "大向　雅人、細川　篤、周山　大慶、豊島　晋、廣田　敦志"
+  }
+]

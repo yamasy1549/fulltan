@@ -1,0 +1,326 @@
+[
+  {
+    "id": 1,
+    "divide": 0,
+    "required": true,
+    "title": "保健体育Ⅴ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "松下　幸一、後藤　太之"
+  },
+  {
+    "id": 2,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅤＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "前原　澄子"
+  },
+  {
+    "id": 3,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅤＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "松田　安隆"
+  },
+  {
+    "id": 4,
+    "divide": 0,
+    "required": false,
+    "title": "国語表現概論",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "武田　充啓"
+  },
+  {
+    "id": 5,
+    "divide": 0,
+    "required": false,
+    "title": "法学概論",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "西島　和彦"
+  },
+  {
+    "id": 6,
+    "divide": 0,
+    "required": false,
+    "title": "哲学概論",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "森　芳周"
+  },
+  {
+    "id": 7,
+    "divide": 0,
+    "required": false,
+    "title": "数学概論",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "面田　康裕"
+  },
+  {
+    "id": 8,
+    "divide": 0,
+    "required": false,
+    "title": "生化学",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "倉光　利江"
+  },
+  {
+    "id": 9,
+    "divide": 0,
+    "required": false,
+    "title": "科学技術と環境",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "井上　尚之"
+  },
+  {
+    "id": 10,
+    "divide": 0,
+    "required": false,
+    "title": "スポーツ科学実習",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "松下　幸一、後藤　太之"
+  },
+  {
+    "id": 11,
+    "divide": 1,
+    "required": true,
+    "title": "知的財産権",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "森定　勇二"
+  },
+  {
+    "id": 12,
+    "divide": 1,
+    "required": true,
+    "title": "卒業研究",
+    "term": 0,
+    "credit": 9,
+    "lecturer": "Ｅ全"
+  },
+  {
+    "id": 13,
+    "divide": 1,
+    "required": true,
+    "title": "情報理論Ⅰ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "中井　優一"
+  },
+  {
+    "id": 14,
+    "divide": 1,
+    "required": true,
+    "title": "信号処理",
+    "term": 1,
+    "credit": 1,
+    "lecturer": ""
+  },
+  {
+    "id": 15,
+    "divide": 1,
+    "required": true,
+    "title": "コンパイラ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "三浦　欽也"
+  },
+  {
+    "id": 16,
+    "divide": 1,
+    "required": true,
+    "title": "ソフトウェア工学",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "三浦　欽也"
+  },
+  {
+    "id": 17,
+    "divide": 1,
+    "required": true,
+    "title": "情報工学実験Ⅱ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "濱田　幸弘、新井　イスマイル"
+  },
+  {
+    "id": 18,
+    "divide": 1,
+    "required": false,
+    "title": "応用数学Ⅰ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "松下　通紀"
+  },
+  {
+    "id": 19,
+    "divide": 1,
+    "required": false,
+    "title": "応用数学Ⅱ",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "松下　通紀"
+  },
+  {
+    "id": 20,
+    "divide": 1,
+    "required": false,
+    "title": "通信工学Ⅰ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "中尾　睦彦"
+  },
+  {
+    "id": 21,
+    "divide": 1,
+    "required": false,
+    "title": "通信工学Ⅱ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "成枝　秀介"
+  },
+  {
+    "id": 22,
+    "divide": 1,
+    "required": false,
+    "title": "情報理論Ⅱ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "中井　優一"
+  },
+  {
+    "id": 23,
+    "divide": 1,
+    "required": false,
+    "title": "情報ネットワーク",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "佐村　敏治"
+  },
+  {
+    "id": 24,
+    "divide": 1,
+    "required": false,
+    "title": "ディジタル制御",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "上　泰"
+  },
+  {
+    "id": 25,
+    "divide": 1,
+    "required": false,
+    "title": "電子応用",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "的場　功始"
+  },
+  {
+    "id": 26,
+    "divide": 1,
+    "required": false,
+    "title": "ヒューマンインターフェイス",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "長松　隆"
+  },
+  {
+    "id": 27,
+    "divide": 1,
+    "required": false,
+    "title": "データベース",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "佐藤　隆士"
+  },
+  {
+    "id": 28,
+    "divide": 1,
+    "required": false,
+    "title": "人工知能",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "新井　イスマイル"
+  },
+  {
+    "id": 29,
+    "divide": 1,
+    "required": false,
+    "title": "プロダクトデザイン",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "逸身　健二郎"
+  },
+  {
+    "id": 30,
+    "divide": 1,
+    "required": false,
+    "title": "画像工学",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "中井　優一"
+  },
+  {
+    "id": 31,
+    "divide": 1,
+    "required": false,
+    "title": "工業外国語",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "原　良子"
+  },
+  {
+    "id": 32,
+    "divide": 1,
+    "required": false,
+    "title": "情報資格Ⅰ",
+    "term": 0,
+    "credit": 1,
+    "lecturer": "中井　優一"
+  },
+  {
+    "id": 33,
+    "divide": 1,
+    "required": false,
+    "title": "情報資格Ⅱ",
+    "term": 0,
+    "credit": 1,
+    "lecturer": "中井　優一"
+  },
+  {
+    "id": 34,
+    "divide": 1,
+    "required": false,
+    "title": "コンピュータシミュレーション",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "上　泰"
+  },
+  {
+    "id": 35,
+    "divide": 0,
+    "required": false,
+    "title": "ＴＯＥＩＣⅠ",
+    "term": 0,
+    "credit": 1,
+    "lecturer": "松田　安隆、前原　澄子"
+  },
+  {
+    "id": 36,
+    "divide": 0,
+    "required": false,
+    "title": "ＴＯＥＩＣⅡ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "松田　安隆、前原　澄子"
+  }
+]
