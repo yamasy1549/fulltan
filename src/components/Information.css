@@ -1,0 +1,15 @@
+.informationWrapper {
+  margin: 2rem;
+  color: #023466;
+}
+
+.informationList {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+
+.link {
+  color: #30C7EF;
+}

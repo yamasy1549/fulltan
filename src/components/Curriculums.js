@@ -48,6 +48,7 @@ class Curriculum  extends React.Component {
 
 const Curriculums = ({ curriculums, toggleCredit }) => (
   <section>
+    <h2 className={styles.header}>カリキュラム一覧</h2>
     {curriculums.map((curriculums_of_grade, i) => {
       const grade = i+1
       return (

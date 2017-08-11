@@ -6,7 +6,7 @@
   padding: 1rem 2rem;
   background: #30C7EF;
   width: 100%;
-  max-height: 120px;
+  max-height: 115px;
   border-top: 2px solid #ffffff;
 }
 
@@ -33,7 +33,7 @@
   color: #FFFFFF;
   font-weight: bold;
   font-size: 1.5rem;
-  line-height: 110px;
+  line-height: 100px;
 }
 
 .currentCredits {
@@ -49,6 +49,7 @@
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
   margin-bottom: 0.2rem;
+  text-indent: 0.1rem;
 }
 
 .number {

@@ -30,3 +30,7 @@
   font-weight: bold;
   color: #023466;
 }
+
+.header {
+  display: none;
+}

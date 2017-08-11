@@ -16,6 +16,7 @@ class Select extends React.Component {
 
     return (
       <section className={styles.selectWrapper}>
+        <h2 className={styles.header}>クラスを選択</h2>
         <select
           className={styles.select}
           value={this.state.classcode}

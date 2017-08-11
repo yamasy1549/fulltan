@@ -1,8 +1,15 @@
-.title {
+.titleWrapper {
   background: #30C7EF;
   color: #ffffff;
   text-align: center;
   height: 80px;
-  line-height: 80px;
+}
+
+.title {
+  padding: 1rem 0 0.4rem;
   font-size: 2rem;
+}
+
+.lead {
+  font-size: 0.8rem;
 }
