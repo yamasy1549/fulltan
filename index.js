@@ -11809,7 +11809,7 @@ var _actions = __webpack_require__(59);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var logger = (0, _reduxLogger.createLogger)();
-var store = (0, _redux.createStore)(_reducers2.default, (0, _redux.applyMiddleware)(logger));
+var store = (0, _redux.createStore)(_reducers2.default);
 
 store.dispatch((0, _actions.fetchCurriculums)(4, 'ej'));
 
