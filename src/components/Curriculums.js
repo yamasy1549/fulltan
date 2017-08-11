@@ -1,12 +1,9 @@
 import React from 'react'
 import styles from './Curriculums.css'
 
-class Curriculum  extends React.Component {
+class Curriculum extends React.Component {
   constructor(props, context) {
     super(props, context)
-    this.state = {
-      checked: props.c.getCredit
-    }
   }
 
   render() {
@@ -19,9 +16,8 @@ class Curriculum  extends React.Component {
             id={c.id}
             className={styles.curriculumCheck}
             type="checkbox"
-            defaultChecked={c.required}
+            checked={c.getCredit}
             onChange={(e) => {
-              this.setState({ checked: !this.state.checked })
               toggleCredit(c.id, e.target.checked)
             }}
           />
@@ -29,7 +25,7 @@ class Curriculum  extends React.Component {
             <span className={styles.curriculumCredit}>{c.credit}</span>
             <span className={styles.curriculumTitle}>{c.title}</span>
             {(() => {
-              if(this.state.checked) {
+              if(c.getCredit) {
                 return (
                   <span className={styles.curriculumCheckmark}>
                     <svg viewBox='0 0 36.9 28.3' enableBackground='new 0 0 36.9 28.3'>

@@ -4,6 +4,8 @@ const defaultState = []
 
 const curriculums = (state = defaultState, action) => {
   switch (action.type) {
+    case 'RESET_CURRICULUMS':
+      return defaultState
     case 'FETCH_CURRICULUMS':
       return action.curriculums.map((curriculums_of_grade, i) => {
         return curriculums_of_grade.map((c) => curriculum(c, action, i+1))

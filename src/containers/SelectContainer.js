@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import Select      from '../components/Select'
-import { set_classcode, fetchCurriculums } from '../actions'
+import { set_classcode, resetCurriculums, fetchCurriculums } from '../actions'
 
 const mapStateToProps = (state) => {
   return {
@@ -13,6 +13,7 @@ const mapDispatchToProps = (dispatch) => {
   return {
     set_classcode: (grade, course) => {
       dispatch(set_classcode(grade, course))
+      dispatch(resetCurriculums())
       dispatch(fetchCurriculums(grade, course))
     },
   }

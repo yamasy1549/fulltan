@@ -8,6 +8,12 @@ export const set_classcode = (grade, course) => {
   }
 }
 
+export const resetCurriculums = () => {
+  return {
+    type: 'RESET_CURRICULUMS'
+  }
+}
+
 export const fetchCurriculums = (grade, course) => {
   let curriculums = []
   let year = heiseiYear
