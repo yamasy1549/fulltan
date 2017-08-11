@@ -14,6 +14,14 @@ const App = () => (
     <SelectContainer />
     <CurriculumsContainer />
     <Information />
+    <div className={styles.twitter}>
+      <a
+        href='//twitter.com/share'
+        className='twitter-share-button'
+        data-url='http://yamasy.info/fulltan/'
+        data-text='fulltan〜単位、足りてますか？〜'
+      >Tweet</a>
+    </div>
     <CreditContainer />
   </div>
 )
