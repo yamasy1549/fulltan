@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "divide": 0,
+    "required": true,
+    "title": "国語Ⅲ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "石原　のり子"
+  },
+  {
+    "id": 2,
+    "divide": 0,
+    "required": true,
+    "title": "日本史",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "兒玉　州平"
+  },
+  {
+    "id": 3,
+    "divide": 0,
+    "required": true,
+    "title": "微積分Ⅱ",
+    "term": 0,
+    "credit": 4,
+    "lecturer": "松宮　篤"
+  },
+  {
+    "id": 4,
+    "divide": 0,
+    "required": true,
+    "title": "代数Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "高田　功"
+  },
+  {
+    "id": 5,
+    "divide": 0,
+    "required": true,
+    "title": "物理Ⅲ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "武内　將洋"
+  },
+  {
+    "id": 6,
+    "divide": 0,
+    "required": true,
+    "title": "化学Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "倉光　利江"
+  },
+  {
+    "id": 7,
+    "divide": 0,
+    "required": true,
+    "title": "保健体育Ⅲ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "松下　幸一、前田　忠紀、石田　まさみ"
+  },
+  {
+    "id": 8,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅢA",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "原　良子"
+  },
+  {
+    "id": 9,
+    "divide": 0,
+    "required": true,
+    "title": "英会話Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "ジョン　ハーバート"
+  },
+  {
+    "id": 10,
+    "divide": 1,
+    "required": true,
+    "title": "建築構造力学Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "荘所　直哉"
+  },
+  {
+    "id": 11,
+    "divide": 1,
+    "required": true,
+    "title": "建築材料",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "角野　嘉則"
+  },
+  {
+    "id": 12,
+    "divide": 1,
+    "required": true,
+    "title": "建築計画Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "水島　あかね"
+  },
+  {
+    "id": 13,
+    "divide": 1,
+    "required": true,
+    "title": "建築設計演習Ⅲ",
+    "term": 0,
+    "credit": 6,
+    "lecturer": "大塚　毅彦、工藤　和美"
+  },
+  {
+    "id": 14,
+    "divide": 1,
+    "required": true,
+    "title": "建築環境工学Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "平石　年弘"
+  },
+  {
+    "id": 15,
+    "divide": 1,
+    "required": true,
+    "title": "図学Ⅰ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "中川　肇"
+  },
+  {
+    "id": 16,
+    "divide": 1,
+    "required": true,
+    "title": "図学Ⅱ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "工藤　和美"
+  }
+]

@@ -1,0 +1,173 @@
+[
+  {
+    "id": 1,
+    "divide": 0,
+    "required": true,
+    "title": "国語Ⅲ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "宮川　真弥"
+  },
+  {
+    "id": 2,
+    "divide": 0,
+    "required": true,
+    "title": "日本史",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "小野塚　航一"
+  },
+  {
+    "id": 3,
+    "divide": 0,
+    "required": true,
+    "title": "数学ⅢA",
+    "term": 0,
+    "credit": 4,
+    "lecturer": "長尾　秀人"
+  },
+  {
+    "id": 4,
+    "divide": 0,
+    "required": true,
+    "title": "数学ⅢB",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "武田　ひとみ"
+  },
+  {
+    "id": 5,
+    "divide": 0,
+    "required": true,
+    "title": "サイエンスⅢA",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "原　俊雄、小笠原　弘道"
+  },
+  {
+    "id": 6,
+    "divide": 0,
+    "required": true,
+    "title": "サイエンスⅢB",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "倉光　利江"
+  },
+  {
+    "id": 7,
+    "divide": 0,
+    "required": true,
+    "title": "保健体育Ⅲ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "前田　忠紀、松下　幸一、石田　まさみ"
+  },
+  {
+    "id": 8,
+    "divide": 0,
+    "required": true,
+    "title": "英語Ⅲ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "穐本　浩美"
+  },
+  {
+    "id": 9,
+    "divide": 0,
+    "required": true,
+    "title": "英会話Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "ジョン　ハーバート"
+  },
+  {
+    "id": 10,
+    "divide": 0,
+    "required": true,
+    "title": "Co+workⅡ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "全教員"
+  },
+  {
+    "id": 11,
+    "divide": 1,
+    "required": true,
+    "title": "設計製図Ⅱ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "三好　崇夫"
+  },
+  {
+    "id": 12,
+    "divide": 1,
+    "required": true,
+    "title": "構造力学ⅠA",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "石丸　和宏"
+  },
+  {
+    "id": 13,
+    "divide": 1,
+    "required": true,
+    "title": "構造力学ⅠB",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "石丸　和宏"
+  },
+  {
+    "id": 14,
+    "divide": 1,
+    "required": true,
+    "title": "水理学ⅠA",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "神田　佳一"
+  },
+  {
+    "id": 15,
+    "divide": 1,
+    "required": true,
+    "title": "水理学ⅠB",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "神田　佳一"
+  },
+  {
+    "id": 16,
+    "divide": 1,
+    "required": true,
+    "title": "地盤工学ⅠA",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "鍋島　康之"
+  },
+  {
+    "id": 17,
+    "divide": 1,
+    "required": true,
+    "title": "地盤工学ⅠB",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "鍋島　康之"
+  },
+  {
+    "id": 18,
+    "divide": 1,
+    "required": true,
+    "title": "環境生態学",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "渡部　守義"
+  },
+  {
+    "id": 19,
+    "divide": 1,
+    "required": true,
+    "title": "工学実験Ⅰ",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "武田　字浦"
+  }
+]

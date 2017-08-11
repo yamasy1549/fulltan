@@ -1,0 +1,155 @@
+[
+  {
+    "id": 1,
+    "divide": 0,
+    "required": true,
+    "title": "国語Ⅲ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "石原　のり子"
+  },
+  {
+    "id": 2,
+    "divide": 0,
+    "required": true,
+    "title": "日本史",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "本間　哲也"
+  },
+  {
+    "id": 3,
+    "divide": 0,
+    "required": true,
+    "title": "微積分Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "松宮　篤"
+  },
+  {
+    "id": 4,
+    "divide": 0,
+    "required": true,
+    "title": "代数Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "高野　啓児"
+  },
+  {
+    "id": 5,
+    "divide": 0,
+    "required": true,
+    "title": "物理Ⅲ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "武内　將洋、小笠原　弘道"
+  },
+  {
+    "id": 6,
+    "divide": 0,
+    "required": true,
+    "title": "化学Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "倉光　利江"
+  },
+  {
+    "id": 7,
+    "divide": 0,
+    "required": true,
+    "title": "保健体育Ⅲ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "松下　幸一、前田　忠紀、石田　まさみ"
+  },
+  {
+    "id": 8,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅢA",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "原　良子"
+  },
+  {
+    "id": 9,
+    "divide": 0,
+    "required": true,
+    "title": "英会話Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "ジョン　ハーバート"
+  },
+  {
+    "id": 10,
+    "divide": 1,
+    "required": true,
+    "title": "コンピュータ設計",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "稲積　真哉、三好　崇夫"
+  },
+  {
+    "id": 11,
+    "divide": 1,
+    "required": true,
+    "title": "構造力学Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "石丸　和宏"
+  },
+  {
+    "id": 12,
+    "divide": 1,
+    "required": true,
+    "title": "水理学Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "中村　文則"
+  },
+  {
+    "id": 13,
+    "divide": 1,
+    "required": true,
+    "title": "地盤工学Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "鍋島　康之"
+  },
+  {
+    "id": 14,
+    "divide": 1,
+    "required": true,
+    "title": "工学基礎Ⅱ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "細川　篤"
+  },
+  {
+    "id": 15,
+    "divide": 1,
+    "required": true,
+    "title": "環境生態学",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "渡部　守義"
+  },
+  {
+    "id": 16,
+    "divide": 1,
+    "required": true,
+    "title": "施工管理学Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "稲積　真哉"
+  },
+  {
+    "id": 17,
+    "divide": 1,
+    "required": true,
+    "title": "工学実験Ⅰ",
+    "term": 0,
+    "credit": 4,
+    "lecturer": "石丸　和宏、武田　字浦"
+  }
+]

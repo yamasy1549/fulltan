@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "divide": 0,
+    "required": true,
+    "title": "国語Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "善塔　正志"
+  },
+  {
+    "id": 2,
+    "divide": 0,
+    "required": true,
+    "title": "政治経済",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "石田　祐、日高　薫"
+  },
+  {
+    "id": 3,
+    "divide": 0,
+    "required": true,
+    "title": "世界史",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "本間　哲也"
+  },
+  {
+    "id": 4,
+    "divide": 0,
+    "required": true,
+    "title": "数学ⅡA",
+    "term": 0,
+    "credit": 4,
+    "lecturer": "面田　康裕"
+  },
+  {
+    "id": 5,
+    "divide": 0,
+    "required": true,
+    "title": "数学ⅡB",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "高田　功"
+  },
+  {
+    "id": 6,
+    "divide": 0,
+    "required": true,
+    "title": "サイエンスⅡA",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "武内　將洋、原　俊雄"
+  },
+  {
+    "id": 7,
+    "divide": 0,
+    "required": true,
+    "title": "サイエンスⅡB",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "井上　努"
+  },
+  {
+    "id": 8,
+    "divide": 0,
+    "required": true,
+    "title": "保健体育Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "後藤　太之、前田　忠紀、石田　まさみ"
+  },
+  {
+    "id": 9,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅡA",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "井上　英俊"
+  },
+  {
+    "id": 10,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅡB",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "飯島　睦美"
+  },
+  {
+    "id": 11,
+    "divide": 0,
+    "required": true,
+    "title": "Co+workⅠ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "全教員"
+  },
+  {
+    "id": 12,
+    "divide": 1,
+    "required": true,
+    "title": "情報基礎Ⅱ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "荘所　直哉"
+  },
+  {
+    "id": 13,
+    "divide": 1,
+    "required": true,
+    "title": "建築意匠",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "東野　アドリアナ、中村　卓"
+  },
+  {
+    "id": 14,
+    "divide": 1,
+    "required": true,
+    "title": "建築構造力学Ⅰ",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "荘所　直哉"
+  },
+  {
+    "id": 15,
+    "divide": 1,
+    "required": true,
+    "title": "建築設計演習Ⅱ",
+    "term": 0,
+    "credit": 4,
+    "lecturer": "坂戸　省三"
+  },
+  {
+    "id": 16,
+    "divide": 1,
+    "required": true,
+    "title": "建築史Ⅰ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "東野　アドリアナ"
+  }
+]

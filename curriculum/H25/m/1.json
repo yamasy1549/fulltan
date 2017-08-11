@@ -1,0 +1,155 @@
+[
+  {
+    "id": 1,
+    "divide": 0,
+    "required": true,
+    "title": "国語Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "善塔　正志"
+  },
+  {
+    "id": 2,
+    "divide": 0,
+    "required": true,
+    "title": "地理",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "石田　祐"
+  },
+  {
+    "id": 3,
+    "divide": 0,
+    "required": true,
+    "title": "数学A",
+    "term": 0,
+    "credit": 4,
+    "lecturer": "面田　康裕"
+  },
+  {
+    "id": 4,
+    "divide": 0,
+    "required": true,
+    "title": "数学B",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "南出　大樹"
+  },
+  {
+    "id": 5,
+    "divide": 0,
+    "required": true,
+    "title": "物理Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "武内　將洋"
+  },
+  {
+    "id": 6,
+    "divide": 0,
+    "required": true,
+    "title": "生物",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "井上　努"
+  },
+  {
+    "id": 7,
+    "divide": 0,
+    "required": true,
+    "title": "保健体育Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "後藤　太之、松下　幸一、石田　まさみ"
+  },
+  {
+    "id": 8,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅠA",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "井上　英俊"
+  },
+  {
+    "id": 9,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅠB",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "前原　澄子"
+  },
+  {
+    "id": 10,
+    "divide": 0,
+    "required": false,
+    "title": "音楽",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "泉　由香"
+  },
+  {
+    "id": 11,
+    "divide": 0,
+    "required": false,
+    "title": "美術",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "大野　良平"
+  },
+  {
+    "id": 12,
+    "divide": 1,
+    "required": true,
+    "title": "情報基礎",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "田中　誠一"
+  },
+  {
+    "id": 13,
+    "divide": 1,
+    "required": true,
+    "title": "設計製図Ⅰ",
+    "term": 0,
+    "credit": 3,
+    "lecturer": "史　鳳輝"
+  },
+  {
+    "id": 14,
+    "divide": 1,
+    "required": true,
+    "title": "工作実習Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "森下　智博"
+  },
+  {
+    "id": 15,
+    "divide": 1,
+    "required": true,
+    "title": "機械工学実習Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "森下　智博、松下　通紀、岩野　優樹、國峰　寛司"
+  },
+  {
+    "id": 16,
+    "divide": 1,
+    "required": true,
+    "title": "機械加工学Ⅰ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "加藤　隆弘"
+  },
+  {
+    "id": 17,
+    "divide": 1,
+    "required": true,
+    "title": "防災リテラシー",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "太田　敏一、松野　泉"
+  }
+]

@@ -1,0 +1,200 @@
+[
+  {
+    "id": 1,
+    "divide": 0,
+    "required": true,
+    "title": "国語Ⅲ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "宮川　真弥"
+  },
+  {
+    "id": 2,
+    "divide": 0,
+    "required": true,
+    "title": "日本史",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "小野塚　航一"
+  },
+  {
+    "id": 3,
+    "divide": 0,
+    "required": true,
+    "title": "数学ⅢＡ",
+    "term": 0,
+    "credit": 4,
+    "lecturer": "松宮　篤"
+  },
+  {
+    "id": 4,
+    "divide": 0,
+    "required": true,
+    "title": "数学ⅢＢ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "長尾　秀人"
+  },
+  {
+    "id": 5,
+    "divide": 0,
+    "required": true,
+    "title": "サイエンスⅢＡ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "原　俊雄、小笠原　弘道"
+  },
+  {
+    "id": 6,
+    "divide": 0,
+    "required": true,
+    "title": "サイエンスⅢＢ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "倉光　利江"
+  },
+  {
+    "id": 7,
+    "divide": 0,
+    "required": true,
+    "title": "保健体育Ⅲ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "小林　優希、前田　忠紀、石田　まさみ"
+  },
+  {
+    "id": 8,
+    "divide": 0,
+    "required": true,
+    "title": "英語Ⅲ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "穐本　浩美"
+  },
+  {
+    "id": 9,
+    "divide": 0,
+    "required": true,
+    "title": "英会話Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "ジョン　ハーバート"
+  },
+  {
+    "id": 10,
+    "divide": 0,
+    "required": true,
+    "title": "Ｃｏ+ｗｏｒｋⅡＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "全教員"
+  },
+  {
+    "id": 11,
+    "divide": 0,
+    "required": true,
+    "title": "Ｃｏ+ｗｏｒｋⅡＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "全教員"
+  },
+  {
+    "id": 12,
+    "divide": 1,
+    "required": true,
+    "title": "設計製図ⅢＡ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "田中　雅之"
+  },
+  {
+    "id": 13,
+    "divide": 1,
+    "required": true,
+    "title": "設計製図ⅢＢ",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "田中　雅之"
+  },
+  {
+    "id": 14,
+    "divide": 1,
+    "required": true,
+    "title": "工作実習ⅢＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "大森　茂俊"
+  },
+  {
+    "id": 15,
+    "divide": 1,
+    "required": true,
+    "title": "工作実習ⅢＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "大森　茂俊"
+  },
+  {
+    "id": 16,
+    "divide": 1,
+    "required": true,
+    "title": "機械工学実験ⅠＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "境田　彰芳、藤原　誠之"
+  },
+  {
+    "id": 17,
+    "divide": 1,
+    "required": true,
+    "title": "機械工学実験ⅠＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "境田　彰芳、國峰　寛司"
+  },
+  {
+    "id": 18,
+    "divide": 1,
+    "required": true,
+    "title": "機構学",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "関森　大介"
+  },
+  {
+    "id": 19,
+    "divide": 1,
+    "required": true,
+    "title": "工業力学Ⅰ",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "國峰　寛司"
+  },
+  {
+    "id": 20,
+    "divide": 1,
+    "required": true,
+    "title": "材料学Ⅰ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "境田　彰芳"
+  },
+  {
+    "id": 21,
+    "divide": 1,
+    "required": true,
+    "title": "設計工学Ⅰ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "松塚　直樹"
+  },
+  {
+    "id": 22,
+    "divide": 1,
+    "required": true,
+    "title": "材料力学Ⅰ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "森下　智博"
+  }
+]

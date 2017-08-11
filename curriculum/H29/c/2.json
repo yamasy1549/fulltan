@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "divide": 0,
+    "required": true,
+    "title": "国語Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "仁木　夏実"
+  },
+  {
+    "id": 2,
+    "divide": 0,
+    "required": true,
+    "title": "政治経済",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "日高　薫"
+  },
+  {
+    "id": 3,
+    "divide": 0,
+    "required": true,
+    "title": "世界史",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "荒川　裕紀"
+  },
+  {
+    "id": 4,
+    "divide": 0,
+    "required": true,
+    "title": "数学ⅡＡ",
+    "term": 0,
+    "credit": 4,
+    "lecturer": "松宮　篤"
+  },
+  {
+    "id": 5,
+    "divide": 0,
+    "required": true,
+    "title": "数学ⅡＢ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "紫垣　孝洋"
+  },
+  {
+    "id": 6,
+    "divide": 0,
+    "required": true,
+    "title": "サイエンスⅡＡ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "武内　將洋、原　俊雄"
+  },
+  {
+    "id": 7,
+    "divide": 0,
+    "required": true,
+    "title": "サイエンスⅡＢ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "井上　努"
+  },
+  {
+    "id": 8,
+    "divide": 0,
+    "required": true,
+    "title": "保健体育Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "前田　忠紀、後藤　太之、石田　まさみ"
+  },
+  {
+    "id": 9,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅡＡ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "水野　知津子"
+  },
+  {
+    "id": 10,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅡＢ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "松田　安隆"
+  },
+  {
+    "id": 11,
+    "divide": 0,
+    "required": true,
+    "title": "Ｃｏ+ｗｏｒｋⅠＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "全教員"
+  },
+  {
+    "id": 12,
+    "divide": 0,
+    "required": true,
+    "title": "Ｃｏ+ｗｏｒｋⅠＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "全教員"
+  },
+  {
+    "id": 13,
+    "divide": 1,
+    "required": true,
+    "title": "情報処理Ⅰ",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "檀　和秀"
+  },
+  {
+    "id": 14,
+    "divide": 1,
+    "required": true,
+    "title": "測量学Ⅱ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "江口　忠臣"
+  },
+  {
+    "id": 15,
+    "divide": 1,
+    "required": true,
+    "title": "建設材料",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "友久　誠司"
+  },
+  {
+    "id": 16,
+    "divide": 1,
+    "required": true,
+    "title": "測量演習",
+    "term": 0,
+    "credit": 4,
+    "lecturer": "江口　忠臣"
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "divide": 0,
+    "required": true,
+    "title": "国語Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "仁木　夏実"
+  },
+  {
+    "id": 2,
+    "divide": 0,
+    "required": true,
+    "title": "地理",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "石田　祐"
+  },
+  {
+    "id": 3,
+    "divide": 0,
+    "required": true,
+    "title": "数学A",
+    "term": 0,
+    "credit": 4,
+    "lecturer": "高野　啓児"
+  },
+  {
+    "id": 4,
+    "divide": 0,
+    "required": true,
+    "title": "数学B",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "宮本　博行"
+  },
+  {
+    "id": 5,
+    "divide": 0,
+    "required": true,
+    "title": "物理Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "武内　將洋"
+  },
+  {
+    "id": 6,
+    "divide": 0,
+    "required": true,
+    "title": "生物",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "井上　努"
+  },
+  {
+    "id": 7,
+    "divide": 0,
+    "required": true,
+    "title": "保健体育Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "後藤　太之、松下　幸一、石田　まさみ"
+  },
+  {
+    "id": 8,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅠA",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "松田　安隆"
+  },
+  {
+    "id": 9,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅠB",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "穐本　浩美"
+  },
+  {
+    "id": 10,
+    "divide": 0,
+    "required": false,
+    "title": "音楽",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "泉　由香"
+  },
+  {
+    "id": 11,
+    "divide": 0,
+    "required": false,
+    "title": "美術",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "大野　良平"
+  },
+  {
+    "id": 12,
+    "divide": 1,
+    "required": true,
+    "title": "防災リテラシー",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "松野　泉、太田　敏一"
+  },
+  {
+    "id": 13,
+    "divide": 1,
+    "required": true,
+    "title": "情報基礎Ⅰ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "荘所　直哉"
+  },
+  {
+    "id": 14,
+    "divide": 1,
+    "required": true,
+    "title": "造形",
+    "term": 0,
+    "credit": 4,
+    "lecturer": "坂戸　省三、大塚　毅彦、宮崎　みよし、山口　晃壽"
+  },
+  {
+    "id": 15,
+    "divide": 1,
+    "required": true,
+    "title": "建築一般構造",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "八木　雅夫、荘所　直哉、角野　嘉則"
+  },
+  {
+    "id": 16,
+    "divide": 1,
+    "required": true,
+    "title": "建築設計演習Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "東野　アドリアナ、荘所　直哉"
+  }
+]

@@ -1,0 +1,155 @@
+[
+  {
+    "id": 1,
+    "divide": 0,
+    "required": true,
+    "title": "国語Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "仁木　夏実"
+  },
+  {
+    "id": 2,
+    "divide": 0,
+    "required": true,
+    "title": "地理",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "西又　悠"
+  },
+  {
+    "id": 3,
+    "divide": 0,
+    "required": true,
+    "title": "数学ⅠA",
+    "term": 0,
+    "credit": 4,
+    "lecturer": "平岡　和幸"
+  },
+  {
+    "id": 4,
+    "divide": 0,
+    "required": true,
+    "title": "数学ⅠB",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "藤　健太"
+  },
+  {
+    "id": 5,
+    "divide": 0,
+    "required": true,
+    "title": "サイエンスⅠ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "武内　將洋"
+  },
+  {
+    "id": 6,
+    "divide": 0,
+    "required": true,
+    "title": "保健体育Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "後藤　太之、松下　幸一、石田　まゆみ"
+  },
+  {
+    "id": 7,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅠA",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "穐本　浩美"
+  },
+  {
+    "id": 8,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅠB",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "松田　安隆"
+  },
+  {
+    "id": 9,
+    "divide": 0,
+    "required": true,
+    "title": "アクティブラーニング入門",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "木上　裕貴"
+  },
+  {
+    "id": 10,
+    "divide": 0,
+    "required": true,
+    "title": "グローバルスタディーズ入門",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "玉置　知巳"
+  },
+  {
+    "id": 11,
+    "divide": 0,
+    "required": false,
+    "title": "音楽",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "泉　由香"
+  },
+  {
+    "id": 12,
+    "divide": 0,
+    "required": false,
+    "title": "美術",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "大野　良平"
+  },
+  {
+    "id": 13,
+    "divide": 1,
+    "required": true,
+    "title": "防災リテラシー",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "太田　敏一、松野　泉"
+  },
+  {
+    "id": 14,
+    "divide": 1,
+    "required": true,
+    "title": "情報基礎Ⅰ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "大塚　毅彦"
+  },
+  {
+    "id": 15,
+    "divide": 1,
+    "required": true,
+    "title": "造形",
+    "term": 1,
+    "credit": 4,
+    "lecturer": "大塚　毅彦、赤堀　富子、山口　晃壽"
+  },
+  {
+    "id": 16,
+    "divide": 1,
+    "required": true,
+    "title": "建築一般構造",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "砂本　文彦"
+  },
+  {
+    "id": 17,
+    "divide": 1,
+    "required": true,
+    "title": "建築設計演習Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "東野　アドリアナ、荘所　直哉、大久保　武志"
+  }
+]

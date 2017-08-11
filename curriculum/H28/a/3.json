@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "divide": 0,
+    "required": true,
+    "title": "国語Ⅲ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "宮川　真弥"
+  },
+  {
+    "id": 2,
+    "divide": 0,
+    "required": true,
+    "title": "日本史",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "小野塚　航一"
+  },
+  {
+    "id": 3,
+    "divide": 0,
+    "required": true,
+    "title": "数学ⅢA",
+    "term": 0,
+    "credit": 4,
+    "lecturer": "長尾　秀人"
+  },
+  {
+    "id": 4,
+    "divide": 0,
+    "required": true,
+    "title": "数学ⅢB",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "面田　康裕"
+  },
+  {
+    "id": 5,
+    "divide": 0,
+    "required": true,
+    "title": "サイエンスⅢA",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "小笠原　弘道、原　俊雄"
+  },
+  {
+    "id": 6,
+    "divide": 0,
+    "required": true,
+    "title": "サイエンスⅢB",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "倉光　利江"
+  },
+  {
+    "id": 7,
+    "divide": 0,
+    "required": true,
+    "title": "保健体育Ⅲ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "前田　忠紀、松下　幸一、石田　まさみ"
+  },
+  {
+    "id": 8,
+    "divide": 0,
+    "required": true,
+    "title": "英語Ⅲ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "井上　英俊"
+  },
+  {
+    "id": 9,
+    "divide": 0,
+    "required": true,
+    "title": "英会話Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "ジョン　ハーバート"
+  },
+  {
+    "id": 10,
+    "divide": 0,
+    "required": true,
+    "title": "Co+workⅡ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "全教員"
+  },
+  {
+    "id": 11,
+    "divide": 1,
+    "required": true,
+    "title": "建築構造力学Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "荘所　直哉"
+  },
+  {
+    "id": 12,
+    "divide": 1,
+    "required": true,
+    "title": "建築材料",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "角野　嘉則"
+  },
+  {
+    "id": 13,
+    "divide": 1,
+    "required": true,
+    "title": "建築計画Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "水島　あかね"
+  },
+  {
+    "id": 14,
+    "divide": 1,
+    "required": true,
+    "title": "建築設計演習Ⅲ",
+    "term": 0,
+    "credit": 6,
+    "lecturer": "大塚　毅彦、工藤　和美、梶原　伸介"
+  },
+  {
+    "id": 15,
+    "divide": 1,
+    "required": true,
+    "title": "建築環境工学Ⅰ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "飛田　国人"
+  },
+  {
+    "id": 16,
+    "divide": 1,
+    "required": true,
+    "title": "図学",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "工藤　和美"
+  }
+]

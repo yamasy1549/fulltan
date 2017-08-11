@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "divide": 0,
+    "required": true,
+    "title": "国語Ⅳ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "善塔　正志"
+  },
+  {
+    "id": 2,
+    "divide": 0,
+    "required": true,
+    "title": "保健体育Ⅳ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "松下　幸一、前田　忠紀、後藤　太之"
+  },
+  {
+    "id": 3,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅣA",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "井上　英俊"
+  },
+  {
+    "id": 4,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅣＢ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "穐本　浩美"
+  },
+  {
+    "id": 5,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅣＣ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "飯島　睦美"
+  },
+  {
+    "id": 6,
+    "divide": 0,
+    "required": true,
+    "title": "英会話Ⅱ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "ジョン　ハーバート"
+  },
+  {
+    "id": 7,
+    "divide": 0,
+    "required": false,
+    "title": "中国語",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "付瑞"
+  },
+  {
+    "id": 8,
+    "divide": 0,
+    "required": false,
+    "title": "ドイツ語",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "大澤　三枝子"
+  },
+  {
+    "id": 9,
+    "divide": 0,
+    "required": false,
+    "title": "フランス語",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "藤本　智成"
+  },
+  {
+    "id": 10,
+    "divide": 1,
+    "required": true,
+    "title": "応用数学Ⅰ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "武田　ひとみ"
+  },
+  {
+    "id": 11,
+    "divide": 1,
+    "required": true,
+    "title": "応用微分方程式",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "武田　ひとみ、面田　康裕"
+  },
+  {
+    "id": 12,
+    "divide": 1,
+    "required": true,
+    "title": "物理学概論",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "角野　嘉則"
+  },
+  {
+    "id": 13,
+    "divide": 1,
+    "required": true,
+    "title": "建築情報デザインⅠ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "工藤　和美"
+  },
+  {
+    "id": 14,
+    "divide": 1,
+    "required": true,
+    "title": "建築情報デザインⅡ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "田坂　誠一"
+  },
+  {
+    "id": 15,
+    "divide": 1,
+    "required": true,
+    "title": "建築構造力学Ⅲ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "中川　肇"
+  },
+  {
+    "id": 16,
+    "divide": 1,
+    "required": true,
+    "title": "建築工学実験",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "田坂　誠一、角野　嘉則"
+  },
+  {
+    "id": 17,
+    "divide": 1,
+    "required": true,
+    "title": "鉄筋コンクリート構造",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "田坂　誠一"
+  },
+  {
+    "id": 18,
+    "divide": 1,
+    "required": true,
+    "title": "鋼構造",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "中川　肇"
+  },
+  {
+    "id": 19,
+    "divide": 1,
+    "required": true,
+    "title": "建築計画Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "坂戸　省三、寺岡　宏治、三宗　司郎"
+  },
+  {
+    "id": 20,
+    "divide": 1,
+    "required": true,
+    "title": "建築設計演習Ⅳ",
+    "term": 0,
+    "credit": 6,
+    "lecturer": "八木　雅夫、神家　昭雄、工藤　和美、山口　晃壽、森崎　輝行"
+  },
+  {
+    "id": 21,
+    "divide": 1,
+    "required": true,
+    "title": "建築環境工学Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "平石　年弘"
+  },
+  {
+    "id": 22,
+    "divide": 1,
+    "required": true,
+    "title": "建築ゼミナール",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "Ａ全"
+  },
+  {
+    "id": 23,
+    "divide": 1,
+    "required": false,
+    "title": "建築史Ⅱ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "東野　アドリアナ"
+  },
+  {
+    "id": 24,
+    "divide": 1,
+    "required": false,
+    "title": "建築インターンシップ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "Ａ全"
+  }
+]

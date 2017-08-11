@@ -1,0 +1,155 @@
+[
+  {
+    "id": 1,
+    "divide": 0,
+    "required": true,
+    "title": "国語Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "仁木　夏実"
+  },
+  {
+    "id": 2,
+    "divide": 0,
+    "required": true,
+    "title": "政治経済",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "石田　祐"
+  },
+  {
+    "id": 3,
+    "divide": 0,
+    "required": true,
+    "title": "世界史",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "本間　哲也"
+  },
+  {
+    "id": 4,
+    "divide": 0,
+    "required": true,
+    "title": "微積分Ⅰ",
+    "term": 0,
+    "credit": 4,
+    "lecturer": "松宮　篤"
+  },
+  {
+    "id": 5,
+    "divide": 0,
+    "required": true,
+    "title": "代数Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "園田　昭彦"
+  },
+  {
+    "id": 6,
+    "divide": 0,
+    "required": true,
+    "title": "物理Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "小笠原　弘道"
+  },
+  {
+    "id": 7,
+    "divide": 0,
+    "required": true,
+    "title": "化学Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "倉光　利江"
+  },
+  {
+    "id": 8,
+    "divide": 0,
+    "required": true,
+    "title": "保健体育Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "前田　忠紀、後藤　太之、石田　まさみ"
+  },
+  {
+    "id": 9,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅡA",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "松田　安隆"
+  },
+  {
+    "id": 10,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅡB",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "穐本　浩美"
+  },
+  {
+    "id": 11,
+    "divide": 1,
+    "required": true,
+    "title": "解析演習Ⅰ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "國峰　寛司"
+  },
+  {
+    "id": 12,
+    "divide": 1,
+    "required": true,
+    "title": "プログラミング基礎",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "田中　誠一"
+  },
+  {
+    "id": 13,
+    "divide": 1,
+    "required": true,
+    "title": "設計製図Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "松塚　直樹"
+  },
+  {
+    "id": 14,
+    "divide": 1,
+    "required": true,
+    "title": "工作実習Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "加藤　隆弘"
+  },
+  {
+    "id": 15,
+    "divide": 1,
+    "required": true,
+    "title": "機械工学実習Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "加藤　隆弘、関森　大介、岩野　優樹、大森　茂俊"
+  },
+  {
+    "id": 16,
+    "divide": 1,
+    "required": true,
+    "title": "機械加工学Ⅱ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "加藤　隆弘"
+  },
+  {
+    "id": 17,
+    "divide": 1,
+    "required": true,
+    "title": "機械加工学Ⅲ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "大森　茂俊"
+  }
+]
