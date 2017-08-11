@@ -35,7 +35,16 @@
 .curriculumCredit {
   display: inline-block;
   width: 15%;
+  font-size: 1.2rem;
   text-align: center;
+}
+
+.curriculumTerm {
+  display: inline-block;
+  margin-right: 0.8rem;
+  padding: 0.1rem;
+  border: 1px solid #023466;
+  font-size: 0.9rem;
 }
 
 .curriculumTitle {
