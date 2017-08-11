@@ -1,0 +1,56 @@
+.creditsWrapper {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  bottom: 0;
+  padding: 1rem 2rem;
+  background: #30C7EF;
+  width: 100%;
+  max-height: 120px;
+  border-top: 2px solid #ffffff;
+}
+
+.creditWrapper {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+}
+
+.remainingCredits {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #023466;
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+
+.remainingCredits .number {
+  color: #ffffff;
+  margin-left: 0.2rem;
+}
+
+.creditsSymbol {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 110px;
+}
+
+.currentCredits {
+  background: #ffffff;
+  border-radius: 0.3rem;
+  padding: 0.6rem 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: #023466;
+}
+
+.currentCreditsDivide {
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.number {
+  font-size: 1.5rem;
+}

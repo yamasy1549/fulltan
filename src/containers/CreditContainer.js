@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { credits, required_credits } from '../consts'
-import Credit from '../components/Credit'
+import Credits from '../components/Credits'
 
 const mapStateToProps = (state) => {
   return {
@@ -17,5 +17,5 @@ const mapDispatchToProps = (dispatch) => {
 const CreditContainer = connect(
   mapStateToProps,
   mapDispatchToProps
-)(Credit)
+)(Credits)
 export default CreditContainer

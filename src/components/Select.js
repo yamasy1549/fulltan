@@ -1,41 +1,38 @@
 import React from 'react'
+import styles from './Select.css'
 
 import { grades, courses, toClasscode } from '../consts'
 
-const ClassOption = ({ grade, course, g, c, set_classcode }) => {
-  const classcode = toClasscode(g, c)
+class Select extends React.Component {
+  constructor(props, context) {
+    super(props, context)
+    this.state = {
+      classcode: toClasscode(this.props.grade, this.props.course)
+    }
+  }
 
-  return (
-    <span key={classcode}>
-      <input
-        id={classcode}
-        type="radio"
-        checked={grade == g && course == c}
-        onChange={() => set_classcode(g, c)}
-      />
-      <label htmlFor={classcode}>{classcode}</label>
-    </span>
-  )
+  render() {
+    const { grade, course, set_classcode } = this.props
+
+    return (
+      <section className={styles.selectWrapper}>
+        <select
+          className={styles.select}
+          value={this.state.classcode}
+          onChange={(e) => {
+            this.setState({ classcode: e.target.value })
+            set_classcode(e.target.value[0], e.target.value.slice(1))
+          }}
+        >
+          {grades.map(g => {
+            return courses.map(c => {
+              const classcode = toClasscode(g, c)
+              return <option value={classcode}>{classcode}</option>
+            })
+          })}
+        </select>
+      </section>
+    )
+  }
 }
-
-const Select = ({ grade, course, set_classcode }) => (
-  <div>
-    <span>クラスを選択</span>
-    <form>
-      {grades.map(g => {
-        return courses.map(c => {
-          return (
-            <ClassOption
-              grade={grade}
-              course={course}
-              g={g}
-              c={c}
-              set_classcode={set_classcode}
-            />
-          )
-        })
-      })}
-    </form>
-  </div>
-)
 export default Select

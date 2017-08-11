@@ -1,10 +1,56 @@
-.curriculumListGrade {
+.curriculums {
+  margin: 2rem;
 }
 
-.curriculumList {
-  margin-left: 2rem;
+.curriculumListGrade {
+  border-bottom: 2px solid #30C7EF;
+  margin-bottom: 0.5rem;
+  padding: 0 0 0.5rem 1rem;
+  color: #023466;
+}
+
+.curriculumCheck {
+  display: none;
+}
+
+.curriculumCheck:checked + .curriculum {
+  background: #30C7EF;
 }
 
 .curriculum {
-  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin: 0.3rem 0;
+  border-radius: 0.3rem;
+  background: #EAEAEA;
+  font-weight: bold;
+  color: #023466;
+  cursor: pointer;
+  transition: .1s;
+  z-index: -10;
+}
+
+.curriculumCredit {
+  display: inline-block;
+  width: 15%;
+  text-align: center;
+}
+
+.curriculumTitle {
+  display: inline-block;
+  width: 85%;
+  padding: 0.8rem 0.9rem 0.8rem 1rem;
+  border-left: 1px dashed #ffffff;
+}
+
+.curriculumCheckmark {
+  position: absolute;
+  width: 1.5rem;
+  right: 0.8rem;
+  display: block;
+  line-height: 2.9rem;
+  top: 0;
+  z-index: -1;
 }

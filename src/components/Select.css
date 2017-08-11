@@ -1,0 +1,32 @@
+.selectWrapper {
+  margin: 2rem;
+  position: relative;
+}
+
+.selectWrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 1.2rem;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  margin: auto;
+  border-top: 0.5rem solid #023466;
+  border-right: 0.4rem solid transparent;
+  border-left: 0.4rem solid transparent;
+}
+
+.select {
+  display: inline-block;
+  width: 100%;
+  margin: 0.3rem 0;
+  padding: 0.8rem 1rem;
+  border: 0;
+  border-radius: 0.3rem;
+  appearance: none;
+  background: #EAEAEA;
+  font-size: 16px;
+  font-weight: bold;
+  color: #023466;
+}
