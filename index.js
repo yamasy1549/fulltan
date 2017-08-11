@@ -11809,7 +11809,9 @@ var _actions = __webpack_require__(59);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var logger = (0, _reduxLogger.createLogger)();
-var store = (0, _redux.createStore)(_reducers2.default);
+var store = (0, _redux.createStore)(_reducers2.default
+// applyMiddleware(logger)
+);
 
 store.dispatch((0, _actions.fetchCurriculums)(4, 'ej'));
 
@@ -26573,8 +26575,6 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 var _react = __webpack_require__(12);
 
 var _react2 = _interopRequireDefault(_react);
@@ -26585,83 +26585,73 @@ var _Curriculums2 = _interopRequireDefault(_Curriculums);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Curriculum = function (_React$Component) {
-  _inherits(Curriculum, _React$Component);
-
-  function Curriculum(props, context) {
-    _classCallCheck(this, Curriculum);
-
-    return _possibleConstructorReturn(this, (Curriculum.__proto__ || Object.getPrototypeOf(Curriculum)).call(this, props, context));
-  }
-
-  _createClass(Curriculum, [{
-    key: 'render',
-    value: function render() {
-      var _props = this.props,
-          c = _props.c,
-          grade = _props.grade,
-          toggleCredit = _props.toggleCredit;
-
-
-      return _react2.default.createElement(
-        'li',
-        { key: c.id },
-        _react2.default.createElement(
-          'label',
-          { htmlFor: c.id },
-          _react2.default.createElement('input', {
-            id: c.id,
-            className: _Curriculums2.default.curriculumCheck,
-            type: 'checkbox',
-            checked: c.getCredit,
-            onChange: function onChange(e) {
-              toggleCredit(c.id, e.target.checked);
-            }
-          }),
-          _react2.default.createElement(
-            'span',
-            { className: _Curriculums2.default.curriculum },
-            _react2.default.createElement(
-              'span',
-              { className: _Curriculums2.default.curriculumCredit },
-              c.credit
-            ),
-            _react2.default.createElement(
-              'span',
-              { className: _Curriculums2.default.curriculumTitle },
-              c.title
-            ),
-            function () {
-              if (c.getCredit) {
-                return _react2.default.createElement(
-                  'span',
-                  { className: _Curriculums2.default.curriculumCheckmark },
-                  _react2.default.createElement(
-                    'svg',
-                    { viewBox: '0 0 36.9 28.3', enableBackground: 'new 0 0 36.9 28.3' },
-                    _react2.default.createElement('path', { fill: '#FFFFFF', d: 'M36.9,5.5c0,0.6-0.2,1.2-0.7,1.6L19,24.4l-3.2,3.2c-0.4,0.4-1,0.7-1.6,0.7c-0.6,0-1.2-0.2-1.6-0.7l-3.2-3.2l-8.6-8.6c-0.4-0.4-0.7-1-0.7-1.6c0-0.6,0.2-1.2,0.7-1.6l3.2-3.2c0.4-0.4,1-0.7,1.6-0.7s1.2,0.2,1.6,0.7l7,7L29.8,0.7c0.4-0.4,1-0.7,1.6-0.7C32,0,32.6,0.2,33,0.7l3.2,3.2C36.7,4.4,36.9,4.9,36.9,5.5z' })
-                  )
-                );
-              }
-            }()
-          )
-        )
-      );
-    }
-  }]);
-
-  return Curriculum;
-}(_react2.default.Component);
-
-var Curriculums = function Curriculums(_ref) {
-  var curriculums = _ref.curriculums,
+var Curriculum = function Curriculum(_ref) {
+  var c = _ref.c,
+      grade = _ref.grade,
       toggleCredit = _ref.toggleCredit;
+  var id = c.id,
+      getCredit = c.getCredit,
+      credit = c.credit,
+      title = c.title,
+      required = c.required;
+
+  var term = c.term == 0 ? '通' : c.term == 1 ? '前' : '後';
+  var attention = required && !getCredit;
+
+  return _react2.default.createElement(
+    'li',
+    { key: id },
+    _react2.default.createElement(
+      'label',
+      { htmlFor: id },
+      _react2.default.createElement('input', {
+        id: id,
+        className: _Curriculums2.default.curriculumCheck,
+        type: 'checkbox',
+        checked: getCredit,
+        onChange: function onChange(e) {
+          toggleCredit(id, e.target.checked);
+        }
+      }),
+      _react2.default.createElement(
+        'span',
+        { className: `${_Curriculums2.default.curriculum} ${attention ? _Curriculums2.default.attention : ''}` },
+        _react2.default.createElement(
+          'span',
+          { className: _Curriculums2.default.curriculumCredit },
+          credit
+        ),
+        _react2.default.createElement(
+          'span',
+          { className: _Curriculums2.default.curriculumTerm },
+          term
+        ),
+        _react2.default.createElement(
+          'span',
+          { className: _Curriculums2.default.curriculumTitle },
+          title
+        ),
+        function () {
+          if (getCredit) {
+            return _react2.default.createElement(
+              'span',
+              { className: _Curriculums2.default.curriculumCheckmark },
+              _react2.default.createElement(
+                'svg',
+                { viewBox: '0 0 36.9 28.3', enableBackground: 'new 0 0 36.9 28.3' },
+                _react2.default.createElement('path', { fill: '#FFFFFF', d: 'M36.9,5.5c0,0.6-0.2,1.2-0.7,1.6L19,24.4l-3.2,3.2c-0.4,0.4-1,0.7-1.6,0.7c-0.6,0-1.2-0.2-1.6-0.7l-3.2-3.2l-8.6-8.6c-0.4-0.4-0.7-1-0.7-1.6c0-0.6,0.2-1.2,0.7-1.6l3.2-3.2c0.4-0.4,1-0.7,1.6-0.7s1.2,0.2,1.6,0.7l7,7L29.8,0.7c0.4-0.4,1-0.7,1.6-0.7C32,0,32.6,0.2,33,0.7l3.2,3.2C36.7,4.4,36.9,4.9,36.9,5.5z' })
+              )
+            );
+          }
+        }()
+      )
+    )
+  );
+};
+
+var Curriculums = function Curriculums(_ref2) {
+  var curriculums = _ref2.curriculums,
+      toggleCredit = _ref2.toggleCredit;
   return _react2.default.createElement(
     'section',
     null,
@@ -26734,7 +26724,7 @@ exports = module.exports = __webpack_require__(15)(undefined);
 
 
 // module
-exports.push([module.i, "._2WUMQAEi-ExfIM_cNUSakH {\n  margin: 2rem;\n}\n\n._11oKjmqgYD4NiDRZqBPR72 {\n  border-bottom: 2px solid #30C7EF;\n  margin-bottom: 0.5rem;\n  padding: 0 0 0.5rem 1rem;\n  color: #023466;\n}\n\n._3iEByNrmCpl8ehHVI2gn9i {\n  display: none;\n}\n\n._3iEByNrmCpl8ehHVI2gn9i:checked + ._7YyxAmZHhaYae3f0FaOYB {\n  background: #30C7EF;\n}\n\n._7YyxAmZHhaYae3f0FaOYB {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  position: relative;\n  width: 100%;\n  margin: 0.3rem 0;\n  border-radius: 0.3rem;\n  background: #EAEAEA;\n  font-weight: bold;\n  color: #023466;\n  cursor: pointer;\n  transition: .1s;\n  z-index: -10;\n}\n\n._27IKdPUNL_E-ur0PQ5Xfr- {\n  display: inline-block;\n  width: 15%;\n  text-align: center;\n}\n\n._2c74Z_iPLRpWMDF6WSrecF {\n  display: inline-block;\n  width: 85%;\n  padding: 0.8rem 0.9rem 0.8rem 1rem;\n  border-left: 1px dashed #ffffff;\n}\n\n._1fHL0b6vChshLpwuVPR3Uh {\n  position: absolute;\n  width: 1.5rem;\n  right: 0.8rem;\n  display: block;\n  line-height: 2.9rem;\n  top: 0;\n  z-index: -1;\n}\n\n._1BLfB2yceBlXlWJFeJqkFO {\n  display: none;\n}\n", ""]);
+exports.push([module.i, "._2WUMQAEi-ExfIM_cNUSakH {\n  margin: 2rem;\n}\n\n._11oKjmqgYD4NiDRZqBPR72 {\n  border-bottom: 2px solid #30C7EF;\n  margin-bottom: 0.5rem;\n  padding: 0 0 0.5rem 1rem;\n  color: #023466;\n}\n\n._3iEByNrmCpl8ehHVI2gn9i {\n  display: none;\n}\n\n._3iEByNrmCpl8ehHVI2gn9i:checked + ._7YyxAmZHhaYae3f0FaOYB {\n  background: #30C7EF;\n}\n\n._7YyxAmZHhaYae3f0FaOYB {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  position: relative;\n  width: 100%;\n  margin: 0.3rem 0;\n  border-radius: 0.3rem;\n  background: #EAEAEA;\n  font-weight: bold;\n  color: #023466;\n  cursor: pointer;\n  transition: .1s;\n  z-index: -10;\n}\n\n._3sz_NP3ri7oM3cZ8nDt5pb {\n  background: #EC516F;\n}\n\n._27IKdPUNL_E-ur0PQ5Xfr- {\n  display: inline-block;\n  width: 15%;\n  font-size: 1.2rem;\n  text-align: center;\n}\n\n._2N7pI-HhitS2GvE6Y322h0 {\n  display: inline-block;\n  margin-right: 0.8rem;\n  padding: 0.1rem;\n  border: 1px solid #023466;\n  font-size: 0.9rem;\n}\n\n._2c74Z_iPLRpWMDF6WSrecF {\n  display: inline-block;\n  width: 85%;\n  padding: 0.8rem 0.9rem 0.8rem 1rem;\n  border-left: 1px dashed #ffffff;\n}\n\n._1fHL0b6vChshLpwuVPR3Uh {\n  position: absolute;\n  width: 1.5rem;\n  right: 0.8rem;\n  display: block;\n  line-height: 2.9rem;\n  top: 0;\n  z-index: -1;\n}\n\n._1BLfB2yceBlXlWJFeJqkFO {\n  display: none;\n}\n", ""]);
 
 // exports
 exports.locals = {
@@ -26742,7 +26732,9 @@ exports.locals = {
 	"curriculumListGrade": "_11oKjmqgYD4NiDRZqBPR72",
 	"curriculumCheck": "_3iEByNrmCpl8ehHVI2gn9i",
 	"curriculum": "_7YyxAmZHhaYae3f0FaOYB",
+	"attention": "_3sz_NP3ri7oM3cZ8nDt5pb",
 	"curriculumCredit": "_27IKdPUNL_E-ur0PQ5Xfr-",
+	"curriculumTerm": "_2N7pI-HhitS2GvE6Y322h0",
 	"curriculumTitle": "_2c74Z_iPLRpWMDF6WSrecF",
 	"curriculumCheckmark": "_1fHL0b6vChshLpwuVPR3Uh",
 	"header": "_1BLfB2yceBlXlWJFeJqkFO"
