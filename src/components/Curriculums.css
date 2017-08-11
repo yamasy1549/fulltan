@@ -32,6 +32,10 @@
   z-index: -10;
 }
 
+.attention {
+  background: #EC516F;
+}
+
 .curriculumCredit {
   display: inline-block;
   width: 15%;

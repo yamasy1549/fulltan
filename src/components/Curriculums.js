@@ -2,8 +2,9 @@ import React from 'react'
 import styles from './Curriculums.css'
 
 const Curriculum = ({ c, grade, toggleCredit }) => {
-  const { id, getCredit, credit, title } = c
+  const { id, getCredit, credit, title, required } = c
   const term = (c.term == 0) ? '通' : (c.term == 1) ? '前' : '後'
+  const attention = required && !getCredit
 
   return (
     <li key={id}>
@@ -17,7 +18,7 @@ const Curriculum = ({ c, grade, toggleCredit }) => {
             toggleCredit(id, e.target.checked)
           }}
         />
-        <span className={styles.curriculum}>
+        <span className={`${styles.curriculum} ${attention ? styles.attention : ''}`}>
           <span className={styles.curriculumCredit}>{credit}</span>
           <span className={styles.curriculumTerm}>{term}</span>
           <span className={styles.curriculumTitle}>{title}</span>
