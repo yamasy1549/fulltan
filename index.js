@@ -1283,7 +1283,7 @@ var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(4);
 
 var CallbackQueue = __webpack_require__(71);
-var PooledClass = __webpack_require__(16);
+var PooledClass = __webpack_require__(18);
 var ReactFeatureFlags = __webpack_require__(72);
 var ReactReconciler = __webpack_require__(21);
 var Transaction = __webpack_require__(30);
@@ -1524,6 +1524,16 @@ module.exports = ReactUpdates;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+
+
+module.exports = __webpack_require__(19);
+
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -1538,7 +1548,7 @@ module.exports = ReactUpdates;
 
 var _assign = __webpack_require__(4);
 
-var PooledClass = __webpack_require__(16);
+var PooledClass = __webpack_require__(18);
 
 var emptyFunction = __webpack_require__(8);
 var warning = __webpack_require__(2);
@@ -1792,16 +1802,6 @@ function getPooledWarningPropertyDefinition(propName, getVal) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 13 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = __webpack_require__(19);
-
-
-/***/ }),
 /* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2018,471 +2018,6 @@ module.exports = DOMProperty;
 
 /***/ }),
 /* 15 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2014-present, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- *
- */
-
-
-
-var _assign = __webpack_require__(4);
-
-var ReactCurrentOwner = __webpack_require__(10);
-
-var warning = __webpack_require__(2);
-var canDefineProperty = __webpack_require__(27);
-var hasOwnProperty = Object.prototype.hasOwnProperty;
-
-var REACT_ELEMENT_TYPE = __webpack_require__(62);
-
-var RESERVED_PROPS = {
-  key: true,
-  ref: true,
-  __self: true,
-  __source: true
-};
-
-var specialPropKeyWarningShown, specialPropRefWarningShown;
-
-function hasValidRef(config) {
-  if (process.env.NODE_ENV !== 'production') {
-    if (hasOwnProperty.call(config, 'ref')) {
-      var getter = Object.getOwnPropertyDescriptor(config, 'ref').get;
-      if (getter && getter.isReactWarning) {
-        return false;
-      }
-    }
-  }
-  return config.ref !== undefined;
-}
-
-function hasValidKey(config) {
-  if (process.env.NODE_ENV !== 'production') {
-    if (hasOwnProperty.call(config, 'key')) {
-      var getter = Object.getOwnPropertyDescriptor(config, 'key').get;
-      if (getter && getter.isReactWarning) {
-        return false;
-      }
-    }
-  }
-  return config.key !== undefined;
-}
-
-function defineKeyPropWarningGetter(props, displayName) {
-  var warnAboutAccessingKey = function () {
-    if (!specialPropKeyWarningShown) {
-      specialPropKeyWarningShown = true;
-      process.env.NODE_ENV !== 'production' ? warning(false, '%s: `key` is not a prop. Trying to access it will result ' + 'in `undefined` being returned. If you need to access the same ' + 'value within the child component, you should pass it as a different ' + 'prop. (https://fb.me/react-special-props)', displayName) : void 0;
-    }
-  };
-  warnAboutAccessingKey.isReactWarning = true;
-  Object.defineProperty(props, 'key', {
-    get: warnAboutAccessingKey,
-    configurable: true
-  });
-}
-
-function defineRefPropWarningGetter(props, displayName) {
-  var warnAboutAccessingRef = function () {
-    if (!specialPropRefWarningShown) {
-      specialPropRefWarningShown = true;
-      process.env.NODE_ENV !== 'production' ? warning(false, '%s: `ref` is not a prop. Trying to access it will result ' + 'in `undefined` being returned. If you need to access the same ' + 'value within the child component, you should pass it as a different ' + 'prop. (https://fb.me/react-special-props)', displayName) : void 0;
-    }
-  };
-  warnAboutAccessingRef.isReactWarning = true;
-  Object.defineProperty(props, 'ref', {
-    get: warnAboutAccessingRef,
-    configurable: true
-  });
-}
-
-/**
- * Factory method to create a new React element. This no longer adheres to
- * the class pattern, so do not use new to call it. Also, no instanceof check
- * will work. Instead test $$typeof field against Symbol.for('react.element') to check
- * if something is a React Element.
- *
- * @param {*} type
- * @param {*} key
- * @param {string|object} ref
- * @param {*} self A *temporary* helper to detect places where `this` is
- * different from the `owner` when React.createElement is called, so that we
- * can warn. We want to get rid of owner and replace string `ref`s with arrow
- * functions, and as long as `this` and owner are the same, there will be no
- * change in behavior.
- * @param {*} source An annotation object (added by a transpiler or otherwise)
- * indicating filename, line number, and/or other information.
- * @param {*} owner
- * @param {*} props
- * @internal
- */
-var ReactElement = function (type, key, ref, self, source, owner, props) {
-  var element = {
-    // This tag allow us to uniquely identify this as a React Element
-    $$typeof: REACT_ELEMENT_TYPE,
-
-    // Built-in properties that belong on the element
-    type: type,
-    key: key,
-    ref: ref,
-    props: props,
-
-    // Record the component responsible for creating this element.
-    _owner: owner
-  };
-
-  if (process.env.NODE_ENV !== 'production') {
-    // The validation flag is currently mutative. We put it on
-    // an external backing store so that we can freeze the whole object.
-    // This can be replaced with a WeakMap once they are implemented in
-    // commonly used development environments.
-    element._store = {};
-
-    // To make comparing ReactElements easier for testing purposes, we make
-    // the validation flag non-enumerable (where possible, which should
-    // include every environment we run tests in), so the test framework
-    // ignores it.
-    if (canDefineProperty) {
-      Object.defineProperty(element._store, 'validated', {
-        configurable: false,
-        enumerable: false,
-        writable: true,
-        value: false
-      });
-      // self and source are DEV only properties.
-      Object.defineProperty(element, '_self', {
-        configurable: false,
-        enumerable: false,
-        writable: false,
-        value: self
-      });
-      // Two elements created in two different places should be considered
-      // equal for testing purposes and therefore we hide it from enumeration.
-      Object.defineProperty(element, '_source', {
-        configurable: false,
-        enumerable: false,
-        writable: false,
-        value: source
-      });
-    } else {
-      element._store.validated = false;
-      element._self = self;
-      element._source = source;
-    }
-    if (Object.freeze) {
-      Object.freeze(element.props);
-      Object.freeze(element);
-    }
-  }
-
-  return element;
-};
-
-/**
- * Create and return a new ReactElement of the given type.
- * See https://facebook.github.io/react/docs/top-level-api.html#react.createelement
- */
-ReactElement.createElement = function (type, config, children) {
-  var propName;
-
-  // Reserved names are extracted
-  var props = {};
-
-  var key = null;
-  var ref = null;
-  var self = null;
-  var source = null;
-
-  if (config != null) {
-    if (hasValidRef(config)) {
-      ref = config.ref;
-    }
-    if (hasValidKey(config)) {
-      key = '' + config.key;
-    }
-
-    self = config.__self === undefined ? null : config.__self;
-    source = config.__source === undefined ? null : config.__source;
-    // Remaining properties are added to a new props object
-    for (propName in config) {
-      if (hasOwnProperty.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) {
-        props[propName] = config[propName];
-      }
-    }
-  }
-
-  // Children can be more than one argument, and those are transferred onto
-  // the newly allocated props object.
-  var childrenLength = arguments.length - 2;
-  if (childrenLength === 1) {
-    props.children = children;
-  } else if (childrenLength > 1) {
-    var childArray = Array(childrenLength);
-    for (var i = 0; i < childrenLength; i++) {
-      childArray[i] = arguments[i + 2];
-    }
-    if (process.env.NODE_ENV !== 'production') {
-      if (Object.freeze) {
-        Object.freeze(childArray);
-      }
-    }
-    props.children = childArray;
-  }
-
-  // Resolve default props
-  if (type && type.defaultProps) {
-    var defaultProps = type.defaultProps;
-    for (propName in defaultProps) {
-      if (props[propName] === undefined) {
-        props[propName] = defaultProps[propName];
-      }
-    }
-  }
-  if (process.env.NODE_ENV !== 'production') {
-    if (key || ref) {
-      if (typeof props.$$typeof === 'undefined' || props.$$typeof !== REACT_ELEMENT_TYPE) {
-        var displayName = typeof type === 'function' ? type.displayName || type.name || 'Unknown' : type;
-        if (key) {
-          defineKeyPropWarningGetter(props, displayName);
-        }
-        if (ref) {
-          defineRefPropWarningGetter(props, displayName);
-        }
-      }
-    }
-  }
-  return ReactElement(type, key, ref, self, source, ReactCurrentOwner.current, props);
-};
-
-/**
- * Return a function that produces ReactElements of a given type.
- * See https://facebook.github.io/react/docs/top-level-api.html#react.createfactory
- */
-ReactElement.createFactory = function (type) {
-  var factory = ReactElement.createElement.bind(null, type);
-  // Expose the type on the factory and the prototype so that it can be
-  // easily accessed on elements. E.g. `<Foo />.type === Foo`.
-  // This should not be named `constructor` since this may not be the function
-  // that created the element, and it may not even be a constructor.
-  // Legacy hook TODO: Warn if this is accessed
-  factory.type = type;
-  return factory;
-};
-
-ReactElement.cloneAndReplaceKey = function (oldElement, newKey) {
-  var newElement = ReactElement(oldElement.type, newKey, oldElement.ref, oldElement._self, oldElement._source, oldElement._owner, oldElement.props);
-
-  return newElement;
-};
-
-/**
- * Clone and return a new ReactElement using element as the starting point.
- * See https://facebook.github.io/react/docs/top-level-api.html#react.cloneelement
- */
-ReactElement.cloneElement = function (element, config, children) {
-  var propName;
-
-  // Original props are copied
-  var props = _assign({}, element.props);
-
-  // Reserved names are extracted
-  var key = element.key;
-  var ref = element.ref;
-  // Self is preserved since the owner is preserved.
-  var self = element._self;
-  // Source is preserved since cloneElement is unlikely to be targeted by a
-  // transpiler, and the original source is probably a better indicator of the
-  // true owner.
-  var source = element._source;
-
-  // Owner will be preserved, unless ref is overridden
-  var owner = element._owner;
-
-  if (config != null) {
-    if (hasValidRef(config)) {
-      // Silently steal the ref from the parent.
-      ref = config.ref;
-      owner = ReactCurrentOwner.current;
-    }
-    if (hasValidKey(config)) {
-      key = '' + config.key;
-    }
-
-    // Remaining properties override existing props
-    var defaultProps;
-    if (element.type && element.type.defaultProps) {
-      defaultProps = element.type.defaultProps;
-    }
-    for (propName in config) {
-      if (hasOwnProperty.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) {
-        if (config[propName] === undefined && defaultProps !== undefined) {
-          // Resolve default props
-          props[propName] = defaultProps[propName];
-        } else {
-          props[propName] = config[propName];
-        }
-      }
-    }
-  }
-
-  // Children can be more than one argument, and those are transferred onto
-  // the newly allocated props object.
-  var childrenLength = arguments.length - 2;
-  if (childrenLength === 1) {
-    props.children = children;
-  } else if (childrenLength > 1) {
-    var childArray = Array(childrenLength);
-    for (var i = 0; i < childrenLength; i++) {
-      childArray[i] = arguments[i + 2];
-    }
-    props.children = childArray;
-  }
-
-  return ReactElement(element.type, key, ref, self, source, owner, props);
-};
-
-/**
- * Verifies the object is a ReactElement.
- * See https://facebook.github.io/react/docs/top-level-api.html#react.isvalidelement
- * @param {?object} object
- * @return {boolean} True if `object` is a valid component.
- * @final
- */
-ReactElement.isValidElement = function (object) {
-  return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
-};
-
-module.exports = ReactElement;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 16 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright 2013-present, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- *
- * 
- */
-
-
-
-var _prodInvariant = __webpack_require__(3);
-
-var invariant = __webpack_require__(1);
-
-/**
- * Static poolers. Several custom versions for each potential number of
- * arguments. A completely generic pooler is easy to implement, but would
- * require accessing the `arguments` object. In each of these, `this` refers to
- * the Class itself, not an instance. If any others are needed, simply add them
- * here, or in their own files.
- */
-var oneArgumentPooler = function (copyFieldsFrom) {
-  var Klass = this;
-  if (Klass.instancePool.length) {
-    var instance = Klass.instancePool.pop();
-    Klass.call(instance, copyFieldsFrom);
-    return instance;
-  } else {
-    return new Klass(copyFieldsFrom);
-  }
-};
-
-var twoArgumentPooler = function (a1, a2) {
-  var Klass = this;
-  if (Klass.instancePool.length) {
-    var instance = Klass.instancePool.pop();
-    Klass.call(instance, a1, a2);
-    return instance;
-  } else {
-    return new Klass(a1, a2);
-  }
-};
-
-var threeArgumentPooler = function (a1, a2, a3) {
-  var Klass = this;
-  if (Klass.instancePool.length) {
-    var instance = Klass.instancePool.pop();
-    Klass.call(instance, a1, a2, a3);
-    return instance;
-  } else {
-    return new Klass(a1, a2, a3);
-  }
-};
-
-var fourArgumentPooler = function (a1, a2, a3, a4) {
-  var Klass = this;
-  if (Klass.instancePool.length) {
-    var instance = Klass.instancePool.pop();
-    Klass.call(instance, a1, a2, a3, a4);
-    return instance;
-  } else {
-    return new Klass(a1, a2, a3, a4);
-  }
-};
-
-var standardReleaser = function (instance) {
-  var Klass = this;
-  !(instance instanceof Klass) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Trying to release an instance into a pool of a different type.') : _prodInvariant('25') : void 0;
-  instance.destructor();
-  if (Klass.instancePool.length < Klass.poolSize) {
-    Klass.instancePool.push(instance);
-  }
-};
-
-var DEFAULT_POOL_SIZE = 10;
-var DEFAULT_POOLER = oneArgumentPooler;
-
-/**
- * Augments `CopyConstructor` to be a poolable class, augmenting only the class
- * itself (statically) not adding any prototypical fields. Any CopyConstructor
- * you give this may have a `poolSize` property, and will look for a
- * prototypical `destructor` on instances.
- *
- * @param {Function} CopyConstructor Constructor that can be used to reset.
- * @param {Function} pooler Customizable pooler.
- */
-var addPoolingTo = function (CopyConstructor, pooler) {
-  // Casting as any so that flow ignores the actual implementation and trusts
-  // it to match the type we declared
-  var NewKlass = CopyConstructor;
-  NewKlass.instancePool = [];
-  NewKlass.getPooled = pooler || DEFAULT_POOLER;
-  if (!NewKlass.poolSize) {
-    NewKlass.poolSize = DEFAULT_POOL_SIZE;
-  }
-  NewKlass.release = standardReleaser;
-  return NewKlass;
-};
-
-var PooledClass = {
-  addPoolingTo: addPoolingTo,
-  oneArgumentPooler: oneArgumentPooler,
-  twoArgumentPooler: twoArgumentPooler,
-  threeArgumentPooler: threeArgumentPooler,
-  fourArgumentPooler: fourArgumentPooler
-};
-
-module.exports = PooledClass;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 17 */
 /***/ (function(module, exports) {
 
 /*
@@ -2564,7 +2099,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 18 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -2923,6 +2458,471 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {/**
+ * Copyright 2014-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ */
+
+
+
+var _assign = __webpack_require__(4);
+
+var ReactCurrentOwner = __webpack_require__(10);
+
+var warning = __webpack_require__(2);
+var canDefineProperty = __webpack_require__(27);
+var hasOwnProperty = Object.prototype.hasOwnProperty;
+
+var REACT_ELEMENT_TYPE = __webpack_require__(62);
+
+var RESERVED_PROPS = {
+  key: true,
+  ref: true,
+  __self: true,
+  __source: true
+};
+
+var specialPropKeyWarningShown, specialPropRefWarningShown;
+
+function hasValidRef(config) {
+  if (process.env.NODE_ENV !== 'production') {
+    if (hasOwnProperty.call(config, 'ref')) {
+      var getter = Object.getOwnPropertyDescriptor(config, 'ref').get;
+      if (getter && getter.isReactWarning) {
+        return false;
+      }
+    }
+  }
+  return config.ref !== undefined;
+}
+
+function hasValidKey(config) {
+  if (process.env.NODE_ENV !== 'production') {
+    if (hasOwnProperty.call(config, 'key')) {
+      var getter = Object.getOwnPropertyDescriptor(config, 'key').get;
+      if (getter && getter.isReactWarning) {
+        return false;
+      }
+    }
+  }
+  return config.key !== undefined;
+}
+
+function defineKeyPropWarningGetter(props, displayName) {
+  var warnAboutAccessingKey = function () {
+    if (!specialPropKeyWarningShown) {
+      specialPropKeyWarningShown = true;
+      process.env.NODE_ENV !== 'production' ? warning(false, '%s: `key` is not a prop. Trying to access it will result ' + 'in `undefined` being returned. If you need to access the same ' + 'value within the child component, you should pass it as a different ' + 'prop. (https://fb.me/react-special-props)', displayName) : void 0;
+    }
+  };
+  warnAboutAccessingKey.isReactWarning = true;
+  Object.defineProperty(props, 'key', {
+    get: warnAboutAccessingKey,
+    configurable: true
+  });
+}
+
+function defineRefPropWarningGetter(props, displayName) {
+  var warnAboutAccessingRef = function () {
+    if (!specialPropRefWarningShown) {
+      specialPropRefWarningShown = true;
+      process.env.NODE_ENV !== 'production' ? warning(false, '%s: `ref` is not a prop. Trying to access it will result ' + 'in `undefined` being returned. If you need to access the same ' + 'value within the child component, you should pass it as a different ' + 'prop. (https://fb.me/react-special-props)', displayName) : void 0;
+    }
+  };
+  warnAboutAccessingRef.isReactWarning = true;
+  Object.defineProperty(props, 'ref', {
+    get: warnAboutAccessingRef,
+    configurable: true
+  });
+}
+
+/**
+ * Factory method to create a new React element. This no longer adheres to
+ * the class pattern, so do not use new to call it. Also, no instanceof check
+ * will work. Instead test $$typeof field against Symbol.for('react.element') to check
+ * if something is a React Element.
+ *
+ * @param {*} type
+ * @param {*} key
+ * @param {string|object} ref
+ * @param {*} self A *temporary* helper to detect places where `this` is
+ * different from the `owner` when React.createElement is called, so that we
+ * can warn. We want to get rid of owner and replace string `ref`s with arrow
+ * functions, and as long as `this` and owner are the same, there will be no
+ * change in behavior.
+ * @param {*} source An annotation object (added by a transpiler or otherwise)
+ * indicating filename, line number, and/or other information.
+ * @param {*} owner
+ * @param {*} props
+ * @internal
+ */
+var ReactElement = function (type, key, ref, self, source, owner, props) {
+  var element = {
+    // This tag allow us to uniquely identify this as a React Element
+    $$typeof: REACT_ELEMENT_TYPE,
+
+    // Built-in properties that belong on the element
+    type: type,
+    key: key,
+    ref: ref,
+    props: props,
+
+    // Record the component responsible for creating this element.
+    _owner: owner
+  };
+
+  if (process.env.NODE_ENV !== 'production') {
+    // The validation flag is currently mutative. We put it on
+    // an external backing store so that we can freeze the whole object.
+    // This can be replaced with a WeakMap once they are implemented in
+    // commonly used development environments.
+    element._store = {};
+
+    // To make comparing ReactElements easier for testing purposes, we make
+    // the validation flag non-enumerable (where possible, which should
+    // include every environment we run tests in), so the test framework
+    // ignores it.
+    if (canDefineProperty) {
+      Object.defineProperty(element._store, 'validated', {
+        configurable: false,
+        enumerable: false,
+        writable: true,
+        value: false
+      });
+      // self and source are DEV only properties.
+      Object.defineProperty(element, '_self', {
+        configurable: false,
+        enumerable: false,
+        writable: false,
+        value: self
+      });
+      // Two elements created in two different places should be considered
+      // equal for testing purposes and therefore we hide it from enumeration.
+      Object.defineProperty(element, '_source', {
+        configurable: false,
+        enumerable: false,
+        writable: false,
+        value: source
+      });
+    } else {
+      element._store.validated = false;
+      element._self = self;
+      element._source = source;
+    }
+    if (Object.freeze) {
+      Object.freeze(element.props);
+      Object.freeze(element);
+    }
+  }
+
+  return element;
+};
+
+/**
+ * Create and return a new ReactElement of the given type.
+ * See https://facebook.github.io/react/docs/top-level-api.html#react.createelement
+ */
+ReactElement.createElement = function (type, config, children) {
+  var propName;
+
+  // Reserved names are extracted
+  var props = {};
+
+  var key = null;
+  var ref = null;
+  var self = null;
+  var source = null;
+
+  if (config != null) {
+    if (hasValidRef(config)) {
+      ref = config.ref;
+    }
+    if (hasValidKey(config)) {
+      key = '' + config.key;
+    }
+
+    self = config.__self === undefined ? null : config.__self;
+    source = config.__source === undefined ? null : config.__source;
+    // Remaining properties are added to a new props object
+    for (propName in config) {
+      if (hasOwnProperty.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) {
+        props[propName] = config[propName];
+      }
+    }
+  }
+
+  // Children can be more than one argument, and those are transferred onto
+  // the newly allocated props object.
+  var childrenLength = arguments.length - 2;
+  if (childrenLength === 1) {
+    props.children = children;
+  } else if (childrenLength > 1) {
+    var childArray = Array(childrenLength);
+    for (var i = 0; i < childrenLength; i++) {
+      childArray[i] = arguments[i + 2];
+    }
+    if (process.env.NODE_ENV !== 'production') {
+      if (Object.freeze) {
+        Object.freeze(childArray);
+      }
+    }
+    props.children = childArray;
+  }
+
+  // Resolve default props
+  if (type && type.defaultProps) {
+    var defaultProps = type.defaultProps;
+    for (propName in defaultProps) {
+      if (props[propName] === undefined) {
+        props[propName] = defaultProps[propName];
+      }
+    }
+  }
+  if (process.env.NODE_ENV !== 'production') {
+    if (key || ref) {
+      if (typeof props.$$typeof === 'undefined' || props.$$typeof !== REACT_ELEMENT_TYPE) {
+        var displayName = typeof type === 'function' ? type.displayName || type.name || 'Unknown' : type;
+        if (key) {
+          defineKeyPropWarningGetter(props, displayName);
+        }
+        if (ref) {
+          defineRefPropWarningGetter(props, displayName);
+        }
+      }
+    }
+  }
+  return ReactElement(type, key, ref, self, source, ReactCurrentOwner.current, props);
+};
+
+/**
+ * Return a function that produces ReactElements of a given type.
+ * See https://facebook.github.io/react/docs/top-level-api.html#react.createfactory
+ */
+ReactElement.createFactory = function (type) {
+  var factory = ReactElement.createElement.bind(null, type);
+  // Expose the type on the factory and the prototype so that it can be
+  // easily accessed on elements. E.g. `<Foo />.type === Foo`.
+  // This should not be named `constructor` since this may not be the function
+  // that created the element, and it may not even be a constructor.
+  // Legacy hook TODO: Warn if this is accessed
+  factory.type = type;
+  return factory;
+};
+
+ReactElement.cloneAndReplaceKey = function (oldElement, newKey) {
+  var newElement = ReactElement(oldElement.type, newKey, oldElement.ref, oldElement._self, oldElement._source, oldElement._owner, oldElement.props);
+
+  return newElement;
+};
+
+/**
+ * Clone and return a new ReactElement using element as the starting point.
+ * See https://facebook.github.io/react/docs/top-level-api.html#react.cloneelement
+ */
+ReactElement.cloneElement = function (element, config, children) {
+  var propName;
+
+  // Original props are copied
+  var props = _assign({}, element.props);
+
+  // Reserved names are extracted
+  var key = element.key;
+  var ref = element.ref;
+  // Self is preserved since the owner is preserved.
+  var self = element._self;
+  // Source is preserved since cloneElement is unlikely to be targeted by a
+  // transpiler, and the original source is probably a better indicator of the
+  // true owner.
+  var source = element._source;
+
+  // Owner will be preserved, unless ref is overridden
+  var owner = element._owner;
+
+  if (config != null) {
+    if (hasValidRef(config)) {
+      // Silently steal the ref from the parent.
+      ref = config.ref;
+      owner = ReactCurrentOwner.current;
+    }
+    if (hasValidKey(config)) {
+      key = '' + config.key;
+    }
+
+    // Remaining properties override existing props
+    var defaultProps;
+    if (element.type && element.type.defaultProps) {
+      defaultProps = element.type.defaultProps;
+    }
+    for (propName in config) {
+      if (hasOwnProperty.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) {
+        if (config[propName] === undefined && defaultProps !== undefined) {
+          // Resolve default props
+          props[propName] = defaultProps[propName];
+        } else {
+          props[propName] = config[propName];
+        }
+      }
+    }
+  }
+
+  // Children can be more than one argument, and those are transferred onto
+  // the newly allocated props object.
+  var childrenLength = arguments.length - 2;
+  if (childrenLength === 1) {
+    props.children = children;
+  } else if (childrenLength > 1) {
+    var childArray = Array(childrenLength);
+    for (var i = 0; i < childrenLength; i++) {
+      childArray[i] = arguments[i + 2];
+    }
+    props.children = childArray;
+  }
+
+  return ReactElement(element.type, key, ref, self, source, owner, props);
+};
+
+/**
+ * Verifies the object is a ReactElement.
+ * See https://facebook.github.io/react/docs/top-level-api.html#react.isvalidelement
+ * @param {?object} object
+ * @return {boolean} True if `object` is a valid component.
+ * @final
+ */
+ReactElement.isValidElement = function (object) {
+  return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+};
+
+module.exports = ReactElement;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * 
+ */
+
+
+
+var _prodInvariant = __webpack_require__(3);
+
+var invariant = __webpack_require__(1);
+
+/**
+ * Static poolers. Several custom versions for each potential number of
+ * arguments. A completely generic pooler is easy to implement, but would
+ * require accessing the `arguments` object. In each of these, `this` refers to
+ * the Class itself, not an instance. If any others are needed, simply add them
+ * here, or in their own files.
+ */
+var oneArgumentPooler = function (copyFieldsFrom) {
+  var Klass = this;
+  if (Klass.instancePool.length) {
+    var instance = Klass.instancePool.pop();
+    Klass.call(instance, copyFieldsFrom);
+    return instance;
+  } else {
+    return new Klass(copyFieldsFrom);
+  }
+};
+
+var twoArgumentPooler = function (a1, a2) {
+  var Klass = this;
+  if (Klass.instancePool.length) {
+    var instance = Klass.instancePool.pop();
+    Klass.call(instance, a1, a2);
+    return instance;
+  } else {
+    return new Klass(a1, a2);
+  }
+};
+
+var threeArgumentPooler = function (a1, a2, a3) {
+  var Klass = this;
+  if (Klass.instancePool.length) {
+    var instance = Klass.instancePool.pop();
+    Klass.call(instance, a1, a2, a3);
+    return instance;
+  } else {
+    return new Klass(a1, a2, a3);
+  }
+};
+
+var fourArgumentPooler = function (a1, a2, a3, a4) {
+  var Klass = this;
+  if (Klass.instancePool.length) {
+    var instance = Klass.instancePool.pop();
+    Klass.call(instance, a1, a2, a3, a4);
+    return instance;
+  } else {
+    return new Klass(a1, a2, a3, a4);
+  }
+};
+
+var standardReleaser = function (instance) {
+  var Klass = this;
+  !(instance instanceof Klass) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Trying to release an instance into a pool of a different type.') : _prodInvariant('25') : void 0;
+  instance.destructor();
+  if (Klass.instancePool.length < Klass.poolSize) {
+    Klass.instancePool.push(instance);
+  }
+};
+
+var DEFAULT_POOL_SIZE = 10;
+var DEFAULT_POOLER = oneArgumentPooler;
+
+/**
+ * Augments `CopyConstructor` to be a poolable class, augmenting only the class
+ * itself (statically) not adding any prototypical fields. Any CopyConstructor
+ * you give this may have a `poolSize` property, and will look for a
+ * prototypical `destructor` on instances.
+ *
+ * @param {Function} CopyConstructor Constructor that can be used to reset.
+ * @param {Function} pooler Customizable pooler.
+ */
+var addPoolingTo = function (CopyConstructor, pooler) {
+  // Casting as any so that flow ignores the actual implementation and trusts
+  // it to match the type we declared
+  var NewKlass = CopyConstructor;
+  NewKlass.instancePool = [];
+  NewKlass.getPooled = pooler || DEFAULT_POOLER;
+  if (!NewKlass.poolSize) {
+    NewKlass.poolSize = DEFAULT_POOL_SIZE;
+  }
+  NewKlass.release = standardReleaser;
+  return NewKlass;
+};
+
+var PooledClass = {
+  addPoolingTo: addPoolingTo,
+  oneArgumentPooler: oneArgumentPooler,
+  twoArgumentPooler: twoArgumentPooler,
+  threeArgumentPooler: threeArgumentPooler,
+  fourArgumentPooler: fourArgumentPooler
+};
+
+module.exports = PooledClass;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
 /* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2944,7 +2944,7 @@ var _assign = __webpack_require__(4);
 var ReactBaseClasses = __webpack_require__(60);
 var ReactChildren = __webpack_require__(102);
 var ReactDOMFactories = __webpack_require__(106);
-var ReactElement = __webpack_require__(15);
+var ReactElement = __webpack_require__(17);
 var ReactPropTypes = __webpack_require__(110);
 var ReactVersion = __webpack_require__(112);
 
@@ -3836,7 +3836,7 @@ module.exports = EventPluginHub;
 
 
 
-var SyntheticEvent = __webpack_require__(12);
+var SyntheticEvent = __webpack_require__(13);
 
 var getEventTarget = __webpack_require__(41);
 
@@ -7654,7 +7654,7 @@ module.exports = getIteratorFn;
 
 var ReactCurrentOwner = __webpack_require__(10);
 var ReactComponentTreeHook = __webpack_require__(7);
-var ReactElement = __webpack_require__(15);
+var ReactElement = __webpack_require__(17);
 
 var checkReactTypeSpec = __webpack_require__(107);
 
@@ -8620,7 +8620,7 @@ var _prodInvariant = __webpack_require__(3);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var PooledClass = __webpack_require__(16);
+var PooledClass = __webpack_require__(18);
 
 var invariant = __webpack_require__(1);
 
@@ -11058,7 +11058,7 @@ var storeShape = __WEBPACK_IMPORTED_MODULE_0_prop_types___default.a.shape({
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_hoist_non_react_statics__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(206);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_Subscription__ = __webpack_require__(207);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_PropTypes__ = __webpack_require__(93);
@@ -11778,7 +11778,7 @@ function verifyPlainObject(value, displayName, methodName) {
 "use strict";
 
 
-var _react = __webpack_require__(13);
+var _react = __webpack_require__(12);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -11794,7 +11794,7 @@ var _App = __webpack_require__(230);
 
 var _App2 = _interopRequireDefault(_App);
 
-var _reducers = __webpack_require__(379);
+var _reducers = __webpack_require__(382);
 
 var _reducers2 = _interopRequireDefault(_reducers);
 
@@ -11831,7 +11831,7 @@ store.dispatch((0, _actions.fetchCurriculums)(4, 'ej'));
 
 
 var PooledClass = __webpack_require__(103);
-var ReactElement = __webpack_require__(15);
+var ReactElement = __webpack_require__(17);
 
 var emptyFunction = __webpack_require__(8);
 var traverseAllChildren = __webpack_require__(104);
@@ -12390,7 +12390,7 @@ module.exports = KeyEscapeUtils;
 
 
 
-var ReactElement = __webpack_require__(15);
+var ReactElement = __webpack_require__(17);
 
 /**
  * Create a factory that creates HTML tag elements.
@@ -12711,7 +12711,7 @@ module.exports = ReactPropTypesSecret;
 
 
 
-var _require = __webpack_require__(15),
+var _require = __webpack_require__(17),
     isValidElement = _require.isValidElement;
 
 var factory = __webpack_require__(65);
@@ -12826,7 +12826,7 @@ module.exports = '15.6.1';
 var _require = __webpack_require__(60),
     Component = _require.Component;
 
-var _require2 = __webpack_require__(15),
+var _require2 = __webpack_require__(17),
     isValidElement = _require2.isValidElement;
 
 var ReactNoopUpdateQueue = __webpack_require__(61);
@@ -13732,7 +13732,7 @@ module.exports = factory;
 
 var _prodInvariant = __webpack_require__(20);
 
-var ReactElement = __webpack_require__(15);
+var ReactElement = __webpack_require__(17);
 
 var invariant = __webpack_require__(1);
 
@@ -14471,7 +14471,7 @@ module.exports = BeforeInputEventPlugin;
 
 var _assign = __webpack_require__(4);
 
-var PooledClass = __webpack_require__(16);
+var PooledClass = __webpack_require__(18);
 
 var getTextContentAccessor = __webpack_require__(70);
 
@@ -14569,7 +14569,7 @@ module.exports = FallbackCompositionState;
 
 
 
-var SyntheticEvent = __webpack_require__(12);
+var SyntheticEvent = __webpack_require__(13);
 
 /**
  * @interface Event
@@ -14610,7 +14610,7 @@ module.exports = SyntheticCompositionEvent;
 
 
 
-var SyntheticEvent = __webpack_require__(12);
+var SyntheticEvent = __webpack_require__(13);
 
 /**
  * @interface Event
@@ -14657,7 +14657,7 @@ var EventPropagators = __webpack_require__(23);
 var ExecutionEnvironment = __webpack_require__(6);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactUpdates = __webpack_require__(11);
-var SyntheticEvent = __webpack_require__(12);
+var SyntheticEvent = __webpack_require__(13);
 
 var inputValueTracking = __webpack_require__(73);
 var getEventTarget = __webpack_require__(41);
@@ -20633,7 +20633,7 @@ module.exports = flattenChildren;
 
 var _assign = __webpack_require__(4);
 
-var PooledClass = __webpack_require__(16);
+var PooledClass = __webpack_require__(18);
 var Transaction = __webpack_require__(30);
 var ReactInstrumentation = __webpack_require__(9);
 var ReactServerUpdateQueue = __webpack_require__(167);
@@ -21324,7 +21324,7 @@ var _assign = __webpack_require__(4);
 
 var EventListener = __webpack_require__(87);
 var ExecutionEnvironment = __webpack_require__(6);
-var PooledClass = __webpack_require__(16);
+var PooledClass = __webpack_require__(18);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactUpdates = __webpack_require__(11);
 
@@ -21566,7 +21566,7 @@ module.exports = ReactInjection;
 var _assign = __webpack_require__(4);
 
 var CallbackQueue = __webpack_require__(71);
-var PooledClass = __webpack_require__(16);
+var PooledClass = __webpack_require__(18);
 var ReactBrowserEventEmitter = __webpack_require__(34);
 var ReactInputSelection = __webpack_require__(88);
 var ReactInstrumentation = __webpack_require__(9);
@@ -22459,7 +22459,7 @@ var EventPropagators = __webpack_require__(23);
 var ExecutionEnvironment = __webpack_require__(6);
 var ReactDOMComponentTree = __webpack_require__(5);
 var ReactInputSelection = __webpack_require__(88);
-var SyntheticEvent = __webpack_require__(12);
+var SyntheticEvent = __webpack_require__(13);
 
 var getActiveElement = __webpack_require__(89);
 var isTextInputElement = __webpack_require__(74);
@@ -22656,7 +22656,7 @@ var EventPropagators = __webpack_require__(23);
 var ReactDOMComponentTree = __webpack_require__(5);
 var SyntheticAnimationEvent = __webpack_require__(184);
 var SyntheticClipboardEvent = __webpack_require__(185);
-var SyntheticEvent = __webpack_require__(12);
+var SyntheticEvent = __webpack_require__(13);
 var SyntheticFocusEvent = __webpack_require__(186);
 var SyntheticKeyboardEvent = __webpack_require__(187);
 var SyntheticMouseEvent = __webpack_require__(31);
@@ -22880,7 +22880,7 @@ module.exports = SimpleEventPlugin;
 
 
 
-var SyntheticEvent = __webpack_require__(12);
+var SyntheticEvent = __webpack_require__(13);
 
 /**
  * @interface Event
@@ -22924,7 +22924,7 @@ module.exports = SyntheticAnimationEvent;
 
 
 
-var SyntheticEvent = __webpack_require__(12);
+var SyntheticEvent = __webpack_require__(13);
 
 /**
  * @interface Event
@@ -23305,7 +23305,7 @@ module.exports = SyntheticTouchEvent;
 
 
 
-var SyntheticEvent = __webpack_require__(12);
+var SyntheticEvent = __webpack_require__(13);
 
 /**
  * @interface Event
@@ -23933,7 +23933,7 @@ module.exports = ReactDOMInvalidARIAHook;
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony export (immutable) */ __webpack_exports__["a"] = createProvider;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
@@ -25277,7 +25277,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(13);
+var _react = __webpack_require__(12);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -25297,15 +25297,19 @@ var _Title = __webpack_require__(370);
 
 var _Title2 = _interopRequireDefault(_Title);
 
-var _reset = __webpack_require__(373);
+var _Information = __webpack_require__(373);
+
+var _Information2 = _interopRequireDefault(_Information);
+
+var _reset = __webpack_require__(376);
 
 var _reset2 = _interopRequireDefault(_reset);
 
-var _base = __webpack_require__(375);
+var _base = __webpack_require__(378);
 
 var _base2 = _interopRequireDefault(_base);
 
-var _App = __webpack_require__(377);
+var _App = __webpack_require__(380);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -25318,6 +25322,7 @@ var App = function App() {
     _react2.default.createElement(_Title2.default, null),
     _react2.default.createElement(_SelectContainer2.default, null),
     _react2.default.createElement(_CurriculumsContainer2.default, null),
+    _react2.default.createElement(_Information2.default, null),
     _react2.default.createElement(_CreditContainer2.default, null)
   );
 };
@@ -25376,7 +25381,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(13);
+var _react = __webpack_require__(12);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -25423,6 +25428,11 @@ var Select = function (_React$Component) {
         'section',
         { className: _Select2.default.selectWrapper },
         _react2.default.createElement(
+          'h2',
+          { className: _Select2.default.header },
+          '\u30AF\u30E9\u30B9\u3092\u9078\u629E'
+        ),
+        _react2.default.createElement(
           'select',
           {
             className: _Select2.default.select,
@@ -25467,7 +25477,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(18)(content, options);
+var update = __webpack_require__(16)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -25487,17 +25497,18 @@ if(false) {
 /* 234 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(17)(undefined);
+exports = module.exports = __webpack_require__(15)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "._3cUCFq9WQuvEMnK2Uiqn2 {\n  margin: 2rem;\n  position: relative;\n}\n\n._3cUCFq9WQuvEMnK2Uiqn2::after {\n  content: '';\n  position: absolute;\n  top: 0;\n  right: 1.2rem;\n  bottom: 0;\n  width: 0;\n  height: 0;\n  margin: auto;\n  border-top: 0.5rem solid #023466;\n  border-right: 0.4rem solid transparent;\n  border-left: 0.4rem solid transparent;\n}\n\n._3B35VpAWbESzYspi6RYqnc {\n  display: inline-block;\n  width: 100%;\n  margin: 0.3rem 0;\n  padding: 0.8rem 1rem;\n  border: 0;\n  border-radius: 0.3rem;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  background: #EAEAEA;\n  font-size: 16px;\n  font-weight: bold;\n  color: #023466;\n}\n", ""]);
+exports.push([module.i, "._3cUCFq9WQuvEMnK2Uiqn2 {\n  margin: 2rem;\n  position: relative;\n}\n\n._3cUCFq9WQuvEMnK2Uiqn2::after {\n  content: '';\n  position: absolute;\n  top: 0;\n  right: 1.2rem;\n  bottom: 0;\n  width: 0;\n  height: 0;\n  margin: auto;\n  border-top: 0.5rem solid #023466;\n  border-right: 0.4rem solid transparent;\n  border-left: 0.4rem solid transparent;\n}\n\n._3B35VpAWbESzYspi6RYqnc {\n  display: inline-block;\n  width: 100%;\n  margin: 0.3rem 0;\n  padding: 0.8rem 1rem;\n  border: 0;\n  border-radius: 0.3rem;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  background: #EAEAEA;\n  font-size: 16px;\n  font-weight: bold;\n  color: #023466;\n}\n\n._1uuXLABkfX1hRsUnLa41vi {\n  display: none;\n}\n", ""]);
 
 // exports
 exports.locals = {
 	"selectWrapper": "_3cUCFq9WQuvEMnK2Uiqn2",
-	"select": "_3B35VpAWbESzYspi6RYqnc"
+	"select": "_3B35VpAWbESzYspi6RYqnc",
+	"header": "_1uuXLABkfX1hRsUnLa41vi"
 };
 
 /***/ }),
@@ -26543,7 +26554,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(13);
+var _react = __webpack_require__(12);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -26641,6 +26652,11 @@ var Curriculums = function Curriculums(_ref) {
   return _react2.default.createElement(
     'section',
     null,
+    _react2.default.createElement(
+      'h2',
+      { className: _Curriculums2.default.header },
+      '\u30AB\u30EA\u30AD\u30E5\u30E9\u30E0\u4E00\u89A7'
+    ),
     curriculums.map(function (curriculums_of_grade, i) {
       var grade = i + 1;
       return _react2.default.createElement(
@@ -26680,7 +26696,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(18)(content, options);
+var update = __webpack_require__(16)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -26700,12 +26716,12 @@ if(false) {
 /* 365 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(17)(undefined);
+exports = module.exports = __webpack_require__(15)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "._2WUMQAEi-ExfIM_cNUSakH {\n  margin: 2rem;\n}\n\n._11oKjmqgYD4NiDRZqBPR72 {\n  border-bottom: 2px solid #30C7EF;\n  margin-bottom: 0.5rem;\n  padding: 0 0 0.5rem 1rem;\n  color: #023466;\n}\n\n._3iEByNrmCpl8ehHVI2gn9i {\n  display: none;\n}\n\n._3iEByNrmCpl8ehHVI2gn9i:checked + ._7YyxAmZHhaYae3f0FaOYB {\n  background: #30C7EF;\n}\n\n._7YyxAmZHhaYae3f0FaOYB {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  position: relative;\n  width: 100%;\n  margin: 0.3rem 0;\n  border-radius: 0.3rem;\n  background: #EAEAEA;\n  font-weight: bold;\n  color: #023466;\n  cursor: pointer;\n  transition: .1s;\n  z-index: -10;\n}\n\n._27IKdPUNL_E-ur0PQ5Xfr- {\n  display: inline-block;\n  width: 15%;\n  text-align: center;\n}\n\n._2c74Z_iPLRpWMDF6WSrecF {\n  display: inline-block;\n  width: 85%;\n  padding: 0.8rem 0.9rem 0.8rem 1rem;\n  border-left: 1px dashed #ffffff;\n}\n\n._1fHL0b6vChshLpwuVPR3Uh {\n  position: absolute;\n  width: 1.5rem;\n  right: 0.8rem;\n  display: block;\n  line-height: 2.9rem;\n  top: 0;\n  z-index: -1;\n}\n", ""]);
+exports.push([module.i, "._2WUMQAEi-ExfIM_cNUSakH {\n  margin: 2rem;\n}\n\n._11oKjmqgYD4NiDRZqBPR72 {\n  border-bottom: 2px solid #30C7EF;\n  margin-bottom: 0.5rem;\n  padding: 0 0 0.5rem 1rem;\n  color: #023466;\n}\n\n._3iEByNrmCpl8ehHVI2gn9i {\n  display: none;\n}\n\n._3iEByNrmCpl8ehHVI2gn9i:checked + ._7YyxAmZHhaYae3f0FaOYB {\n  background: #30C7EF;\n}\n\n._7YyxAmZHhaYae3f0FaOYB {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  position: relative;\n  width: 100%;\n  margin: 0.3rem 0;\n  border-radius: 0.3rem;\n  background: #EAEAEA;\n  font-weight: bold;\n  color: #023466;\n  cursor: pointer;\n  transition: .1s;\n  z-index: -10;\n}\n\n._27IKdPUNL_E-ur0PQ5Xfr- {\n  display: inline-block;\n  width: 15%;\n  text-align: center;\n}\n\n._2c74Z_iPLRpWMDF6WSrecF {\n  display: inline-block;\n  width: 85%;\n  padding: 0.8rem 0.9rem 0.8rem 1rem;\n  border-left: 1px dashed #ffffff;\n}\n\n._1fHL0b6vChshLpwuVPR3Uh {\n  position: absolute;\n  width: 1.5rem;\n  right: 0.8rem;\n  display: block;\n  line-height: 2.9rem;\n  top: 0;\n  z-index: -1;\n}\n\n._1BLfB2yceBlXlWJFeJqkFO {\n  display: none;\n}\n", ""]);
 
 // exports
 exports.locals = {
@@ -26715,7 +26731,8 @@ exports.locals = {
 	"curriculum": "_7YyxAmZHhaYae3f0FaOYB",
 	"curriculumCredit": "_27IKdPUNL_E-ur0PQ5Xfr-",
 	"curriculumTitle": "_2c74Z_iPLRpWMDF6WSrecF",
-	"curriculumCheckmark": "_1fHL0b6vChshLpwuVPR3Uh"
+	"curriculumCheckmark": "_1fHL0b6vChshLpwuVPR3Uh",
+	"header": "_1BLfB2yceBlXlWJFeJqkFO"
 };
 
 /***/ }),
@@ -26764,7 +26781,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(13);
+var _react = __webpack_require__(12);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -26864,7 +26881,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(18)(content, options);
+var update = __webpack_require__(16)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -26884,12 +26901,12 @@ if(false) {
 /* 369 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(17)(undefined);
+exports = module.exports = __webpack_require__(15)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "._1sFyGSdP7gyTm2Cfu5WT9i {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  position: -webkit-sticky;\n  position: sticky;\n  bottom: 0;\n  padding: 1rem 2rem;\n  background: #30C7EF;\n  width: 100%;\n  max-height: 120px;\n  border-top: 2px solid #ffffff;\n}\n\n._3t8dbRbiTu39boUL7PIL-j {\n   display: -webkit-box;\n   display: -ms-flexbox;\n   display: flex;\n   -webkit-box-orient: vertical;\n   -webkit-box-direction: normal;\n       -ms-flex-direction: column;\n           flex-direction: column;\n   -webkit-box-pack: end;\n       -ms-flex-pack: end;\n           justify-content: flex-end;\n}\n\n._2DzNgYtqu3NYuuHf-8-tGp {\n  font-size: 0.8rem;\n  font-weight: bold;\n  color: #023466;\n  text-align: center;\n  margin-bottom: 0.3rem;\n}\n\n._2DzNgYtqu3NYuuHf-8-tGp ._2vlOYGHVXCKTEcMwFqDRjX {\n  color: #ffffff;\n  margin-left: 0.2rem;\n}\n\n._1xyQiuf_LxXxk4TjFpWdfA {\n  color: #FFFFFF;\n  font-weight: bold;\n  font-size: 1.5rem;\n  line-height: 110px;\n}\n\n._2gdIlIoTv0jlRL4OEe1QQH {\n  background: #ffffff;\n  border-radius: 0.3rem;\n  padding: 0.6rem 1rem;\n  text-align: center;\n  font-weight: bold;\n  color: #023466;\n}\n\n._3dci9hW-teXLmpC4ApiWIG {\n  font-size: 0.8rem;\n  letter-spacing: 0.1rem;\n  margin-bottom: 0.2rem;\n}\n\n._2vlOYGHVXCKTEcMwFqDRjX {\n  font-size: 1.5rem;\n}\n", ""]);
+exports.push([module.i, "._1sFyGSdP7gyTm2Cfu5WT9i {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  position: -webkit-sticky;\n  position: sticky;\n  bottom: 0;\n  padding: 1rem 2rem;\n  background: #30C7EF;\n  width: 100%;\n  max-height: 115px;\n  border-top: 2px solid #ffffff;\n}\n\n._3t8dbRbiTu39boUL7PIL-j {\n   display: -webkit-box;\n   display: -ms-flexbox;\n   display: flex;\n   -webkit-box-orient: vertical;\n   -webkit-box-direction: normal;\n       -ms-flex-direction: column;\n           flex-direction: column;\n   -webkit-box-pack: end;\n       -ms-flex-pack: end;\n           justify-content: flex-end;\n}\n\n._2DzNgYtqu3NYuuHf-8-tGp {\n  font-size: 0.8rem;\n  font-weight: bold;\n  color: #023466;\n  text-align: center;\n  margin-bottom: 0.3rem;\n}\n\n._2DzNgYtqu3NYuuHf-8-tGp ._2vlOYGHVXCKTEcMwFqDRjX {\n  color: #ffffff;\n  margin-left: 0.2rem;\n}\n\n._1xyQiuf_LxXxk4TjFpWdfA {\n  color: #FFFFFF;\n  font-weight: bold;\n  font-size: 1.5rem;\n  line-height: 100px;\n}\n\n._2gdIlIoTv0jlRL4OEe1QQH {\n  background: #ffffff;\n  border-radius: 0.3rem;\n  padding: 0.6rem 1rem;\n  text-align: center;\n  font-weight: bold;\n  color: #023466;\n}\n\n._3dci9hW-teXLmpC4ApiWIG {\n  font-size: 0.8rem;\n  letter-spacing: 0.1rem;\n  margin-bottom: 0.2rem;\n  text-indent: 0.1rem;\n}\n\n._2vlOYGHVXCKTEcMwFqDRjX {\n  font-size: 1.5rem;\n}\n", ""]);
 
 // exports
 exports.locals = {
@@ -26913,7 +26930,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = __webpack_require__(13);
+var _react = __webpack_require__(12);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -26925,9 +26942,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Title = function Title() {
   return _react2.default.createElement(
-    'h1',
-    { className: _Title2.default.title },
-    'fulltan'
+    'section',
+    { className: _Title2.default.titleWrapper },
+    _react2.default.createElement(
+      'h1',
+      { className: _Title2.default.title },
+      'fulltan'
+    ),
+    _react2.default.createElement(
+      'p',
+      { className: _Title2.default.lead },
+      '\u5358\u4F4D\u3001\u8DB3\u308A\u3066\u307E\u3059\u304B\uFF1F'
+    )
   );
 };
 exports.default = Title;
@@ -26947,7 +26973,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(18)(content, options);
+var update = __webpack_require__(16)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -26967,26 +26993,87 @@ if(false) {
 /* 372 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(17)(undefined);
+exports = module.exports = __webpack_require__(15)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, ".H4QrtKelk95IQTVqaJ8hS {\n  background: #30C7EF;\n  color: #ffffff;\n  text-align: center;\n  height: 80px;\n  line-height: 80px;\n  font-size: 2rem;\n}\n", ""]);
+exports.push([module.i, "._2jP4SIKw7ziJIXctZmLTwd {\n  background: #30C7EF;\n  color: #ffffff;\n  text-align: center;\n  height: 80px;\n}\n\n.H4QrtKelk95IQTVqaJ8hS {\n  padding: 1rem 0 0.4rem;\n  font-size: 2rem;\n}\n\n._1ew6piCDDUpFEiGcjYjT4r {\n  font-size: 0.8rem;\n}\n", ""]);
 
 // exports
 exports.locals = {
-	"title": "H4QrtKelk95IQTVqaJ8hS"
+	"titleWrapper": "_2jP4SIKw7ziJIXctZmLTwd",
+	"title": "H4QrtKelk95IQTVqaJ8hS",
+	"lead": "_1ew6piCDDUpFEiGcjYjT4r"
 };
 
 /***/ }),
 /* 373 */
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(12);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Information = __webpack_require__(374);
+
+var _Information2 = _interopRequireDefault(_Information);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Information = function Information() {
+  return _react2.default.createElement(
+    'section',
+    { className: _Information2.default.informationWrapper },
+    _react2.default.createElement(
+      'ul',
+      { className: _Information2.default.informationList },
+      _react2.default.createElement(
+        'li',
+        null,
+        '\u6B63\u3057\u3055\u306E\u4FDD\u8A3C\u306F\u3067\u304D\u307E\u305B\u3093\u3001\u5FC5\u305A\u3054\u81EA\u8EAB\u3067\u306E\u30C1\u30A7\u30C3\u30AF\u3092\u304A\u9858\u3044\u3057\u307E\u3059'
+      ),
+      _react2.default.createElement(
+        'li',
+        null,
+        '\u9593\u9055\u3044\u3092\u898B\u3064\u3051\u305F\u3068\u304D\u3001\u8FFD\u52A0\u3057\u3066\u307B\u3057\u3044\u6A5F\u80FD\u304C\u3042\u308B\u3068\u304D\u306A\u3069\u306F',
+        _react2.default.createElement(
+          'a',
+          { href: '//twitter.com/yamasy1549', className: _Information2.default.link },
+          '@yamasy1549'
+        ),
+        '\u307E\u3067\u3054\u9023\u7D61\u304F\u3060\u3055\u3044\uFF01'
+      ),
+      _react2.default.createElement(
+        'li',
+        null,
+        '\u8A73\u7D30\u306F',
+        _react2.default.createElement(
+          'a',
+          { href: '//github.com/yamasy1549/fulltan/wiki/fulltan%E3%80%9C%E5%8D%98%E4%BD%8D%E3%80%81%E8%B6%B3%E3%82%8A%E3%81%A6%E3%81%BE%E3%81%99%E3%81%8B%EF%BC%9F%E3%80%9C', className: _Information2.default.link },
+          '\u3053\u3061\u3089'
+        )
+      )
+    )
+  );
+};
+exports.default = Information;
+
+/***/ }),
+/* 374 */
+/***/ (function(module, exports, __webpack_require__) {
+
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(374);
+var content = __webpack_require__(375);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -26994,7 +27081,56 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(18)(content, options);
+var update = __webpack_require__(16)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../node_modules/css-loader/index.js??ref--1-1!../../node_modules/postcss-loader/lib/index.js??ref--1-2!./Information.css", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js??ref--1-1!../../node_modules/postcss-loader/lib/index.js??ref--1-2!./Information.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 375 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(15)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "._1O14h1ZLgmj4XiQeygo7v6 {\n  margin: 2rem;\n  color: #023466;\n}\n\n._3W5xWw56yMUO_d8HDnsQ6J {\n  list-style-type: disc;\n  padding-left: 20px;\n  font-size: 0.8rem;\n  line-height: 1rem;\n}\n\n._2gTyP38j-FxvoSxyn8a6LO {\n  color: #30C7EF;\n}\n", ""]);
+
+// exports
+exports.locals = {
+	"informationWrapper": "_1O14h1ZLgmj4XiQeygo7v6",
+	"informationList": "_3W5xWw56yMUO_d8HDnsQ6J",
+	"link": "_2gTyP38j-FxvoSxyn8a6LO"
+};
+
+/***/ }),
+/* 376 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(377);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(16)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -27011,10 +27147,10 @@ if(false) {
 }
 
 /***/ }),
-/* 374 */
+/* 377 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(17)(undefined);
+exports = module.exports = __webpack_require__(15)(undefined);
 // imports
 
 
@@ -27025,13 +27161,13 @@ exports.push([module.i, "/* http://meyerweb.com/eric/tools/css/reset/ */\n/* v1.
 
 
 /***/ }),
-/* 375 */
+/* 378 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(376);
+var content = __webpack_require__(379);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -27039,7 +27175,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(18)(content, options);
+var update = __webpack_require__(16)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -27056,27 +27192,27 @@ if(false) {
 }
 
 /***/ }),
-/* 376 */
+/* 379 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(17)(undefined);
+exports = module.exports = __webpack_require__(15)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "html {\n  width: 100%;\n}\n\n*, *::before, *::after {\n  box-sizing: border-box;\n}\n", ""]);
+exports.push([module.i, "html {\n  width: 100%;\n  font-family: 游ゴシック体, 'Yu Gothic', YuGothic, '\\30D2\\30E9\\30AE\\30CE\\89D2\\30B4\\30B7\\30C3\\30AF   Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, '\\FF2D\\FF33   \\FF30\\30B4\\30B7\\30C3\\30AF', 'MS PGothic', sans-serif;\n}\n\n*, *::before, *::after {\n  box-sizing: border-box;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 377 */
+/* 380 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(378);
+var content = __webpack_require__(381);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -27084,7 +27220,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(18)(content, options);
+var update = __webpack_require__(16)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -27101,10 +27237,10 @@ if(false) {
 }
 
 /***/ }),
-/* 378 */
+/* 381 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(17)(undefined);
+exports = module.exports = __webpack_require__(15)(undefined);
 // imports
 
 
@@ -27117,7 +27253,7 @@ exports.locals = {
 };
 
 /***/ }),
-/* 379 */
+/* 382 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27129,15 +27265,15 @@ Object.defineProperty(exports, "__esModule", {
 
 var _redux = __webpack_require__(56);
 
-var _grade = __webpack_require__(380);
+var _grade = __webpack_require__(383);
 
 var _grade2 = _interopRequireDefault(_grade);
 
-var _course = __webpack_require__(381);
+var _course = __webpack_require__(384);
 
 var _course2 = _interopRequireDefault(_course);
 
-var _curriculums = __webpack_require__(382);
+var _curriculums = __webpack_require__(385);
 
 var _curriculums2 = _interopRequireDefault(_curriculums);
 
@@ -27151,7 +27287,7 @@ var fulltanApp = (0, _redux.combineReducers)({
 exports.default = fulltanApp;
 
 /***/ }),
-/* 380 */
+/* 383 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27177,7 +27313,7 @@ var grade = function grade() {
 exports.default = grade;
 
 /***/ }),
-/* 381 */
+/* 384 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27203,7 +27339,7 @@ var course = function course() {
 exports.default = course;
 
 /***/ }),
-/* 382 */
+/* 385 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27213,7 +27349,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _curriculum = __webpack_require__(383);
+var _curriculum = __webpack_require__(386);
 
 var _curriculum2 = _interopRequireDefault(_curriculum);
 
@@ -27247,7 +27383,7 @@ var curriculums = function curriculums() {
 exports.default = curriculums;
 
 /***/ }),
-/* 383 */
+/* 386 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
