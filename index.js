@@ -7261,7 +7261,7 @@ var credits = exports.credits = function credits(curriculums) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.loseCredit = exports.getCredit = exports.fetchCurriculums = exports.set_classcode = undefined;
+exports.loseCredit = exports.getCredit = exports.fetchCurriculums = exports.resetCurriculums = exports.set_classcode = undefined;
 
 var _consts = __webpack_require__(58);
 
@@ -7270,6 +7270,12 @@ var set_classcode = exports.set_classcode = function set_classcode(grade, course
     type: 'SET_CLASSCODE',
     grade,
     course
+  };
+};
+
+var resetCurriculums = exports.resetCurriculums = function resetCurriculums() {
+  return {
+    type: 'RESET_CURRICULUMS'
   };
 };
 
@@ -25323,6 +25329,20 @@ var App = function App() {
     _react2.default.createElement(_SelectContainer2.default, null),
     _react2.default.createElement(_CurriculumsContainer2.default, null),
     _react2.default.createElement(_Information2.default, null),
+    _react2.default.createElement(
+      'div',
+      { className: _App2.default.twitter },
+      _react2.default.createElement(
+        'a',
+        {
+          href: '//twitter.com/share',
+          className: 'twitter-share-button',
+          'data-url': 'http://yamasy.info/fulltan/',
+          'data-text': 'fulltan\u301C\u5358\u4F4D\u3001\u8DB3\u308A\u3066\u307E\u3059\u304B\uFF1F\u301C'
+        },
+        'Tweet'
+      )
+    ),
     _react2.default.createElement(_CreditContainer2.default, null)
   );
 };
@@ -25360,6 +25380,7 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   return {
     set_classcode: function set_classcode(grade, course) {
       dispatch((0, _actions.set_classcode)(grade, course));
+      dispatch((0, _actions.resetCurriculums)());
       dispatch((0, _actions.fetchCurriculums)(grade, course));
     }
   };
@@ -26576,19 +26597,12 @@ var Curriculum = function (_React$Component) {
   function Curriculum(props, context) {
     _classCallCheck(this, Curriculum);
 
-    var _this = _possibleConstructorReturn(this, (Curriculum.__proto__ || Object.getPrototypeOf(Curriculum)).call(this, props, context));
-
-    _this.state = {
-      checked: props.c.getCredit
-    };
-    return _this;
+    return _possibleConstructorReturn(this, (Curriculum.__proto__ || Object.getPrototypeOf(Curriculum)).call(this, props, context));
   }
 
   _createClass(Curriculum, [{
     key: 'render',
     value: function render() {
-      var _this2 = this;
-
       var _props = this.props,
           c = _props.c,
           grade = _props.grade,
@@ -26605,9 +26619,8 @@ var Curriculum = function (_React$Component) {
             id: c.id,
             className: _Curriculums2.default.curriculumCheck,
             type: 'checkbox',
-            defaultChecked: c.required,
+            checked: c.getCredit,
             onChange: function onChange(e) {
-              _this2.setState({ checked: !_this2.state.checked });
               toggleCredit(c.id, e.target.checked);
             }
           }),
@@ -26625,7 +26638,7 @@ var Curriculum = function (_React$Component) {
               c.title
             ),
             function () {
-              if (_this2.state.checked) {
+              if (c.getCredit) {
                 return _react2.default.createElement(
                   'span',
                   { className: _Curriculums2.default.curriculumCheckmark },
@@ -27245,11 +27258,12 @@ exports = module.exports = __webpack_require__(15)(undefined);
 
 
 // module
-exports.push([module.i, "._3l6tUHbCLjVyxilYRqe0PJ {\n  max-width: 500px;\n  margin: 0 auto;\n}\n", ""]);
+exports.push([module.i, "._3l6tUHbCLjVyxilYRqe0PJ {\n  max-width: 500px;\n  margin: 0 auto;\n}\n\n._3WmaKTGbiCDM-z5JXEI1g4 {\ntext-align: center;\nmargin: 2rem 0;\n}\n", ""]);
 
 // exports
 exports.locals = {
-	"app": "_3l6tUHbCLjVyxilYRqe0PJ"
+	"app": "_3l6tUHbCLjVyxilYRqe0PJ",
+	"twitter": "_3WmaKTGbiCDM-z5JXEI1g4"
 };
 
 /***/ }),
@@ -27362,6 +27376,8 @@ var curriculums = function curriculums() {
   var action = arguments[1];
 
   switch (action.type) {
+    case 'RESET_CURRICULUMS':
+      return defaultState;
     case 'FETCH_CURRICULUMS':
       return action.curriculums.map(function (curriculums_of_grade, i) {
         return curriculums_of_grade.map(function (c) {
