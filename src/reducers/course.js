@@ -1,4 +1,4 @@
-const defaultState = 'ej'
+const defaultState = 'EJ'
 
 const course = (state = defaultState, action) => {
   switch (action.type) {

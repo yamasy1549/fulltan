@@ -1,6 +1,6 @@
 export const heiseiYear = 29 // 平成
 export const grades = [1, 2, 3, 4, 5]
-export const courses = ['m', 'ed', 'ej', 'c', 'a']
+export const courses = ['M', 'ED', 'EJ', 'C', 'A']
 
 export const required_credits = {
   "一般": 75,

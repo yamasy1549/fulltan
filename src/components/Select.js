@@ -27,9 +27,9 @@ class Select extends React.Component {
         >
           {grades.map(g => {
             return courses.map(c => {
-              if(g <= 3 && c == 'ed')
-                c = 'e'
-              if(g <= 3 && c == 'ej')
+              if(g <= 3 && c == 'ED')
+                c = 'E'
+              if(g <= 3 && c == 'EJ')
                 return
               const classcode = toClasscode(g, c)
               return <option value={classcode}>{classcode}</option>

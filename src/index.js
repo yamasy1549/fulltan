@@ -13,7 +13,7 @@ const store = createStore(
   applyMiddleware(logger)
 )
 
-store.dispatch(fetchCurriculums(4, 'ej'))
+store.dispatch(fetchCurriculums(4, 'EJ'))
 
 render(
   <Provider store={store}>
