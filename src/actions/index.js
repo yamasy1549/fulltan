@@ -19,6 +19,8 @@ export const fetchCurriculums = (grade, course) => {
   let year = heiseiYear
   let g = grade
   for(; year>heiseiYear-grade; year--, g--) {
+    if(g <= 3 && (course == 'ed' || course == 'ej'))
+      course = 'e'
     const curriculum = require(`../../curriculum/H${year}/${course}/${g}.json`)
     const classcode = toClasscode(g, course)
     curriculums[g-1] = curriculum
