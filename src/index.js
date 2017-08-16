@@ -1,22 +1,17 @@
-import React                             from 'react'
-import { createLogger }                  from 'redux-logger'
-import { render }                        from 'react-dom'
-import { Provider }                      from 'react-redux'
-import { applyMiddleware, createStore }  from 'redux'
-import App                               from './components/App'
-import fulltan                           from './reducers'
-import { fetchCurriculums }              from './actions'
+import React               from 'react'
+import { render }          from 'react-dom'
+import { Provider }        from 'mobx-react'
+import CurriculumListStore from './stores/CurriculumListStore'
+import App                 from './components/App'
+import reset               from './components/reset.css'
+import base                from './components/base.css'
 
-const logger = createLogger()
-const store = createStore(
-  fulltan,
-  applyMiddleware(logger)
-)
-
-store.dispatch(fetchCurriculums(4, 'EJ'))
+const stores = {
+  curriculumList: new CurriculumListStore()
+}
 
 render(
-  <Provider store={store}>
+  <Provider {...stores}>
     <App />
   </Provider>,
   document.getElementById('root')
