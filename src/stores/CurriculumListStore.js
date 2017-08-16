@@ -44,17 +44,13 @@ export default class CurriculumListStore {
 
   fetchCurriculums() {
     let curriculums = []
-    let year = heiseiYear
-    let g = this.grade
-    let course = this.course
-    for(; year>heiseiYear-this.grade; year--, g--) {
-      if(g <= 3 && (course == 'ED' || course == 'EJ'))
-        course = 'E'
-      let fetchedCurriculums = require(`../../curriculum/H${year}/${course}/${g}.json`)
+    for(let grade=1; grade<=5; grade++) {
+      const year = (grade > this.grade) ? heiseiYear : heiseiYear-this.grade+grade
+      const fetchedCurriculums = require(`../../curriculum/H${year}/${this.course}/${grade}.json`)
+      curriculums[grade-1] = []
       fetchedCurriculums.forEach(curriculum => {
-        if(!curriculums[g-1]) curriculums[g-1] = []
-        curriculums[g-1].push(
-          new CurriculumModel(curriculum, g)
+        curriculums[grade-1].push(
+          new CurriculumModel(curriculum, grade)
         )
       })
     }

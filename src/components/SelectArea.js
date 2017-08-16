@@ -16,13 +16,7 @@ export default class SelectArea extends React.Component {
           onChange={e => this.handleSelect(e)}
         >
           {grades.map(g => {
-            return courses.map(c => {
-              if(g <= 3 && c == 'ED')
-                c = 'E'
-              if(g <= 3 && c == 'EJ')
-                return
-              return <option>{`${g}${c}`}</option>
-            })
+            return courses.map(c => <option>{`${g}${c}`}</option>)
           })}
         </select>
       </section>
