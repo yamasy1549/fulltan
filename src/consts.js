@@ -8,26 +8,10 @@ export const required_credits = {
   "合計": 167
 }
 
-export const toClasscode = (grade, course) => {
-  return `${grade}${course}`
-}
-
-export const credits = (curriculums) => {
-  let credits = { "一般": 0, "専門": 0 }
-  curriculums.forEach((curriculums_of_grade) => {
-    curriculums_of_grade.forEach(c => {
-      if(c.getCredit) {
-        switch(c.divide) {
-          case 0:
-            credits["一般"] += c.credit
-            break
-          case 1:
-            credits["専門"] += c.credit
-            break
-        }
-      }
-    })
-  })
-
-  return credits
+export const toJaTerm = (term) => {
+  switch(term) {
+    case 0: return '通'
+    case 1: return '前'
+    case 2: return '後'
+  }
 }
