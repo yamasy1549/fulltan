@@ -1,13 +1,15 @@
-import React                from 'react'
+import * as React           from 'react'
 import { inject, observer } from 'mobx-react'
+import CurriculumListStore  from '../stores/CurriculumListStore'
 import Credit               from './Credit'
-import styles               from './Credits.css'
+
+const styles: any = require('./Credits.css')
 
 @inject('curriculumList')
 @observer
-export default class Credits extends React.Component {
+export default class Credits extends React.Component<{ curriculumList?: CurriculumListStore }, {}> {
   render() {
-    const credits = this.props.curriculumList.gotCredits
+    const credits: any = this.props.curriculumList.gotCredits
 
     return (
       <section className={styles.creditsWrapper}>

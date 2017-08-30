@@ -1,16 +1,17 @@
-import React               from 'react'
-import { render }          from 'react-dom'
+import * as React          from 'react'
+import * as ReactDOM       from 'react-dom'
 import { Provider }        from 'mobx-react'
 import CurriculumListStore from './stores/CurriculumListStore'
 import App                 from './components/App'
-import reset               from './components/reset.css'
-import base                from './components/base.css'
+
+import './components/reset.css'
+import './components/base.css'
 
 const stores = {
   curriculumList: new CurriculumListStore()
 }
 
-render(
+ReactDOM.render(
   <Provider {...stores}>
     <App />
   </Provider>,

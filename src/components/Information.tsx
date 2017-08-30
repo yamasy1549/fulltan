@@ -1,7 +1,8 @@
-import React  from 'react'
-import styles from './Information.css'
+import * as React from 'react'
 
-const Information = () => (
+const styles: any = require('./Information.css')
+
+const Information: React.SFC<{}> = () =>
   <section className={styles.informationWrapper}>
     <ul className={styles.informationList}>
       <li>正しさの保証はできません、必ずご自身でのチェックをお願いします</li>
@@ -18,5 +19,5 @@ const Information = () => (
       >Tweet</a>
     </div>
   </section>
-)
+
 export default Information

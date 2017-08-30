@@ -1,8 +1,9 @@
-import React                from 'react'
+import * as React           from 'react'
 import { required_credits } from '../consts'
-import styles               from './Credits.css'
 
-const Credit = ({ divide, credits }) => {
+const styles: any = require('./Credits.css')
+
+const Credit: React.SFC<{ divide: string, credits: number }> = ({ divide, credits }) => {
   let remaining_credits = required_credits[divide] - credits
   remaining_credits = (remaining_credits > 0) ? remaining_credits : 0
 
@@ -24,4 +25,5 @@ const Credit = ({ divide, credits }) => {
     </div>
   )
 }
+
 export default Credit
