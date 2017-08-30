@@ -1,18 +1,19 @@
 import { useStrict, observable, action, computed } from 'mobx'
+import { Grade } from '../consts'
 
 useStrict(true)
 
 export default class CurriculumModel {
-  @observable id
-  @observable divide
-  @observable required
-  @observable title
-  @observable term
-  @observable credit
-  @observable lecturer
-  @observable getCredit
+  @observable id: string
+  @observable divide: number
+  @observable required: boolean
+  @observable title: string
+  @observable term: number
+  @observable credit: number
+  @observable lecturer: string
+  @observable getCredit: boolean
 
-  constructor(curriculum, grade) {
+  constructor(curriculum: any, grade: Grade) {
     this.id        = `${grade}-${curriculum.id}`,
     this.divide    = curriculum.divide,
     this.required  = curriculum.required,
@@ -23,11 +24,11 @@ export default class CurriculumModel {
     this.getCredit = curriculum.required // 必須科目はデフォで単位ゲット
   }
 
-  @computed get gotCredit() {
+  @computed get gotCredit(): number {
     return this.getCredit ? this.credit : 0
   }
 
-  @action toggleCredit() {
+  @action toggleCredit(): void {
     this.getCredit = !this.getCredit
   }
 }

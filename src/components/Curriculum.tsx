@@ -1,14 +1,16 @@
-import React                                       from 'react'
+import * as React                                  from 'react'
 import { useStrict, observable, computed, action } from 'mobx'
 import { observer }                                from 'mobx-react'
 import { toJaTerm }                                from '../consts'
+import CurriculumModel                             from '../stores/CurriculumModel'
 import CheckMark                                   from './CheckMark'
-import styles                                      from './CurriculumList.css'
+
+const styles: any = require('./CurriculumList.css')
 
 useStrict(true)
 
 @observer
-export default class Curriculum extends React.Component {
+export default class Curriculum extends React.Component<{ curriculum?: CurriculumModel }, {}> {
   @observable getCredit = this.props.curriculum.getCredit
 
   @computed get attentionClassName() {
