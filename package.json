@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --progress",
+    "build": "webpack --progress --optimize-minimize",
     "start": "webpack-dev-server --watch --progress"
   },
   "license": "MIT",
