@@ -1,0 +1,254 @@
+[
+  {
+    "id": 1,
+    "divide": 0,
+    "required": true,
+    "title": "国語Ⅳ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "善塔　正志"
+  },
+  {
+    "id": 2,
+    "divide": 0,
+    "required": true,
+    "title": "保健体育Ⅳ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "小林　優希、石田　まさみ、後藤　太之"
+  },
+  {
+    "id": 3,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅣＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "井上　英俊"
+  },
+  {
+    "id": 4,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅣＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "穐本　浩美"
+  },
+  {
+    "id": 5,
+    "divide": 0,
+    "required": true,
+    "title": "英会話Ⅱ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "ジョン　ハーバート"
+  },
+  {
+    "id": 6,
+    "divide": 0,
+    "required": false,
+    "title": "中国語",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "有川　けい"
+  },
+  {
+    "id": 7,
+    "divide": 0,
+    "required": false,
+    "title": "ドイツ語",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "横田　一哉"
+  },
+  {
+    "id": 8,
+    "divide": 0,
+    "required": false,
+    "title": "フランス語",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "藤本　智成"
+  },
+  {
+    "id": 9,
+    "divide": 0,
+    "required": false,
+    "title": "数学概論",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "松宮　篤"
+  },
+  {
+    "id": 10,
+    "divide": 1,
+    "required": true,
+    "title": "Ｃｏ+ｗｏｒｋⅢＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "全教員"
+  },
+  {
+    "id": 11,
+    "divide": 1,
+    "required": true,
+    "title": "Ｃｏ+ｗｏｒｋⅢＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "全教員"
+  },
+  {
+    "id": 12,
+    "divide": 1,
+    "required": true,
+    "title": "応用物理学Ⅰ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "藤原　誠之"
+  },
+  {
+    "id": 13,
+    "divide": 1,
+    "required": true,
+    "title": "応用物理学Ⅱ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "藤原　誠之"
+  },
+  {
+    "id": 14,
+    "divide": 1,
+    "required": true,
+    "title": "過渡現象論",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "周山　大慶"
+  },
+  {
+    "id": 15,
+    "divide": 1,
+    "required": true,
+    "title": "電子回路",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "堀　桂太郎"
+  },
+  {
+    "id": 16,
+    "divide": 1,
+    "required": true,
+    "title": "制御工学Ⅰ",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "上　泰"
+  },
+  {
+    "id": 17,
+    "divide": 1,
+    "required": true,
+    "title": "課題研究",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "Ｅ全"
+  },
+  {
+    "id": 18,
+    "divide": 1,
+    "required": true,
+    "title": "離散数学",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "濱田　幸弘"
+  },
+  {
+    "id": 19,
+    "divide": 1,
+    "required": true,
+    "title": "計算機アーキテクチャ",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "井上　一成"
+  },
+  {
+    "id": 20,
+    "divide": 1,
+    "required": true,
+    "title": "プログラミングⅢ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "佐村　敏治"
+  },
+  {
+    "id": 21,
+    "divide": 1,
+    "required": true,
+    "title": "オペレーティングシステム",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "井上　一成"
+  },
+  {
+    "id": 22,
+    "divide": 1,
+    "required": true,
+    "title": "データ構造とアルゴリズム",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "濱田　幸弘"
+  },
+  {
+    "id": 23,
+    "divide": 1,
+    "required": true,
+    "title": "情報工学実験Ⅰ",
+    "term": 0,
+    "credit": 4,
+    "lecturer": "井上　一成、廣田　敦志、藤野　達士、中井　優一、上　泰、寺澤　真一"
+  },
+  {
+    "id": 24,
+    "divide": 1,
+    "required": false,
+    "title": "電気情報インターンシップＡ",
+    "term": 0,
+    "credit": 1,
+    "lecturer": "Ｅ全"
+  },
+  {
+    "id": 25,
+    "divide": 1,
+    "required": false,
+    "title": "電気情報インターンシップＢ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "Ｅ全"
+  },
+  {
+    "id": 26,
+    "divide": 1,
+    "required": false,
+    "title": "電気磁気学Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "大向　雅人"
+  },
+  {
+    "id": 27,
+    "divide": 1,
+    "required": false,
+    "title": "応用数学Ⅰ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "小笠原　弘道"
+  },
+  {
+    "id": 28,
+    "divide": 1,
+    "required": false,
+    "title": "応用数学Ⅱ",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "小笠原　弘道"
+  }
+]

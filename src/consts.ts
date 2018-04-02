@@ -1,4 +1,4 @@
-export const heiseiYear: number = 29 // 平成
+export const heiseiYear: number = 30 // 平成
 
 export type Grade = 1 | 2 | 3 | 4 | 5
 export const grades: Grade[] = [1, 2, 3, 4, 5]

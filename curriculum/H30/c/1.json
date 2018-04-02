@@ -1,0 +1,173 @@
+[
+  {
+    "id": 1,
+    "divide": 0,
+    "required": true,
+    "title": "国語Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "仁木　夏実"
+  },
+  {
+    "id": 2,
+    "divide": 0,
+    "required": true,
+    "title": "地理",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "荒川　裕紀"
+  },
+  {
+    "id": 3,
+    "divide": 0,
+    "required": true,
+    "title": "世界史",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "荒川　裕紀"
+  },
+  {
+    "id": 4,
+    "divide": 0,
+    "required": true,
+    "title": "数学ⅠＡ",
+    "term": 0,
+    "credit": 4,
+    "lecturer": "長尾　秀人"
+  },
+  {
+    "id": 5,
+    "divide": 0,
+    "required": true,
+    "title": "数学ⅠＢ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "武田　ひとみ"
+  },
+  {
+    "id": 6,
+    "divide": 0,
+    "required": true,
+    "title": "サイエンスⅠ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "武内　將洋"
+  },
+  {
+    "id": 7,
+    "divide": 0,
+    "required": true,
+    "title": "保健体育Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "後藤　太之、小林　優希、石田　まさみ"
+  },
+  {
+    "id": 8,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅠＡ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "北川　千穂"
+  },
+  {
+    "id": 9,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅠＢ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "水野　知津子"
+  },
+  {
+    "id": 10,
+    "divide": 0,
+    "required": true,
+    "title": "アクティブラーニング入門",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "竹岡　篤永"
+  },
+  {
+    "id": 11,
+    "divide": 0,
+    "required": true,
+    "title": "グローバルスタディーズ入門",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "荒川　裕紀、金　光敏"
+  },
+  {
+    "id": 12,
+    "divide": 0,
+    "required": false,
+    "title": "音楽",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "泉　由香"
+  },
+  {
+    "id": 13,
+    "divide": 0,
+    "required": false,
+    "title": "美術",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "大野　良平"
+  },
+  {
+    "id": 14,
+    "divide": 1,
+    "required": true,
+    "title": "防災リテラシー",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "鍋島　康之、佐伯　亮太"
+  },
+  {
+    "id": 15,
+    "divide": 1,
+    "required": true,
+    "title": "都市システム工学概論",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "石丸　和宏"
+  },
+  {
+    "id": 16,
+    "divide": 1,
+    "required": true,
+    "title": "コンピュータ基礎",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "佐村　敏治"
+  },
+  {
+    "id": 17,
+    "divide": 1,
+    "required": true,
+    "title": "製図基礎",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "江口　忠臣"
+  },
+  {
+    "id": 18,
+    "divide": 1,
+    "required": true,
+    "title": "測量学Ⅰ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "石松　一仁"
+  },
+  {
+    "id": 19,
+    "divide": 1,
+    "required": true,
+    "title": "測量実習",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "生田　麻実、内藤　永秀"
+  }
+]

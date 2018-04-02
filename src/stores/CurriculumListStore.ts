@@ -5,7 +5,7 @@ import { heiseiYear, Grade, Course }  from '../consts'
 useStrict(true)
 
 export default class CurriculumListStore {
-  @observable grade: Grade = 4
+  @observable grade: Grade = 5
   @observable course: Course = 'EJ'
   @observable curriculums: CurriculumModel[][] = []
 
