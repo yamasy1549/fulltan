@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --progress -p",
-    "start": "webpack-dev-server --watch --progress"
+    "start": "webpack-dev-server --watch --progress",
+    "scrape": "node scripts/scrape.js"
   },
   "license": "MIT",
   "dependencies": {
@@ -22,6 +23,7 @@
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.6.0",
+    "puppeteer": "^1.14.0",
     "source-map-loader": "^0.2.4",
     "style-loader": "^0.23.1",
     "typescript": "^3.4.1",
