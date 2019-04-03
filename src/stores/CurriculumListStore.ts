@@ -1,8 +1,6 @@
-import { useStrict, observable, computed, action } from 'mobx'
-import CurriculumModel from './CurriculumModel'
-import { heiseiYear, Grade, Course }  from '../consts'
-
-useStrict(true)
+import { observable, computed, action } from 'mobx'
+import CurriculumModel                  from './CurriculumModel'
+import { currentYear, Grade, Course }  from '../consts'
 
 export default class CurriculumListStore {
   @observable grade: Grade = 5
