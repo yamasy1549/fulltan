@@ -1,0 +1,191 @@
+[
+  {
+    "id": 1,
+    "divide": 0,
+    "required": true,
+    "title": "国語Ⅲ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "河野　光将"
+  },
+  {
+    "id": 2,
+    "divide": 0,
+    "required": true,
+    "title": "日本史",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "本間　哲也"
+  },
+  {
+    "id": 3,
+    "divide": 0,
+    "required": true,
+    "title": "数学ⅢＡ",
+    "term": 0,
+    "credit": 4,
+    "lecturer": "面田　康裕"
+  },
+  {
+    "id": 4,
+    "divide": 0,
+    "required": true,
+    "title": "数学ⅢＢ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "三浦　嵩広"
+  },
+  {
+    "id": 5,
+    "divide": 0,
+    "required": true,
+    "title": "サイエンスⅢＡ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "小野　慎司"
+  },
+  {
+    "id": 6,
+    "divide": 0,
+    "required": true,
+    "title": "サイエンスⅢＢ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "井上　努"
+  },
+  {
+    "id": 7,
+    "divide": 0,
+    "required": true,
+    "title": "保健体育Ⅲ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "小林　優希、前田　忠紀、石田　まさみ"
+  },
+  {
+    "id": 8,
+    "divide": 0,
+    "required": true,
+    "title": "英語Ⅲ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "松田　安隆"
+  },
+  {
+    "id": 9,
+    "divide": 0,
+    "required": true,
+    "title": "英会話Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "ハーバート　ジョン"
+  },
+  {
+    "id": 10,
+    "divide": 0,
+    "required": true,
+    "title": "Ｃｏ＋ｗｏｒｋⅡＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "全教員"
+  },
+  {
+    "id": 11,
+    "divide": 0,
+    "required": true,
+    "title": "Ｃｏ＋ｗｏｒｋⅡＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "全教員"
+  },
+  {
+    "id": 12,
+    "divide": 0,
+    "required": false,
+    "title": "海外研修Ⅰ",
+    "term": 0,
+    "credit": 1,
+    "lecturer": "Ａ全"
+  },
+  {
+    "id": 13,
+    "divide": 1,
+    "required": true,
+    "title": "建築情報デザイン",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "工藤　和美"
+  },
+  {
+    "id": 14,
+    "divide": 1,
+    "required": true,
+    "title": "建築構造力学ⅡＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "中川　肇"
+  },
+  {
+    "id": 15,
+    "divide": 1,
+    "required": true,
+    "title": "建築構造力学ⅡＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "荘所　直哉"
+  },
+  {
+    "id": 16,
+    "divide": 1,
+    "required": true,
+    "title": "建築材料",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "角野　嘉則"
+  },
+  {
+    "id": 17,
+    "divide": 1,
+    "required": true,
+    "title": "建築計画Ⅱ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "佐伯　亮太"
+  },
+  {
+    "id": 18,
+    "divide": 1,
+    "required": true,
+    "title": "建築設計演習ⅢＡ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "本塚　智貴、徳岡　浩二"
+  },
+  {
+    "id": 19,
+    "divide": 1,
+    "required": true,
+    "title": "建築設計演習ⅢＢ",
+    "term": 2,
+    "credit": 4,
+    "lecturer": "工藤　和美、平石　年弘、寺岡　宏治"
+  },
+  {
+    "id": 20,
+    "divide": 1,
+    "required": true,
+    "title": "建築環境工学Ⅰ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "平石　年弘"
+  },
+  {
+    "id": 21,
+    "divide": 1,
+    "required": true,
+    "title": "図学",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "工藤　和美"
+  }
+]

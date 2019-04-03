@@ -1,7 +1,5 @@
-import { useStrict, observable, action, computed } from 'mobx'
-import { Grade } from '../consts'
-
-useStrict(true)
+import { observable, action, computed } from 'mobx'
+import { Grade }                        from '../consts'
 
 export default class CurriculumModel {
   @observable id: string

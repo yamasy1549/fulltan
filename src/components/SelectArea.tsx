@@ -18,7 +18,7 @@ export default class SelectArea extends React.Component<{ curriculumList?: Curri
           onChange={e => this.handleSelect(e)}
         >
           {grades.map((g: Grade) => {
-            return courses.map((c: Course) => <option>{`${g}${c}`}</option>)
+            return courses.map((c: Course) => <option key={`${g}${c}`}>{`${g}${c}`}</option>)
           })}
         </select>
       </section>

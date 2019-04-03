@@ -1,0 +1,191 @@
+[
+  {
+    "id": 1,
+    "divide": 0,
+    "required": true,
+    "title": "国語Ⅲ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "河野　光将"
+  },
+  {
+    "id": 2,
+    "divide": 0,
+    "required": true,
+    "title": "日本史",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "本間　哲也"
+  },
+  {
+    "id": 3,
+    "divide": 0,
+    "required": true,
+    "title": "数学ⅢＡ",
+    "term": 0,
+    "credit": 4,
+    "lecturer": "面田　康裕"
+  },
+  {
+    "id": 4,
+    "divide": 0,
+    "required": true,
+    "title": "数学ⅢＢ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "三浦　嵩広"
+  },
+  {
+    "id": 5,
+    "divide": 0,
+    "required": true,
+    "title": "サイエンスⅢＡ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "小野　慎司、小笠原　弘道"
+  },
+  {
+    "id": 6,
+    "divide": 0,
+    "required": true,
+    "title": "サイエンスⅢＢ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "井上　努"
+  },
+  {
+    "id": 7,
+    "divide": 0,
+    "required": true,
+    "title": "保健体育Ⅲ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "小林　優希、前田　忠紀、石田　まさみ"
+  },
+  {
+    "id": 8,
+    "divide": 0,
+    "required": true,
+    "title": "英語Ⅲ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "松田　安隆"
+  },
+  {
+    "id": 9,
+    "divide": 0,
+    "required": true,
+    "title": "英会話Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "ハーバート　ジョン"
+  },
+  {
+    "id": 10,
+    "divide": 0,
+    "required": true,
+    "title": "Ｃｏ＋ｗｏｒｋⅡＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "全教員"
+  },
+  {
+    "id": 11,
+    "divide": 0,
+    "required": true,
+    "title": "Ｃｏ＋ｗｏｒｋⅡＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "全教員"
+  },
+  {
+    "id": 12,
+    "divide": 0,
+    "required": false,
+    "title": "海外研修Ⅰ",
+    "term": 0,
+    "credit": 1,
+    "lecturer": "Ｃ全"
+  },
+  {
+    "id": 13,
+    "divide": 1,
+    "required": true,
+    "title": "土木設計製図",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "三好　崇夫"
+  },
+  {
+    "id": 14,
+    "divide": 1,
+    "required": true,
+    "title": "構造力学Ⅰ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "石丸　和宏"
+  },
+  {
+    "id": 15,
+    "divide": 1,
+    "required": true,
+    "title": "構造力学Ⅱ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "石丸　和宏"
+  },
+  {
+    "id": 16,
+    "divide": 1,
+    "required": true,
+    "title": "水理学Ⅰ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "神田　佳一"
+  },
+  {
+    "id": 17,
+    "divide": 1,
+    "required": true,
+    "title": "水理学Ⅱ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "神田　佳一"
+  },
+  {
+    "id": 18,
+    "divide": 1,
+    "required": true,
+    "title": "地盤工学Ⅰ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "鍋島　康之"
+  },
+  {
+    "id": 19,
+    "divide": 1,
+    "required": true,
+    "title": "地盤工学Ⅱ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "鍋島　康之"
+  },
+  {
+    "id": 20,
+    "divide": 1,
+    "required": true,
+    "title": "環境生態学",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "渡部　守義"
+  },
+  {
+    "id": 21,
+    "divide": 1,
+    "required": true,
+    "title": "工学実験Ⅰ",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "武田　字浦、生田　麻実"
+  }
+]

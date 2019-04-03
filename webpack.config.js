@@ -1,4 +1,5 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const postcssPresetEnv = require('postcss-preset-env')
 
 module.exports = {
   entry: './src/index.tsx',
@@ -37,15 +38,17 @@ module.exports = {
               loader: 'css-loader',
               options: {
                 sourceMap: true,
-                modules: true,
-                minimize: true
+                modules: true
               }
             },
             {
               loader: 'postcss-loader',
               options: {
+                ident: 'postcss',
                 plugins: () => [
-                  require('autoprefixer')({})
+                  postcssPresetEnv({
+                    autoprefixer: { grid: true }
+                  })
                 ]
               }
             }

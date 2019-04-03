@@ -1,0 +1,155 @@
+[
+  {
+    "id": 1,
+    "divide": 0,
+    "required": true,
+    "title": "国語Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "善塔　正志"
+  },
+  {
+    "id": 2,
+    "divide": 0,
+    "required": true,
+    "title": "政治経済",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "本間　哲也、日高　薫"
+  },
+  {
+    "id": 3,
+    "divide": 0,
+    "required": true,
+    "title": "数学ⅡＡ",
+    "term": 0,
+    "credit": 4,
+    "lecturer": "高田　功"
+  },
+  {
+    "id": 4,
+    "divide": 0,
+    "required": true,
+    "title": "数学ⅡＢ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "藤　健太、面田　康裕"
+  },
+  {
+    "id": 5,
+    "divide": 0,
+    "required": true,
+    "title": "サイエンスⅡＡ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "武内　將洋、小野　慎司"
+  },
+  {
+    "id": 6,
+    "divide": 0,
+    "required": true,
+    "title": "サイエンスⅡＢ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "小野　慎司"
+  },
+  {
+    "id": 7,
+    "divide": 0,
+    "required": true,
+    "title": "保健体育Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "前田　忠紀、後藤　太之、石田　まさみ"
+  },
+  {
+    "id": 8,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅡＡ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "北川　千穂"
+  },
+  {
+    "id": 9,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅡＢ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "水野　知津子"
+  },
+  {
+    "id": 10,
+    "divide": 0,
+    "required": true,
+    "title": "Ｃｏ＋ｗｏｒｋⅠＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "全教員"
+  },
+  {
+    "id": 11,
+    "divide": 0,
+    "required": true,
+    "title": "Ｃｏ＋ｗｏｒｋⅠＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "全教員"
+  },
+  {
+    "id": 12,
+    "divide": 1,
+    "required": true,
+    "title": "情報基礎Ⅱ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "荘所　直哉"
+  },
+  {
+    "id": 13,
+    "divide": 1,
+    "required": true,
+    "title": "建築意匠Ａ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "大塚　毅彦、東野　アドリアナ"
+  },
+  {
+    "id": 14,
+    "divide": 1,
+    "required": true,
+    "title": "建築意匠Ｂ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "本塚　智貴"
+  },
+  {
+    "id": 15,
+    "divide": 1,
+    "required": true,
+    "title": "建築構造力学Ⅰ",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "荘所　直哉"
+  },
+  {
+    "id": 16,
+    "divide": 1,
+    "required": true,
+    "title": "建築設計演習ⅡＡ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "大塚　毅彦、中村　卓"
+  },
+  {
+    "id": 17,
+    "divide": 1,
+    "required": true,
+    "title": "建築設計演習ⅡＢ",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "中村　卓"
+  }
+]
