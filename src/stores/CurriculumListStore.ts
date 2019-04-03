@@ -1,6 +1,6 @@
 import { observable, computed, action } from 'mobx'
 import CurriculumModel                  from './CurriculumModel'
-import { currentYear, Grade, Course }  from '../consts'
+import { currentYear, Grade, Course }   from '../consts'
 
 export default class CurriculumListStore {
   @observable grade: Grade = 5
@@ -43,8 +43,8 @@ export default class CurriculumListStore {
   fetchCurriculums(): CurriculumModel[][] {
     let curriculums: CurriculumModel[][] = []
     for(let grade=1; grade<=5; grade++) {
-      const year: number = (grade > this.grade) ? heiseiYear : heiseiYear-this.grade+grade
-      const fetchedCurriculums: any[] = require(`../../curriculum/H${year}/${this.course}/${grade}.json`)
+      const year: number = (grade > this.grade) ? currentYear : currentYear-this.grade+grade
+      const fetchedCurriculums: any[] = require(`../../curriculum/${year}/${this.course}/${grade}.json`)
       curriculums[grade-1] = []
       fetchedCurriculums.forEach(curriculum => {
         curriculums[grade-1].push(
