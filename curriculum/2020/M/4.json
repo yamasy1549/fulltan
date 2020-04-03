@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "divide": 0,
+    "required": true,
+    "title": "国語Ⅳ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "杉本　泰子"
+  },
+  {
+    "id": 2,
+    "divide": 0,
+    "required": true,
+    "title": "保健体育Ⅳ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "小林　優希、石田　まさみ、後藤　太之"
+  },
+  {
+    "id": 3,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅣＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "井上　英俊"
+  },
+  {
+    "id": 4,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅣＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "穐本　浩美"
+  },
+  {
+    "id": 5,
+    "divide": 0,
+    "required": true,
+    "title": "英会話Ⅱ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "ハーバート　ジョン"
+  },
+  {
+    "id": 6,
+    "divide": 0,
+    "required": false,
+    "title": "中国語",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "有川　けい"
+  },
+  {
+    "id": 7,
+    "divide": 0,
+    "required": false,
+    "title": "ドイツ語",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "横田　一哉"
+  },
+  {
+    "id": 8,
+    "divide": 0,
+    "required": false,
+    "title": "フランス語",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "武内　英公子"
+  },
+  {
+    "id": 9,
+    "divide": 0,
+    "required": false,
+    "title": "数学概論",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "面田　康裕"
+  },
+  {
+    "id": 10,
+    "divide": 1,
+    "required": true,
+    "title": "Ｃｏ＋ｗｏｒｋⅢＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "全教員"
+  },
+  {
+    "id": 11,
+    "divide": 1,
+    "required": true,
+    "title": "Ｃｏ＋ｗｏｒｋⅢＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "全教員"
+  },
+  {
+    "id": 12,
+    "divide": 1,
+    "required": true,
+    "title": "応用数学Ａ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "小笠原　弘道"
+  },
+  {
+    "id": 13,
+    "divide": 1,
+    "required": true,
+    "title": "応用数学Ｂ",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "小笠原　弘道"
+  },
+  {
+    "id": 14,
+    "divide": 1,
+    "required": true,
+    "title": "応用物理",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "小笠原　弘道"
+  },
+  {
+    "id": 15,
+    "divide": 1,
+    "required": true,
+    "title": "プログラミング応用",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "岩野　優樹"
+  },
+  {
+    "id": 16,
+    "divide": 1,
+    "required": true,
+    "title": "設計製図ⅣＡ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "史　鳳輝"
+  },
+  {
+    "id": 17,
+    "divide": 1,
+    "required": true,
+    "title": "設計製図ⅣＢ",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "史　鳳輝"
+  },
+  {
+    "id": 18,
+    "divide": 1,
+    "required": true,
+    "title": "工作実習ⅣＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "大森　茂俊"
+  },
+  {
+    "id": 19,
+    "divide": 1,
+    "required": true,
+    "title": "工作実習ⅣＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "大森　茂俊"
+  },
+  {
+    "id": 20,
+    "divide": 1,
+    "required": true,
+    "title": "機械工学実験ⅡＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "加藤　隆弘、國峰　寛司、史　鳳輝、松塚　直樹、田中　誠一、岩野　優樹"
+  },
+  {
+    "id": 21,
+    "divide": 1,
+    "required": true,
+    "title": "機械工学実験ⅡＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "境田　彰芳、國峰　寛司、加藤　隆弘、岩野　優樹、田中　誠一"
+  },
+  {
+    "id": 22,
+    "divide": 1,
+    "required": true,
+    "title": "工業力学Ⅱ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "國峰　寛司"
+  },
+  {
+    "id": 23,
+    "divide": 1,
+    "required": true,
+    "title": "設計工学Ⅱ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "史　鳳輝"
+  },
+  {
+    "id": 24,
+    "divide": 1,
+    "required": true,
+    "title": "材料力学Ⅱ",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "森下　智博"
+  },
+  {
+    "id": 25,
+    "divide": 1,
+    "required": true,
+    "title": "熱力学Ⅰ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "牧　祥"
+  },
+  {
+    "id": 26,
+    "divide": 1,
+    "required": true,
+    "title": "流体力学Ⅰ",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "田中　誠一"
+  },
+  {
+    "id": 27,
+    "divide": 1,
+    "required": true,
+    "title": "機械力学",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "関森　大介"
+  },
+  {
+    "id": 28,
+    "divide": 1,
+    "required": true,
+    "title": "電気電子工学Ⅰ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "平野　雅嗣"
+  },
+  {
+    "id": 29,
+    "divide": 1,
+    "required": true,
+    "title": "機械工学ゼミナール",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "Ｍ全"
+  },
+  {
+    "id": 30,
+    "divide": 1,
+    "required": false,
+    "title": "機械インターンシップⅠ",
+    "term": 0,
+    "credit": 1,
+    "lecturer": "Ｍ全"
+  }
+]

@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "divide": 0,
+    "required": true,
+    "title": "国語Ⅳ",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "未定"
+  },
+  {
+    "id": 2,
+    "divide": 0,
+    "required": true,
+    "title": "保健体育Ⅳ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "小林　優希、石田　まさみ、後藤　太之"
+  },
+  {
+    "id": 3,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅣＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "穐本　浩美"
+  },
+  {
+    "id": 4,
+    "divide": 0,
+    "required": true,
+    "title": "英語ⅣＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "北川　千穂"
+  },
+  {
+    "id": 5,
+    "divide": 0,
+    "required": true,
+    "title": "英会話Ⅱ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "ハーバート　ジョン"
+  },
+  {
+    "id": 6,
+    "divide": 0,
+    "required": false,
+    "title": "中国語",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "有川　けい"
+  },
+  {
+    "id": 7,
+    "divide": 0,
+    "required": false,
+    "title": "ドイツ語",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "横田　一哉"
+  },
+  {
+    "id": 8,
+    "divide": 0,
+    "required": false,
+    "title": "フランス語",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "武内　英公子"
+  },
+  {
+    "id": 9,
+    "divide": 0,
+    "required": false,
+    "title": "数学概論",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "高田　功"
+  },
+  {
+    "id": 10,
+    "divide": 1,
+    "required": true,
+    "title": "Ｃｏ＋ｗｏｒｋⅢＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "全教員"
+  },
+  {
+    "id": 11,
+    "divide": 1,
+    "required": true,
+    "title": "Ｃｏ＋ｗｏｒｋⅢＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "全教員"
+  },
+  {
+    "id": 12,
+    "divide": 1,
+    "required": true,
+    "title": "応用数学",
+    "term": 0,
+    "credit": 4,
+    "lecturer": "河田　祥太郎"
+  },
+  {
+    "id": 13,
+    "divide": 1,
+    "required": true,
+    "title": "物理学概論",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "小笠原　弘道"
+  },
+  {
+    "id": 14,
+    "divide": 1,
+    "required": true,
+    "title": "情報処理Ⅱ",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "石丸　和宏"
+  },
+  {
+    "id": 15,
+    "divide": 1,
+    "required": true,
+    "title": "コンクリート構造学",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "武田　字浦"
+  },
+  {
+    "id": 16,
+    "divide": 1,
+    "required": true,
+    "title": "構造力学Ⅲ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "石丸　和宏"
+  },
+  {
+    "id": 17,
+    "divide": 1,
+    "required": true,
+    "title": "水理学Ⅲ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "神田　佳一"
+  },
+  {
+    "id": 18,
+    "divide": 1,
+    "required": true,
+    "title": "地盤工学Ⅲ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "鍋島　康之"
+  },
+  {
+    "id": 19,
+    "divide": 1,
+    "required": true,
+    "title": "社会基盤マネジメント",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "武田　字浦、江口　忠臣"
+  },
+  {
+    "id": 20,
+    "divide": 1,
+    "required": true,
+    "title": "衛生工学",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "渡部　守義"
+  },
+  {
+    "id": 21,
+    "divide": 1,
+    "required": true,
+    "title": "計画学Ⅰ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "石松　一仁"
+  },
+  {
+    "id": 22,
+    "divide": 1,
+    "required": true,
+    "title": "計画学Ⅱ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "石松　一仁"
+  },
+  {
+    "id": 23,
+    "divide": 1,
+    "required": true,
+    "title": "工学実験Ⅱ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "鍋島　康之、神田　佳一"
+  },
+  {
+    "id": 24,
+    "divide": 1,
+    "required": true,
+    "title": "工学実験Ⅲ",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "渡部　守義、三好　崇夫"
+  },
+  {
+    "id": 25,
+    "divide": 1,
+    "required": false,
+    "title": "都市システムインターンシップ",
+    "term": 0,
+    "credit": 1,
+    "lecturer": "Ｃ全"
+  }
+]
