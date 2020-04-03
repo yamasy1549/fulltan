@@ -82,15 +82,6 @@
   },
   {
     "id": 10,
-    "divide": 0,
-    "required": false,
-    "title": "海外研修Ⅱ",
-    "term": 0,
-    "credit": 1,
-    "lecturer": "Ｍ全"
-  },
-  {
-    "id": 11,
     "divide": 1,
     "required": true,
     "title": "Ｃｏ＋ｗｏｒｋⅢＡ",
@@ -99,7 +90,7 @@
     "lecturer": "全教員"
   },
   {
-    "id": 12,
+    "id": 11,
     "divide": 1,
     "required": true,
     "title": "Ｃｏ＋ｗｏｒｋⅢＢ",
@@ -108,7 +99,7 @@
     "lecturer": "全教員"
   },
   {
-    "id": 13,
+    "id": 12,
     "divide": 1,
     "required": true,
     "title": "応用数学Ａ",
@@ -117,7 +108,7 @@
     "lecturer": "小笠原　弘道"
   },
   {
-    "id": 14,
+    "id": 13,
     "divide": 1,
     "required": true,
     "title": "応用数学Ｂ",
@@ -126,7 +117,7 @@
     "lecturer": "小笠原　弘道"
   },
   {
-    "id": 15,
+    "id": 14,
     "divide": 1,
     "required": true,
     "title": "応用物理",
@@ -135,7 +126,7 @@
     "lecturer": "小笠原　弘道"
   },
   {
-    "id": 16,
+    "id": 15,
     "divide": 1,
     "required": true,
     "title": "プログラミング応用",
@@ -144,7 +135,7 @@
     "lecturer": "奥村　紀之"
   },
   {
-    "id": 17,
+    "id": 16,
     "divide": 1,
     "required": true,
     "title": "設計製図ⅣＡ",
@@ -153,7 +144,7 @@
     "lecturer": "史　鳳輝"
   },
   {
-    "id": 18,
+    "id": 17,
     "divide": 1,
     "required": true,
     "title": "設計製図ⅣＢ",
@@ -162,7 +153,7 @@
     "lecturer": "史　鳳輝"
   },
   {
-    "id": 19,
+    "id": 18,
     "divide": 1,
     "required": true,
     "title": "工作実習ⅣＡ",
@@ -171,7 +162,7 @@
     "lecturer": "大森　茂俊"
   },
   {
-    "id": 20,
+    "id": 19,
     "divide": 1,
     "required": true,
     "title": "工作実習ⅣＢ",
@@ -180,7 +171,7 @@
     "lecturer": "大森　茂俊"
   },
   {
-    "id": 21,
+    "id": 20,
     "divide": 1,
     "required": true,
     "title": "機械工学実験ⅡＡ",
@@ -189,7 +180,7 @@
     "lecturer": "加藤　隆弘、関森　大介、史　鳳輝、松塚　直樹、田中　誠一"
   },
   {
-    "id": 22,
+    "id": 21,
     "divide": 1,
     "required": true,
     "title": "機械工学実験ⅡＢ",
@@ -198,7 +189,7 @@
     "lecturer": "境田　彰芳、國峰　寛司、加藤　隆弘、関森　大介、田中　誠一"
   },
   {
-    "id": 23,
+    "id": 22,
     "divide": 1,
     "required": true,
     "title": "工業力学Ⅱ",
@@ -207,7 +198,7 @@
     "lecturer": "國峰　寛司"
   },
   {
-    "id": 24,
+    "id": 23,
     "divide": 1,
     "required": true,
     "title": "設計工学Ⅱ",
@@ -216,7 +207,7 @@
     "lecturer": "史　鳳輝"
   },
   {
-    "id": 25,
+    "id": 24,
     "divide": 1,
     "required": true,
     "title": "材料力学Ⅱ",
@@ -225,7 +216,7 @@
     "lecturer": "森下　智博"
   },
   {
-    "id": 26,
+    "id": 25,
     "divide": 1,
     "required": true,
     "title": "熱力学Ⅰ",
@@ -234,7 +225,7 @@
     "lecturer": "牧　祥"
   },
   {
-    "id": 27,
+    "id": 26,
     "divide": 1,
     "required": true,
     "title": "流体力学Ⅰ",
@@ -243,7 +234,7 @@
     "lecturer": "田中　誠一"
   },
   {
-    "id": 28,
+    "id": 27,
     "divide": 1,
     "required": true,
     "title": "機械力学",
@@ -252,7 +243,7 @@
     "lecturer": "関森　大介"
   },
   {
-    "id": 29,
+    "id": 28,
     "divide": 1,
     "required": true,
     "title": "電気電子工学Ⅰ",
@@ -261,7 +252,7 @@
     "lecturer": "細川　篤"
   },
   {
-    "id": 30,
+    "id": 29,
     "divide": 1,
     "required": true,
     "title": "機械工学ゼミナール",
@@ -270,7 +261,7 @@
     "lecturer": "Ｍ全"
   },
   {
-    "id": 31,
+    "id": 30,
     "divide": 1,
     "required": false,
     "title": "機械インターンシップⅠ",

@@ -100,15 +100,6 @@
   },
   {
     "id": 12,
-    "divide": 0,
-    "required": false,
-    "title": "海外研修Ⅰ",
-    "term": 0,
-    "credit": 1,
-    "lecturer": "Ｃ全"
-  },
-  {
-    "id": 13,
     "divide": 1,
     "required": true,
     "title": "土木設計製図",
@@ -117,7 +108,7 @@
     "lecturer": "三好　崇夫"
   },
   {
-    "id": 14,
+    "id": 13,
     "divide": 1,
     "required": true,
     "title": "構造力学Ⅰ",
@@ -126,7 +117,7 @@
     "lecturer": "石丸　和宏"
   },
   {
-    "id": 15,
+    "id": 14,
     "divide": 1,
     "required": true,
     "title": "構造力学Ⅱ",
@@ -135,7 +126,7 @@
     "lecturer": "石丸　和宏"
   },
   {
-    "id": 16,
+    "id": 15,
     "divide": 1,
     "required": true,
     "title": "水理学Ⅰ",
@@ -144,7 +135,7 @@
     "lecturer": "神田　佳一"
   },
   {
-    "id": 17,
+    "id": 16,
     "divide": 1,
     "required": true,
     "title": "水理学Ⅱ",
@@ -153,7 +144,7 @@
     "lecturer": "神田　佳一"
   },
   {
-    "id": 18,
+    "id": 17,
     "divide": 1,
     "required": true,
     "title": "地盤工学Ⅰ",
@@ -162,7 +153,7 @@
     "lecturer": "鍋島　康之"
   },
   {
-    "id": 19,
+    "id": 18,
     "divide": 1,
     "required": true,
     "title": "地盤工学Ⅱ",
@@ -171,7 +162,7 @@
     "lecturer": "鍋島　康之"
   },
   {
-    "id": 20,
+    "id": 19,
     "divide": 1,
     "required": true,
     "title": "環境生態学",
@@ -180,7 +171,7 @@
     "lecturer": "渡部　守義"
   },
   {
-    "id": 21,
+    "id": 20,
     "divide": 1,
     "required": true,
     "title": "工学実験Ⅰ",

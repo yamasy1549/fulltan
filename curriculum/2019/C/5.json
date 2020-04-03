@@ -100,15 +100,6 @@
   },
   {
     "id": 12,
-    "divide": 0,
-    "required": false,
-    "title": "海外研修Ⅲ",
-    "term": 0,
-    "credit": 1,
-    "lecturer": "Ｃ全"
-  },
-  {
-    "id": 13,
     "divide": 1,
     "required": true,
     "title": "鋼構造学Ⅰ",
@@ -117,7 +108,7 @@
     "lecturer": "三好　崇夫"
   },
   {
-    "id": 14,
+    "id": 13,
     "divide": 1,
     "required": true,
     "title": "鋼構造学Ⅱ",
@@ -126,7 +117,7 @@
     "lecturer": "三好　崇夫"
   },
   {
-    "id": 15,
+    "id": 14,
     "divide": 1,
     "required": true,
     "title": "構造設計学",
@@ -135,7 +126,7 @@
     "lecturer": "三好　崇夫"
   },
   {
-    "id": 16,
+    "id": 15,
     "divide": 1,
     "required": true,
     "title": "卒業研究",
@@ -144,7 +135,7 @@
     "lecturer": "Ｃ全"
   },
   {
-    "id": 17,
+    "id": 16,
     "divide": 1,
     "required": false,
     "title": "社会基盤メインテナンス工学",
@@ -153,7 +144,7 @@
     "lecturer": "新田　耕司"
   },
   {
-    "id": 18,
+    "id": 17,
     "divide": 1,
     "required": false,
     "title": "公共経済学",
@@ -162,7 +153,7 @@
     "lecturer": "酒井　裕規"
   },
   {
-    "id": 19,
+    "id": 18,
     "divide": 1,
     "required": false,
     "title": "環境工学",
@@ -171,7 +162,7 @@
     "lecturer": "渡部　守義"
   },
   {
-    "id": 20,
+    "id": 19,
     "divide": 1,
     "required": false,
     "title": "測量学Ⅲ",
@@ -180,7 +171,7 @@
     "lecturer": "名草　一成"
   },
   {
-    "id": 21,
+    "id": 20,
     "divide": 1,
     "required": false,
     "title": "測量学Ⅳ",
@@ -189,7 +180,7 @@
     "lecturer": "鍋島　康之"
   },
   {
-    "id": 22,
+    "id": 21,
     "divide": 1,
     "required": false,
     "title": "都市計画",
@@ -198,7 +189,7 @@
     "lecturer": "石松　一仁"
   },
   {
-    "id": 23,
+    "id": 22,
     "divide": 1,
     "required": false,
     "title": "建設法規",
@@ -207,7 +198,7 @@
     "lecturer": "大畑　典久"
   },
   {
-    "id": 24,
+    "id": 23,
     "divide": 1,
     "required": false,
     "title": "水工水理学",
@@ -216,7 +207,7 @@
     "lecturer": "神田　佳一"
   },
   {
-    "id": 25,
+    "id": 24,
     "divide": 1,
     "required": false,
     "title": "防災工学",
@@ -225,7 +216,7 @@
     "lecturer": "鍋島　康之、澁谷　容子"
   },
   {
-    "id": 26,
+    "id": 25,
     "divide": 1,
     "required": false,
     "title": "交通工学",

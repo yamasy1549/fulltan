@@ -100,15 +100,6 @@
   },
   {
     "id": 12,
-    "divide": 0,
-    "required": false,
-    "title": "海外研修Ⅰ",
-    "term": 0,
-    "credit": 1,
-    "lecturer": "Ｍ全"
-  },
-  {
-    "id": 13,
     "divide": 1,
     "required": true,
     "title": "設計製図ⅢＡ",
@@ -117,7 +108,7 @@
     "lecturer": "田中　雅之"
   },
   {
-    "id": 14,
+    "id": 13,
     "divide": 1,
     "required": true,
     "title": "設計製図ⅢＢ",
@@ -126,7 +117,7 @@
     "lecturer": "田中　雅之"
   },
   {
-    "id": 15,
+    "id": 14,
     "divide": 1,
     "required": true,
     "title": "工作実習ⅢＡ",
@@ -135,7 +126,7 @@
     "lecturer": "加藤　隆弘、大森　茂俊"
   },
   {
-    "id": 16,
+    "id": 15,
     "divide": 1,
     "required": true,
     "title": "工作実習ⅢＢ",
@@ -144,7 +135,7 @@
     "lecturer": "加藤　隆弘、大森　茂俊"
   },
   {
-    "id": 17,
+    "id": 16,
     "divide": 1,
     "required": true,
     "title": "機械工学実験ⅠＡ",
@@ -153,7 +144,7 @@
     "lecturer": "國峰　寛司、加藤　隆弘、田中　誠一"
   },
   {
-    "id": 18,
+    "id": 17,
     "divide": 1,
     "required": true,
     "title": "機械工学実験ⅠＢ",
@@ -162,7 +153,7 @@
     "lecturer": "境田　彰芳、森下　智博、加藤　隆弘、田中　誠一"
   },
   {
-    "id": 19,
+    "id": 18,
     "divide": 1,
     "required": true,
     "title": "機構学",
@@ -171,7 +162,7 @@
     "lecturer": "関森　大介"
   },
   {
-    "id": 20,
+    "id": 19,
     "divide": 1,
     "required": true,
     "title": "工業力学Ⅰ",
@@ -180,7 +171,7 @@
     "lecturer": "國峰　寛司"
   },
   {
-    "id": 21,
+    "id": 20,
     "divide": 1,
     "required": true,
     "title": "材料学Ⅰ",
@@ -189,7 +180,7 @@
     "lecturer": "境田　彰芳"
   },
   {
-    "id": 22,
+    "id": 21,
     "divide": 1,
     "required": true,
     "title": "設計工学Ⅰ",
@@ -198,7 +189,7 @@
     "lecturer": "松塚　直樹"
   },
   {
-    "id": 23,
+    "id": 22,
     "divide": 1,
     "required": true,
     "title": "材料力学Ⅰ",

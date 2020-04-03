@@ -100,15 +100,6 @@
   },
   {
     "id": 12,
-    "divide": 0,
-    "required": false,
-    "title": "海外研修Ⅲ",
-    "term": 0,
-    "credit": 1,
-    "lecturer": "Ｅ全"
-  },
-  {
-    "id": 13,
     "divide": 1,
     "required": true,
     "title": "知的財産権",
@@ -117,7 +108,7 @@
     "lecturer": "森定　勇二"
   },
   {
-    "id": 14,
+    "id": 13,
     "divide": 1,
     "required": true,
     "title": "卒業研究",
@@ -126,7 +117,7 @@
     "lecturer": "Ｅ全"
   },
   {
-    "id": 15,
+    "id": 14,
     "divide": 1,
     "required": true,
     "title": "パワーエレクトロニクス",
@@ -135,7 +126,7 @@
     "lecturer": "廣田　敦志"
   },
   {
-    "id": 16,
+    "id": 15,
     "divide": 1,
     "required": true,
     "title": "固体物性Ｃ",
@@ -144,7 +135,7 @@
     "lecturer": "大向　雅人"
   },
   {
-    "id": 17,
+    "id": 16,
     "divide": 1,
     "required": true,
     "title": "電気電子工学実験Ⅱ",
@@ -153,7 +144,7 @@
     "lecturer": "上　泰"
   },
   {
-    "id": 18,
+    "id": 17,
     "divide": 1,
     "required": false,
     "title": "確率・統計",
@@ -162,7 +153,7 @@
     "lecturer": "濱田　幸弘"
   },
   {
-    "id": 19,
+    "id": 18,
     "divide": 1,
     "required": false,
     "title": "情報理論",
@@ -171,7 +162,7 @@
     "lecturer": "中井　優一"
   },
   {
-    "id": 20,
+    "id": 19,
     "divide": 1,
     "required": false,
     "title": "基礎通信工学",
@@ -180,7 +171,7 @@
     "lecturer": "瀧田　愼"
   },
   {
-    "id": 21,
+    "id": 20,
     "divide": 1,
     "required": false,
     "title": "通信方式",
@@ -189,7 +180,7 @@
     "lecturer": "瀧田　愼"
   },
   {
-    "id": 22,
+    "id": 21,
     "divide": 1,
     "required": false,
     "title": "情報ネットワーク",
@@ -198,7 +189,7 @@
     "lecturer": "井上　一成"
   },
   {
-    "id": 23,
+    "id": 22,
     "divide": 1,
     "required": false,
     "title": "制御工学Ⅱ",
@@ -207,7 +198,7 @@
     "lecturer": "上　泰"
   },
   {
-    "id": 24,
+    "id": 23,
     "divide": 1,
     "required": false,
     "title": "エネルギー変換工学",
@@ -216,7 +207,7 @@
     "lecturer": "藤井　治久"
   },
   {
-    "id": 25,
+    "id": 24,
     "divide": 1,
     "required": false,
     "title": "エネルギー伝送工学",
@@ -225,7 +216,7 @@
     "lecturer": "河野　良之"
   },
   {
-    "id": 26,
+    "id": 25,
     "divide": 1,
     "required": false,
     "title": "電子応用",
@@ -234,7 +225,7 @@
     "lecturer": "谷口　友邦"
   },
   {
-    "id": 27,
+    "id": 26,
     "divide": 1,
     "required": false,
     "title": "プロダクトデザイン",
@@ -243,7 +234,7 @@
     "lecturer": "相良　二朗"
   },
   {
-    "id": 28,
+    "id": 27,
     "divide": 1,
     "required": false,
     "title": "画像工学",
@@ -252,7 +243,7 @@
     "lecturer": "中井　優一"
   },
   {
-    "id": 29,
+    "id": 28,
     "divide": 1,
     "required": false,
     "title": "工業外国語",
@@ -261,7 +252,7 @@
     "lecturer": "原　良子"
   },
   {
-    "id": 30,
+    "id": 29,
     "divide": 1,
     "required": false,
     "title": "コンピュータシミュレーション",
@@ -270,7 +261,7 @@
     "lecturer": "上　泰"
   },
   {
-    "id": 31,
+    "id": 30,
     "divide": 1,
     "required": false,
     "title": "電気電子資格Ⅰ",
@@ -279,7 +270,7 @@
     "lecturer": "堀　桂太郎"
   },
   {
-    "id": 32,
+    "id": 31,
     "divide": 1,
     "required": false,
     "title": "電気電子資格Ⅱ",

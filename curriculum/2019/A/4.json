@@ -82,15 +82,6 @@
   },
   {
     "id": 10,
-    "divide": 0,
-    "required": false,
-    "title": "海外研修Ⅱ",
-    "term": 0,
-    "credit": 1,
-    "lecturer": "Ａ全"
-  },
-  {
-    "id": 11,
     "divide": 1,
     "required": true,
     "title": "Ｃｏ＋ｗｏｒｋⅢＡ",
@@ -99,7 +90,7 @@
     "lecturer": "全教員"
   },
   {
-    "id": 12,
+    "id": 11,
     "divide": 1,
     "required": true,
     "title": "Ｃｏ＋ｗｏｒｋⅢＢ",
@@ -108,7 +99,7 @@
     "lecturer": "全教員"
   },
   {
-    "id": 13,
+    "id": 12,
     "divide": 1,
     "required": true,
     "title": "応用数学",
@@ -117,7 +108,7 @@
     "lecturer": "河田　祥太郎"
   },
   {
-    "id": 14,
+    "id": 13,
     "divide": 1,
     "required": true,
     "title": "物理学入門",
@@ -126,7 +117,7 @@
     "lecturer": "角野　嘉則"
   },
   {
-    "id": 15,
+    "id": 14,
     "divide": 1,
     "required": true,
     "title": "建築情報デザイン",
@@ -135,7 +126,7 @@
     "lecturer": "工藤　和美"
   },
   {
-    "id": 16,
+    "id": 15,
     "divide": 1,
     "required": true,
     "title": "建築構造力学ⅢＡ",
@@ -144,7 +135,7 @@
     "lecturer": "荘所　直哉"
   },
   {
-    "id": 17,
+    "id": 16,
     "divide": 1,
     "required": true,
     "title": "建築構造力学ⅢＢ",
@@ -153,7 +144,7 @@
     "lecturer": "中川　肇"
   },
   {
-    "id": 18,
+    "id": 17,
     "divide": 1,
     "required": true,
     "title": "建築工学実験",
@@ -162,7 +153,7 @@
     "lecturer": "荘所　直哉、角野　嘉則"
   },
   {
-    "id": 19,
+    "id": 18,
     "divide": 1,
     "required": true,
     "title": "鉄筋コンクリート構造",
@@ -171,7 +162,7 @@
     "lecturer": "角野　嘉則"
   },
   {
-    "id": 20,
+    "id": 19,
     "divide": 1,
     "required": true,
     "title": "鋼構造Ａ",
@@ -180,7 +171,7 @@
     "lecturer": "中川　肇"
   },
   {
-    "id": 21,
+    "id": 20,
     "divide": 1,
     "required": true,
     "title": "鋼構造Ｂ",
@@ -189,7 +180,7 @@
     "lecturer": "中川　肇"
   },
   {
-    "id": 22,
+    "id": 21,
     "divide": 1,
     "required": true,
     "title": "建築計画Ⅲ",
@@ -198,7 +189,7 @@
     "lecturer": "本塚　智貴"
   },
   {
-    "id": 23,
+    "id": 22,
     "divide": 1,
     "required": true,
     "title": "建築設計演習ⅣＡ",
@@ -207,7 +198,7 @@
     "lecturer": "工藤　和美、殿井　奈緒、小林　直紀"
   },
   {
-    "id": 24,
+    "id": 23,
     "divide": 1,
     "required": true,
     "title": "建築設計演習ⅣＢ",
@@ -216,7 +207,7 @@
     "lecturer": "東野　アドリアナ、神家　昭雄"
   },
   {
-    "id": 25,
+    "id": 24,
     "divide": 1,
     "required": true,
     "title": "建築環境工学Ⅱ",
@@ -225,7 +216,7 @@
     "lecturer": "平石　年弘"
   },
   {
-    "id": 26,
+    "id": 25,
     "divide": 1,
     "required": true,
     "title": "建築ゼミナール",
@@ -234,7 +225,7 @@
     "lecturer": "Ａ全"
   },
   {
-    "id": 27,
+    "id": 26,
     "divide": 1,
     "required": false,
     "title": "建築史Ⅱ",
@@ -243,7 +234,7 @@
     "lecturer": "東野　アドリアナ"
   },
   {
-    "id": 28,
+    "id": 27,
     "divide": 1,
     "required": false,
     "title": "建築計画Ⅳ",
@@ -252,7 +243,7 @@
     "lecturer": "東野　アドリアナ"
   },
   {
-    "id": 29,
+    "id": 28,
     "divide": 1,
     "required": false,
     "title": "建築インターンシップ",

@@ -82,15 +82,6 @@
   },
   {
     "id": 10,
-    "divide": 0,
-    "required": false,
-    "title": "海外研修Ⅱ",
-    "term": 0,
-    "credit": 1,
-    "lecturer": "Ｅ全"
-  },
-  {
-    "id": 11,
     "divide": 1,
     "required": true,
     "title": "Ｃｏ＋ｗｏｒｋⅢＡ",
@@ -99,7 +90,7 @@
     "lecturer": "全教員"
   },
   {
-    "id": 12,
+    "id": 11,
     "divide": 1,
     "required": true,
     "title": "Ｃｏ＋ｗｏｒｋⅢＢ",
@@ -108,7 +99,7 @@
     "lecturer": "全教員"
   },
   {
-    "id": 13,
+    "id": 12,
     "divide": 1,
     "required": true,
     "title": "応用物理学Ⅰ",
@@ -117,7 +108,7 @@
     "lecturer": "小笠原　弘道"
   },
   {
-    "id": 14,
+    "id": 13,
     "divide": 1,
     "required": true,
     "title": "応用物理学Ⅱ",
@@ -126,7 +117,7 @@
     "lecturer": "小笠原　弘道"
   },
   {
-    "id": 15,
+    "id": 14,
     "divide": 1,
     "required": true,
     "title": "過渡現象論",
@@ -135,7 +126,7 @@
     "lecturer": "周山　大慶"
   },
   {
-    "id": 16,
+    "id": 15,
     "divide": 1,
     "required": true,
     "title": "電子回路",
@@ -144,7 +135,7 @@
     "lecturer": "堀　桂太郎"
   },
   {
-    "id": 17,
+    "id": 16,
     "divide": 1,
     "required": true,
     "title": "制御工学Ⅰ",
@@ -153,7 +144,7 @@
     "lecturer": "上　泰"
   },
   {
-    "id": 18,
+    "id": 17,
     "divide": 1,
     "required": true,
     "title": "課題研究",
@@ -162,7 +153,7 @@
     "lecturer": "Ｅ全"
   },
   {
-    "id": 19,
+    "id": 18,
     "divide": 1,
     "required": true,
     "title": "応用数学",
@@ -171,7 +162,7 @@
     "lecturer": "小笠原　弘道"
   },
   {
-    "id": 20,
+    "id": 19,
     "divide": 1,
     "required": true,
     "title": "電気磁気学Ⅱ",
@@ -180,7 +171,7 @@
     "lecturer": "大向　雅人"
   },
   {
-    "id": 21,
+    "id": 20,
     "divide": 1,
     "required": true,
     "title": "固体物性Ａ",
@@ -189,7 +180,7 @@
     "lecturer": "大向　雅人"
   },
   {
-    "id": 22,
+    "id": 21,
     "divide": 1,
     "required": true,
     "title": "電気電子工学実験Ⅰ",
@@ -198,7 +189,7 @@
     "lecturer": "周山　大慶、廣田　敦志、藤野　達士、上　泰、寺澤　真一"
   },
   {
-    "id": 23,
+    "id": 22,
     "divide": 1,
     "required": false,
     "title": "電気情報インターンシップＡ",
@@ -207,7 +198,7 @@
     "lecturer": "Ｅ全"
   },
   {
-    "id": 24,
+    "id": 23,
     "divide": 1,
     "required": false,
     "title": "電気情報インターンシップＢ",
@@ -216,7 +207,7 @@
     "lecturer": "Ｅ全"
   },
   {
-    "id": 25,
+    "id": 24,
     "divide": 1,
     "required": false,
     "title": "固体物性Ｂ",
@@ -225,7 +216,7 @@
     "lecturer": "大向　雅人"
   },
   {
-    "id": 26,
+    "id": 25,
     "divide": 1,
     "required": false,
     "title": "計算機アーキテクチャ",
@@ -234,7 +225,7 @@
     "lecturer": "井上　一成"
   },
   {
-    "id": 27,
+    "id": 26,
     "divide": 1,
     "required": false,
     "title": "離散数学",

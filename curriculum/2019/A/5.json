@@ -100,15 +100,6 @@
   },
   {
     "id": 12,
-    "divide": 0,
-    "required": false,
-    "title": "海外研修Ⅲ",
-    "term": 0,
-    "credit": 1,
-    "lecturer": "Ａ全"
-  },
-  {
-    "id": 13,
     "divide": 1,
     "required": true,
     "title": "土質基礎構造",
@@ -117,7 +108,7 @@
     "lecturer": "村田　幸子"
   },
   {
-    "id": 14,
+    "id": 13,
     "divide": 1,
     "required": true,
     "title": "建築設備Ａ",
@@ -126,7 +117,7 @@
     "lecturer": "平石　年弘"
   },
   {
-    "id": 15,
+    "id": 14,
     "divide": 1,
     "required": true,
     "title": "建築設備Ｂ",
@@ -135,7 +126,7 @@
     "lecturer": "平石　年弘"
   },
   {
-    "id": 16,
+    "id": 15,
     "divide": 1,
     "required": true,
     "title": "建築生産Ａ",
@@ -144,7 +135,7 @@
     "lecturer": "谷口　考生、中川　肇"
   },
   {
-    "id": 17,
+    "id": 16,
     "divide": 1,
     "required": true,
     "title": "建築生産Ｂ",
@@ -153,7 +144,7 @@
     "lecturer": "谷口　考生、中川　肇"
   },
   {
-    "id": 18,
+    "id": 17,
     "divide": 1,
     "required": true,
     "title": "建築法規",
@@ -162,7 +153,7 @@
     "lecturer": "内海　哲也"
   },
   {
-    "id": 19,
+    "id": 18,
     "divide": 1,
     "required": true,
     "title": "卒業研究",
@@ -171,7 +162,7 @@
     "lecturer": "Ａ全"
   },
   {
-    "id": 20,
+    "id": 19,
     "divide": 1,
     "required": false,
     "title": "建築構造特論Ａ",
@@ -180,7 +171,7 @@
     "lecturer": "中川　肇"
   },
   {
-    "id": 21,
+    "id": 20,
     "divide": 1,
     "required": false,
     "title": "建築構造特論Ｂ",
@@ -189,7 +180,7 @@
     "lecturer": "市澤　勇彦、荘所　直哉"
   },
   {
-    "id": 22,
+    "id": 21,
     "divide": 1,
     "required": false,
     "title": "建築構造演習",
@@ -198,7 +189,7 @@
     "lecturer": "中川　肇"
   },
   {
-    "id": 23,
+    "id": 22,
     "divide": 1,
     "required": false,
     "title": "都市地域計画",
@@ -207,7 +198,7 @@
     "lecturer": "大塚　毅彦"
   },
   {
-    "id": 24,
+    "id": 23,
     "divide": 1,
     "required": false,
     "title": "建築史Ⅲ",
@@ -216,7 +207,7 @@
     "lecturer": "東野　アドリアナ"
   },
   {
-    "id": 25,
+    "id": 24,
     "divide": 1,
     "required": false,
     "title": "建築計画Ⅴ",
@@ -225,7 +216,7 @@
     "lecturer": "工藤　和美"
   },
   {
-    "id": 26,
+    "id": 25,
     "divide": 1,
     "required": false,
     "title": "建築計画Ⅵ",
@@ -234,7 +225,7 @@
     "lecturer": "工藤　和美、木村　達也"
   },
   {
-    "id": 27,
+    "id": 26,
     "divide": 1,
     "required": false,
     "title": "建築学演習",

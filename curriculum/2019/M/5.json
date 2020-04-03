@@ -100,15 +100,6 @@
   },
   {
     "id": 12,
-    "divide": 0,
-    "required": false,
-    "title": "海外研修Ⅲ",
-    "term": 0,
-    "credit": 1,
-    "lecturer": "Ｍ全"
-  },
-  {
-    "id": 13,
     "divide": 1,
     "required": true,
     "title": "設計製図Ⅴ",
@@ -117,7 +108,7 @@
     "lecturer": "松塚　直樹"
   },
   {
-    "id": 14,
+    "id": 13,
     "divide": 1,
     "required": true,
     "title": "材料学Ⅱ",
@@ -126,7 +117,7 @@
     "lecturer": "境田　彰芳"
   },
   {
-    "id": 15,
+    "id": 14,
     "divide": 1,
     "required": true,
     "title": "自動制御",
@@ -135,7 +126,7 @@
     "lecturer": "石川　将人"
   },
   {
-    "id": 16,
+    "id": 15,
     "divide": 1,
     "required": true,
     "title": "卒業研究",
@@ -144,7 +135,7 @@
     "lecturer": "Ｍ全"
   },
   {
-    "id": 17,
+    "id": 16,
     "divide": 1,
     "required": false,
     "title": "生産管理工学",
@@ -153,7 +144,7 @@
     "lecturer": "木村　真晃"
   },
   {
-    "id": 18,
+    "id": 17,
     "divide": 1,
     "required": false,
     "title": "機械環境工学",
@@ -162,7 +153,7 @@
     "lecturer": "大西　慶三"
   },
   {
-    "id": 19,
+    "id": 18,
     "divide": 1,
     "required": false,
     "title": "熱力学Ⅱ",
@@ -171,7 +162,7 @@
     "lecturer": "牧　祥"
   },
   {
-    "id": 20,
+    "id": 19,
     "divide": 1,
     "required": false,
     "title": "材料力学Ⅲ",
@@ -180,7 +171,7 @@
     "lecturer": "森下　智博"
   },
   {
-    "id": 21,
+    "id": 20,
     "divide": 1,
     "required": false,
     "title": "流体力学Ⅱ",
@@ -189,7 +180,7 @@
     "lecturer": "田中　誠一"
   },
   {
-    "id": 22,
+    "id": 21,
     "divide": 1,
     "required": false,
     "title": "電気電子工学Ⅱ",
@@ -198,7 +189,7 @@
     "lecturer": "上　泰"
   },
   {
-    "id": 23,
+    "id": 22,
     "divide": 1,
     "required": false,
     "title": "伝熱工学",
@@ -207,7 +198,7 @@
     "lecturer": "國峰　寛司"
   },
   {
-    "id": 24,
+    "id": 23,
     "divide": 1,
     "required": false,
     "title": "ロボット工学",
@@ -216,7 +207,7 @@
     "lecturer": "関森　大介"
   },
   {
-    "id": 25,
+    "id": 24,
     "divide": 1,
     "required": false,
     "title": "計測工学",
@@ -225,7 +216,7 @@
     "lecturer": "格内　敏"
   },
   {
-    "id": 26,
+    "id": 25,
     "divide": 1,
     "required": false,
     "title": "生産工学",
@@ -234,7 +225,7 @@
     "lecturer": "大森　茂俊"
   },
   {
-    "id": 27,
+    "id": 26,
     "divide": 1,
     "required": false,
     "title": "熱管理",
@@ -243,7 +234,7 @@
     "lecturer": "田中　誠一"
   },
   {
-    "id": 28,
+    "id": 27,
     "divide": 1,
     "required": false,
     "title": "機械工学実験Ⅲ",
@@ -252,7 +243,7 @@
     "lecturer": "森下　智博、加藤　隆弘、松塚　直樹、大森　茂俊、田中　誠一"
   },
   {
-    "id": 29,
+    "id": 28,
     "divide": 1,
     "required": false,
     "title": "機械インターンシップⅡ",

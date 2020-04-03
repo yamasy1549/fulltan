@@ -100,15 +100,6 @@
   },
   {
     "id": 12,
-    "divide": 0,
-    "required": false,
-    "title": "海外研修Ⅰ",
-    "term": 0,
-    "credit": 1,
-    "lecturer": "Ｅ全"
-  },
-  {
-    "id": 13,
     "divide": 1,
     "required": true,
     "title": "電気磁気学Ⅰ",
@@ -117,7 +108,7 @@
     "lecturer": "梶村　好宏"
   },
   {
-    "id": 14,
+    "id": 13,
     "divide": 1,
     "required": true,
     "title": "回路論",
@@ -126,7 +117,7 @@
     "lecturer": "細川　篤、周山　大慶"
   },
   {
-    "id": 15,
+    "id": 14,
     "divide": 1,
     "required": true,
     "title": "電気電子工学概論",
@@ -135,16 +126,16 @@
     "lecturer": "廣田　敦志"
   },
   {
-    "id": 16,
+    "id": 15,
     "divide": 1,
     "required": true,
     "title": "情報工学概論",
     "term": 2,
     "credit": 2,
-    "lecturer": "佐村　敏治"
+    "lecturer": "井上　一成、　濱田　幸弘"
   },
   {
-    "id": 17,
+    "id": 16,
     "divide": 1,
     "required": true,
     "title": "ディジタル電子回路",
@@ -153,7 +144,7 @@
     "lecturer": "松井　伸之、神田　健介"
   },
   {
-    "id": 18,
+    "id": 17,
     "divide": 1,
     "required": true,
     "title": "電気情報工学実験Ⅱ",

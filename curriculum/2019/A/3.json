@@ -100,15 +100,6 @@
   },
   {
     "id": 12,
-    "divide": 0,
-    "required": false,
-    "title": "海外研修Ⅰ",
-    "term": 0,
-    "credit": 1,
-    "lecturer": "Ａ全"
-  },
-  {
-    "id": 13,
     "divide": 1,
     "required": true,
     "title": "建築情報デザイン",
@@ -117,7 +108,7 @@
     "lecturer": "工藤　和美"
   },
   {
-    "id": 14,
+    "id": 13,
     "divide": 1,
     "required": true,
     "title": "建築構造力学ⅡＡ",
@@ -126,7 +117,7 @@
     "lecturer": "中川　肇"
   },
   {
-    "id": 15,
+    "id": 14,
     "divide": 1,
     "required": true,
     "title": "建築構造力学ⅡＢ",
@@ -135,7 +126,7 @@
     "lecturer": "荘所　直哉"
   },
   {
-    "id": 16,
+    "id": 15,
     "divide": 1,
     "required": true,
     "title": "建築材料",
@@ -144,7 +135,7 @@
     "lecturer": "角野　嘉則"
   },
   {
-    "id": 17,
+    "id": 16,
     "divide": 1,
     "required": true,
     "title": "建築計画Ⅱ",
@@ -153,7 +144,7 @@
     "lecturer": "佐伯　亮太"
   },
   {
-    "id": 18,
+    "id": 17,
     "divide": 1,
     "required": true,
     "title": "建築設計演習ⅢＡ",
@@ -162,7 +153,7 @@
     "lecturer": "本塚　智貴、徳岡　浩二"
   },
   {
-    "id": 19,
+    "id": 18,
     "divide": 1,
     "required": true,
     "title": "建築設計演習ⅢＢ",
@@ -171,7 +162,7 @@
     "lecturer": "工藤　和美、平石　年弘、寺岡　宏治"
   },
   {
-    "id": 20,
+    "id": 19,
     "divide": 1,
     "required": true,
     "title": "建築環境工学Ⅰ",
@@ -180,7 +171,7 @@
     "lecturer": "平石　年弘"
   },
   {
-    "id": 21,
+    "id": 20,
     "divide": 1,
     "required": true,
     "title": "図学",
