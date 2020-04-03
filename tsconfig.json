@@ -4,6 +4,7 @@
         "sourceMap": true,
         "noImplicitAny": true,
         "experimentalDecorators": true,
+        "esModuleInterop": true,
         "module": "commonjs",
         "target": "es5",
         "jsx": "react"

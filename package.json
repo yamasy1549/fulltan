@@ -9,26 +9,26 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@types/node": "^11.13.0",
-    "@types/react": "^16.8.10",
-    "@types/react-dom": "^16.8.3",
-    "mobx": "^5.9.4",
-    "mobx-react": "^5.4.3",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "@types/node": "^13.11.0",
+    "@types/react": "^16.9.32",
+    "@types/react-dom": "^16.9.6",
+    "mobx": "^5.15.4",
+    "mobx-react": "^6.1.8",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "awesome-typescript-loader": "^5.2.1",
-    "css-loader": "^2.1.1",
+    "css-loader": "^3.4.2",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "postcss-loader": "^3.0.0",
-    "postcss-preset-env": "^6.6.0",
-    "puppeteer": "^1.14.0",
+    "postcss-preset-env": "^6.7.0",
+    "puppeteer": "^2.1.1",
     "source-map-loader": "^0.2.4",
-    "style-loader": "^0.23.1",
-    "typescript": "^3.4.1",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.0",
-    "webpack-dev-server": "^3.2.1"
+    "style-loader": "^1.1.3",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   }
 }
