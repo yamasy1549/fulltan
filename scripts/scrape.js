@@ -1,10 +1,3 @@
-// $ yarn scrape -- 2020 M https://www.akashi.ac.jp/mechanical/m_curriculum
-// $ yarn scrape -- 2020 ED https://www.akashi.ac.jp/electrical/e_curriculum
-// $ yarn scrape -- 2020 EJ https://www.akashi.ac.jp/electrical/e_curriculum
-// $ yarn scrape -- 2020 C https://www.akashi.ac.jp/civil/c_curriculum
-// $ yarn scrape -- 2020 A https://www.akashi.ac.jp/architecture/a_curriculum
-//
-//
 // 全体的にwip
 
 const fs        = require('fs');
@@ -22,7 +15,7 @@ async function getCurriculumList(page, cource, url) {
     if(cource == "ED") {
       tableList = [..._tableList.slice(1,5), _tableList[6]]
     } else if(cource == "EJ") {
-      tableList = [..._tableList.slice(1,5), _tableList[5], _tableList[7]]
+      tableList = [..._tableList.slice(1,4), _tableList[5], _tableList[7]]
     } else {
       tableList = _tableList.slice(1,6)
     }
@@ -31,7 +24,7 @@ async function getCurriculumList(page, cource, url) {
       let trList = Array.from(table.querySelectorAll('tr'))
       trList = trList.slice(1,trList.length-1)
 
-      return trList.map((tr, i) => {
+      trList = trList.map(tr => {
         const cellList = Array.from(tr.querySelectorAll('td')).map(cell => {
           return cell.textContent
         })
@@ -44,7 +37,6 @@ async function getCurriculumList(page, cource, url) {
         const lecturer = cellList[cellList.length-1].replace(/\n/g, '').replace(/ /g, '　').replace(/,/g, '、')
 
         return {
-          'id': i+1,
           divide,
           required,
           title,
@@ -52,6 +44,17 @@ async function getCurriculumList(page, cource, url) {
           credit,
           lecturer
         }
+      })
+
+      trList = trList.filter(curriculum => {
+        // 「海外研修Ⅰ」「海外研修Ⅱ」「海外研修Ⅲ」は卒業に必要な単位数に含まれない
+        // 留学生科目も除外
+        return !curriculum.title.match(/(海外研修|留学生)/)
+      })
+
+      // id をつける
+      return trList.map((curriculum, i) => {
+        return Object.assign({}, { id: i+1 }, curriculum)
       })
     })
 

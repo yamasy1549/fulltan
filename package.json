@@ -5,7 +5,7 @@
   "scripts": {
     "build": "webpack --progress -p",
     "start": "webpack-dev-server --watch --progress",
-    "scrape": "node scripts/scrape.js"
+    "scrape": "./scripts/scrape.sh"
   },
   "license": "MIT",
   "dependencies": {
