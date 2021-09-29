@@ -1,0 +1,252 @@
+[
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "国語表現概論",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "善塔 正志",
+    "id": 85
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "生物物理化学",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "小笠原 弘道",
+    "id": 86
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "科学技術と環境",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "井上 尚之",
+    "id": 87
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 5,
+    "title": "英語Ⅴ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "北川 千穂",
+    "id": 88
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "スポーツ科学実習Ⅰ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "小林 優希,前田 忠紀",
+    "id": 89
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "スポーツ科学実習Ⅱ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "後藤 太之,前田 忠紀",
+    "id": 90
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "ＴＯＥＩＣⅠ",
+    "term": 0,
+    "credit": 1,
+    "lecturer": "松田 安隆,北川 千穂",
+    "id": 91
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "ＴＯＥＩＣⅡ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "松田 安隆,北川 千穂",
+    "id": 92
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "ＴＯＥＩＣⅢ",
+    "term": 0,
+    "credit": 3,
+    "lecturer": "松田 安隆,北川 千穂",
+    "id": 93
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "法学概論",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "黒杭 良美",
+    "id": 94
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "哲学概論",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "服部 圭祐",
+    "id": 95
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 5,
+    "title": "土質基礎構造",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "中尾 裕樹",
+    "id": 96
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 5,
+    "title": "建築設備Ａ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "平石 年弘",
+    "id": 97
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 5,
+    "title": "建築設備Ｂ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "平石 年弘",
+    "id": 98
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 5,
+    "title": "建築生産Ａ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "中川 肇,谷口 考生",
+    "id": 99
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 5,
+    "title": "建築生産Ｂ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "中川 肇,谷口 考生",
+    "id": 100
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 5,
+    "title": "建築法規",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "内海 哲也",
+    "id": 101
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 5,
+    "title": "卒業研究",
+    "term": 0,
+    "credit": 7,
+    "lecturer": "Ａ全",
+    "id": 102
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "建築構造特論Ａ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "中川 肇",
+    "id": 103
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "建築構造特論Ｂ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "荘所 直哉,市澤 勇彦",
+    "id": 104
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "建築構造演習",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "中川 肇",
+    "id": 105
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "都市地域計画",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "大塚 毅彦",
+    "id": 106
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "建築史Ⅲ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "東野 アドリアナ",
+    "id": 107
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "建築計画Ⅴ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "工藤 和美",
+    "id": 108
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "建築学演習",
+    "term": 1,
+    "credit": 4,
+    "lecturer": "荘所 直哉,本塚 智貴",
+    "id": 109
+  }
+]

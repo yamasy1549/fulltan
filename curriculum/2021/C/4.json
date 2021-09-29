@@ -1,0 +1,252 @@
+[
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 4,
+    "title": "国語Ⅳ",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "善塔 正志",
+    "id": 56
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 4,
+    "title": "保健体育Ⅳ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "前田 忠紀,石田 まさみ",
+    "id": 57
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 4,
+    "title": "英語ⅣＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "井上 英俊",
+    "id": 58
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 4,
+    "title": "英語ⅣＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "北川 千穂",
+    "id": 59
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 4,
+    "title": "英会話Ⅱ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "ハーバート ジョン",
+    "id": 60
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 4,
+    "title": "中国語",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "有川 けい",
+    "id": 61
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 4,
+    "title": "ドイツ語",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "横田 一哉",
+    "id": 62
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 4,
+    "title": "フランス語",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "藤本 智成,武内 英公子",
+    "id": 63
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 4,
+    "title": "数学概論",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "長尾 秀人",
+    "id": 64
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 4,
+    "title": "Ｃｏ＋ｗｏｒｋⅢＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "全教員",
+    "id": 65
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 4,
+    "title": "Ｃｏ＋ｗｏｒｋⅢＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "全教員",
+    "id": 66
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 4,
+    "title": "応用数学",
+    "term": 0,
+    "credit": 4,
+    "lecturer": "井上 奉紀",
+    "id": 67
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 4,
+    "title": "物理学概論",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "小笠原 弘道",
+    "id": 68
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 4,
+    "title": "情報処理Ⅱ",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "石丸 和宏",
+    "id": 69
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 4,
+    "title": "コンクリート構造学",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "武田 字浦",
+    "id": 70
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 4,
+    "title": "構造力学Ⅲ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "石丸 和宏",
+    "id": 71
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 4,
+    "title": "水理学Ⅲ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "神田 佳一",
+    "id": 72
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 4,
+    "title": "地盤工学Ⅲ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "鍋島 康之",
+    "id": 73
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 4,
+    "title": "社会基盤マネジメント",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "江口 忠臣,武田 字浦",
+    "id": 74
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 4,
+    "title": "都市システムインターンシップ",
+    "term": 0,
+    "credit": 1,
+    "lecturer": "Ｃ全",
+    "id": 75
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 4,
+    "title": "工学実験Ⅲ",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "三好 崇夫,渡部 守義",
+    "id": 76
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 4,
+    "title": "工学実験Ⅱ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "神田 佳一,鍋島 康之",
+    "id": 77
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 4,
+    "title": "計画学Ⅱ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "石松 一仁",
+    "id": 78
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 4,
+    "title": "計画学Ⅰ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "石松 一仁",
+    "id": 79
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 4,
+    "title": "衛生工学",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "渡部 守義",
+    "id": 80
+  }
+]

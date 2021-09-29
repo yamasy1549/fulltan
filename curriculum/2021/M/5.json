@@ -1,0 +1,282 @@
+[
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 5,
+    "title": "英語Ⅴ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "松田 安隆",
+    "id": 93
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "国語表現概論",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "善塔 正志",
+    "id": 94
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "法学概論",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "黒杭 良美",
+    "id": 95
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "哲学概論",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "服部 圭祐",
+    "id": 96
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "生物物理化学",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "小笠原 弘道",
+    "id": 97
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "科学技術と環境",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "井上 尚之",
+    "id": 98
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "スポーツ科学実習Ⅰ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "小林 優希,前田 忠紀",
+    "id": 99
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "スポーツ科学実習Ⅱ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "後藤 太之,前田 忠紀",
+    "id": 100
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "ＴＯＥＩＣⅠ",
+    "term": 0,
+    "credit": 1,
+    "lecturer": "松田 安隆,北川 千穂",
+    "id": 101
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "ＴＯＥＩＣⅡ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "松田 安隆,北川 千穂",
+    "id": 102
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "ＴＯＥＩＣⅢ",
+    "term": 0,
+    "credit": 3,
+    "lecturer": "松田 安隆,北川 千穂",
+    "id": 103
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 5,
+    "title": "設計製図Ⅴ",
+    "term": 0,
+    "credit": 4,
+    "lecturer": "松塚 直樹",
+    "id": 104
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 5,
+    "title": "材料学Ⅱ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "境田 彰芳",
+    "id": 105
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 5,
+    "title": "自動制御",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "岩野 優樹",
+    "id": 106
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 5,
+    "title": "卒業研究",
+    "term": 0,
+    "credit": 6,
+    "lecturer": "Ｍ全",
+    "id": 107
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "生産管理工学",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "木村 真晃",
+    "id": 108
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "機械環境工学",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "大西 慶三",
+    "id": 109
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "熱力学Ⅱ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "牧 祥",
+    "id": 110
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "材料力学Ⅲ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "森下 智博",
+    "id": 111
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "流体力学Ⅱ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "田中 誠一",
+    "id": 112
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "電気電子工学Ⅱ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "上 泰",
+    "id": 113
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "伝熱工学",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "國峰 寛司",
+    "id": 114
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "ロボット工学",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "関森 大介",
+    "id": 115
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "計測工学",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "岩野 優樹",
+    "id": 116
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "生産工学",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "大森 茂俊",
+    "id": 117
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "熱管理",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "田中 誠一",
+    "id": 118
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "機械工学実験Ⅲ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "森下 智博,加藤 隆弘,関森 大介,松塚 直樹,大森 茂俊,田中 誠一",
+    "id": 119
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "機械インターンシップⅡ",
+    "term": 0,
+    "credit": 1,
+    "lecturer": "Ｍ全",
+    "id": 120
+  }
+]

@@ -1,0 +1,172 @@
+[
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 2,
+    "title": "数学ⅡＡ",
+    "term": 0,
+    "credit": 4,
+    "lecturer": "面田 康裕",
+    "id": 20
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 2,
+    "title": "国語Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "善塔 正志",
+    "id": 21
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 2,
+    "title": "数学ⅡＢ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "谷口 雄大",
+    "id": 22
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 2,
+    "title": "政治経済",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "黒杭 良美",
+    "id": 23
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 2,
+    "title": "サイエンスⅡＡ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "武内 將洋,小野 慎司",
+    "id": 24
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 2,
+    "title": "保健体育Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "小林 優希,後藤 太之",
+    "id": 25
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 2,
+    "title": "英語ⅡＡ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "穐本 浩美",
+    "id": 26
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 2,
+    "title": "英語ⅡＢ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "井上 英俊",
+    "id": 27
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 2,
+    "title": "サイエンスⅡＢ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "小野 慎司",
+    "id": 28
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 2,
+    "title": "Ｃｏ＋ｗｏｒｋⅠＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "全教員",
+    "id": 29
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 2,
+    "title": "Ｃｏ＋ｗｏｒｋⅠＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "全教員",
+    "id": 30
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 2,
+    "title": "情報基礎Ⅱ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "荘所 直哉",
+    "id": 31
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 2,
+    "title": "建築意匠Ａ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "大塚 毅彦,東野 アドリアナ",
+    "id": 32
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 2,
+    "title": "建築意匠Ｂ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "本塚 智貴",
+    "id": 33
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 2,
+    "title": "建築構造力学Ⅰ",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "荘所 直哉",
+    "id": 34
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 2,
+    "title": "建築設計演習ⅡＡ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "大塚 毅彦,梶原 伸介",
+    "id": 35
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 2,
+    "title": "建築設計演習ⅡＢ",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "水島 あかね,大塚 毅彦,中村 紀章",
+    "id": 36
+  }
+]
