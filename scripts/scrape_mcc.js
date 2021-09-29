@@ -1,4 +1,5 @@
 // MCC移行後のカリキュラムを取得する
+// $ node scrape_mcc.js 2021 ../curriculum
 
 const fs = require("fs")
 const path = require("path")
@@ -111,13 +112,8 @@ async function save(filename, object) {
   console.log(`Saving to ${filename}...`)
 
   const json = JSON.stringify(object, null, "  ")
-  console.log(path.dirname(filename))
-  await fs.mkdir(path.dirname(filename), { recursive: true }, (err) => {
-    if (err) console.log(err)
-  })
-  await fs.writeFile(filename, json, (err, result) => {
-    if (err) console.log(err)
-  })
+  fs.mkdirSync(path.dirname(filename), { recursive: true })
+  fs.writeFileSync(filename, json)
 }
 
 !(async () => {
@@ -133,7 +129,7 @@ async function save(filename, object) {
     for (const deptName in syllabus) {
       for (const grade in syllabus[deptName]) {
         const path = `${dest}/${year}/${deptName}/${grade}.json`
-        save(path, syllabus[deptName][grade])
+        await save(path, syllabus[deptName][grade])
       }
     }
 
