@@ -1,0 +1,202 @@
+[
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 3,
+    "title": "日本史",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "黒杭 良美",
+    "id": 36
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 3,
+    "title": "数学ⅢＡ",
+    "term": 0,
+    "credit": 4,
+    "lecturer": "三浦 嵩広",
+    "id": 37
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 3,
+    "title": "数学ⅢＢ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "面田 康裕,高田 功",
+    "id": 38
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 3,
+    "title": "サイエンスⅢＡ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "小野 慎司",
+    "id": 39
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 3,
+    "title": "サイエンスⅢＢ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "井上 努",
+    "id": 40
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 3,
+    "title": "保健体育Ⅲ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "後藤 太之,石田 まさみ,小林 優希",
+    "id": 41
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 3,
+    "title": "英語Ⅲ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "平川 裕己,水野 知津子",
+    "id": 42
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 3,
+    "title": "英会話Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "ハーバート ジョン",
+    "id": 43
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 3,
+    "title": "Ｃｏ＋ｗｏｒｋⅡＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "全教員",
+    "id": 44
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 3,
+    "title": "Ｃｏ＋ｗｏｒｋⅡＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "全教員",
+    "id": 45
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 3,
+    "title": "国語Ⅲ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "黒田 秀教",
+    "id": 46
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 3,
+    "title": "土木設計製図",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "三好 崇夫",
+    "id": 47
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 3,
+    "title": "構造力学Ⅰ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "石丸 和宏",
+    "id": 48
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 3,
+    "title": "構造力学Ⅱ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "石丸 和宏",
+    "id": 49
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 3,
+    "title": "水理学Ⅰ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "神田 佳一",
+    "id": 50
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 3,
+    "title": "水理学Ⅱ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "神田 佳一",
+    "id": 51
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 3,
+    "title": "地盤工学Ⅰ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "鍋島 康之",
+    "id": 52
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 3,
+    "title": "地盤工学Ⅱ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "鍋島 康之",
+    "id": 53
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 3,
+    "title": "環境生態学",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "渡部 守義",
+    "id": 54
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 3,
+    "title": "工学実験Ⅰ",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "武田 字浦,生田 麻実",
+    "id": 55
+  }
+]

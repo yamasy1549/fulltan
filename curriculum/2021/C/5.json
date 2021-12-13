@@ -1,0 +1,262 @@
+[
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 5,
+    "title": "英語Ⅴ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "北川 千穂",
+    "id": 81
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "国語表現概論",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "善塔 正志",
+    "id": 82
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "法学概論",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "黒杭 良美",
+    "id": 83
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "哲学概論",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "服部 圭祐",
+    "id": 84
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "生物物理化学",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "小笠原 弘道",
+    "id": 85
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "科学技術と環境",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "井上 尚之",
+    "id": 86
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "スポーツ科学実習Ⅰ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "小林 優希,前田 忠紀",
+    "id": 87
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "スポーツ科学実習Ⅱ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "後藤 太之,前田 忠紀",
+    "id": 88
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "ＴＯＥＩＣⅠ",
+    "term": 0,
+    "credit": 1,
+    "lecturer": "松田 安隆,北川 千穂",
+    "id": 89
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "ＴＯＥＩＣⅡ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "松田 安隆,北川 千穂",
+    "id": 90
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "ＴＯＥＩＣⅢ",
+    "term": 0,
+    "credit": 3,
+    "lecturer": "松田 安隆,北川 千穂",
+    "id": 91
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 5,
+    "title": "鋼構造学Ⅰ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "三好 崇夫",
+    "id": 92
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 5,
+    "title": "鋼構造学Ⅱ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "三好 崇夫",
+    "id": 93
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 5,
+    "title": "構造設計学",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "三好 崇夫",
+    "id": 94
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 5,
+    "title": "卒業研究",
+    "term": 0,
+    "credit": 9,
+    "lecturer": "Ｃ全",
+    "id": 95
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "社会基盤メインテナンス工学",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "新田 耕司",
+    "id": 96
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "公共経済学",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "酒井 裕規",
+    "id": 97
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "環境工学",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "渡部 守義",
+    "id": 98
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "測量学Ⅲ",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "江口 忠臣,生田 麻実",
+    "id": 99
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "応用測量",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "名草 一成",
+    "id": 100
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "測量学Ⅳ",
+    "term": 0,
+    "credit": 1,
+    "lecturer": "鍋島 康之",
+    "id": 101
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "都市計画",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "石松 一仁",
+    "id": 102
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "建設法規",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "大畑 典久",
+    "id": 103
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "水工水理学",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "神田 佳一",
+    "id": 104
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "防災工学",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "鍋島 康之,澁谷 容子",
+    "id": 105
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "交通工学",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "大畑 典久",
+    "id": 106
+  }
+]

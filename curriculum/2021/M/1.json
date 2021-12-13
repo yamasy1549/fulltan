@@ -1,0 +1,212 @@
+[
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 1,
+    "title": "国語Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "黒田 秀教",
+    "id": 0
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 1,
+    "title": "歴史",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "荒川 裕紀",
+    "id": 1
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 1,
+    "title": "数学ⅠＡ",
+    "term": 0,
+    "credit": 4,
+    "lecturer": "長尾 秀人",
+    "id": 2
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 1,
+    "title": "数学ⅠＢ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "面田 康裕",
+    "id": 3
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 1,
+    "title": "サイエンスⅠ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "武内 將洋",
+    "id": 4
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 1,
+    "title": "保健体育Ⅰ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "後藤 太之,小林 優希,石田 まさみ",
+    "id": 5
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 1,
+    "title": "英語ⅠＡ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "松田 安隆",
+    "id": 6
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 1,
+    "title": "英語ⅠＢ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "北川 千穂",
+    "id": 7
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 1,
+    "title": "アクティブラーニング入門",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "佐伯 亮太,有廣 悠乃",
+    "id": 8
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 1,
+    "title": "データサイエンス入門",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "土田 隼之,野村 隼人",
+    "id": 9
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 1,
+    "title": "データサイエンス演習",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "土田 隼之",
+    "id": 10
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 1,
+    "title": "音楽",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "泉 由香",
+    "id": 11
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 1,
+    "title": "美術",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "大野 良平",
+    "id": 12
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 1,
+    "title": "防災リテラシー",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "鍋島 康之,本塚 智貴,木作 尚子,難波 良彰,星野 憲生,梶本 忠",
+    "id": 13
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 1,
+    "title": "情報基礎",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "田中 誠一",
+    "id": 14
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 1,
+    "title": "設計製図ⅠＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "史 鳳輝",
+    "id": 15
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 1,
+    "title": "設計製図ⅠＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "史 鳳輝",
+    "id": 16
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 1,
+    "title": "工作実習ⅠＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "加藤 隆弘,大森 茂俊",
+    "id": 17
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 1,
+    "title": "工作実習ⅠＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "加藤 隆弘,大森 茂俊",
+    "id": 18
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 1,
+    "title": "機械工学実習ⅠＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "森下 智博",
+    "id": 19
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 1,
+    "title": "機械工学実習ⅠＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "岩野 優樹,大森 茂俊",
+    "id": 20
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 2,
+    "title": "国語Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "善塔 正志",
+    "id": 21
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 2,
+    "title": "政治経済",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "黒杭 良美",
+    "id": 22
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 2,
+    "title": "数学ⅡＡ",
+    "term": 0,
+    "credit": 4,
+    "lecturer": "高田 功",
+    "id": 23
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 2,
+    "title": "数学ⅡＢ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "紫垣 孝洋",
+    "id": 24
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 2,
+    "title": "サイエンスⅡＡ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "武内 將洋",
+    "id": 25
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 2,
+    "title": "サイエンスⅡＢ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "今井 良一",
+    "id": 26
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 2,
+    "title": "保健体育Ⅱ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "小林 優希,後藤 太之",
+    "id": 27
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 2,
+    "title": "英語ⅡＡ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "穐本 浩美",
+    "id": 28
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 2,
+    "title": "英語ⅡＢ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "井上 英俊",
+    "id": 29
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 2,
+    "title": "Ｃｏ＋ｗｏｒｋⅠＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "全教員",
+    "id": 30
+  },
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 2,
+    "title": "Ｃｏ＋ｗｏｒｋⅠＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "全教員",
+    "id": 31
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 2,
+    "title": "プログラミング基礎",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "田中 誠一",
+    "id": 32
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 2,
+    "title": "設計製図ⅡＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "松塚 直樹",
+    "id": 33
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 2,
+    "title": "設計製図ⅡＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "松塚 直樹",
+    "id": 34
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 2,
+    "title": "工作実習ⅡＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "加藤 隆弘,大森 茂俊",
+    "id": 35
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 2,
+    "title": "工作実習ⅡＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "加藤 隆弘,大森 茂俊",
+    "id": 36
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 2,
+    "title": "機械工学実習ⅡＡ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "加藤 隆弘,大森 茂俊,岩野 優樹",
+    "id": 37
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 2,
+    "title": "機械工学実習ⅡＢ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "加藤 隆弘,関森 大介",
+    "id": 38
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 2,
+    "title": "機械加工学Ⅰ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "加藤 隆弘",
+    "id": 39
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 2,
+    "title": "機械加工学Ⅱ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "加藤 隆弘",
+    "id": 40
+  }
+]

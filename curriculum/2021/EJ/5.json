@@ -1,0 +1,302 @@
+[
+  {
+    "divide": 0,
+    "required": true,
+    "grade": 5,
+    "title": "英語Ⅴ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "松田 安隆",
+    "id": 29
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "国語表現概論",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "善塔 正志",
+    "id": 30
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "法学概論",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "黒杭 良美",
+    "id": 31
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "哲学概論",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "服部 圭祐",
+    "id": 32
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "生物物理化学",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "小笠原 弘道",
+    "id": 33
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "科学技術と環境",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "井上 尚之",
+    "id": 34
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "スポーツ科学実習Ⅰ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "小林 優希,前田 忠紀",
+    "id": 35
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "スポーツ科学実習Ⅱ",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "後藤 太之,前田 忠紀",
+    "id": 36
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "ＴＯＥＩＣⅠ",
+    "term": 0,
+    "credit": 1,
+    "lecturer": "松田 安隆,北川 千穂",
+    "id": 37
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "ＴＯＥＩＣⅡ",
+    "term": 0,
+    "credit": 2,
+    "lecturer": "松田 安隆,北川 千穂",
+    "id": 38
+  },
+  {
+    "divide": 0,
+    "required": false,
+    "grade": 5,
+    "title": "ＴＯＥＩＣⅢ",
+    "term": 0,
+    "credit": 3,
+    "lecturer": "松田 安隆,北川 千穂",
+    "id": 39
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 5,
+    "title": "知的財産権",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "森定 勇二",
+    "id": 40
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 5,
+    "title": "卒業研究",
+    "term": 0,
+    "credit": 9,
+    "lecturer": "Ｅ全",
+    "id": 41
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 5,
+    "title": "確率・統計",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "濱田 幸弘",
+    "id": 42
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 5,
+    "title": "情報理論",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "中井 優一",
+    "id": 43
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 5,
+    "title": "コンパイラ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "三浦 欽也",
+    "id": 44
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 5,
+    "title": "ソフトウェア工学",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "土田 隼之",
+    "id": 45
+  },
+  {
+    "divide": 1,
+    "required": true,
+    "grade": 5,
+    "title": "情報工学実験Ⅱ",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "濱田 幸弘",
+    "id": 46
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "基礎通信工学",
+    "term": 1,
+    "credit": 2,
+    "lecturer": "瀧田 愼",
+    "id": 47
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "通信方式",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "瀧田 愼",
+    "id": 48
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "情報ネットワーク",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "井上 一成",
+    "id": 49
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "制御工学Ⅱ",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "上 泰",
+    "id": 50
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "電子応用",
+    "term": 1,
+    "credit": 1,
+    "lecturer": "井上 一成",
+    "id": 51
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "データベース",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "土田 隼之",
+    "id": 52
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "人工知能",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "三浦 欽也",
+    "id": 53
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "画像工学",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "中井 優一",
+    "id": 54
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "コンピュータシミュレーション",
+    "term": 2,
+    "credit": 2,
+    "lecturer": "上 泰",
+    "id": 55
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "情報資格Ⅰ",
+    "term": 0,
+    "credit": 1,
+    "lecturer": "中井 優一",
+    "id": 56
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "情報資格Ⅱ",
+    "term": 0,
+    "credit": 1,
+    "lecturer": "中井 優一",
+    "id": 57
+  },
+  {
+    "divide": 1,
+    "required": false,
+    "grade": 5,
+    "title": "情報ネットワーク応用",
+    "term": 2,
+    "credit": 1,
+    "lecturer": "井上 一成",
+    "id": 58
+  }
+]

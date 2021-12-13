@@ -1,4 +1,4 @@
-export const currentYear: number = 2020
+export const currentYear: number = 2021
 
 export type Grade = 1 | 2 | 3 | 4 | 5
 export const grades: Grade[] = [1, 2, 3, 4, 5]
